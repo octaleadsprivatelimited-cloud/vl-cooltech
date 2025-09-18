@@ -1,0 +1,227 @@
+import Link from 'next/link'
+import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight, WashingMachine } from 'lucide-react'
+
+export const metadata = {
+  title: 'Our Services - ApplianceCares.in | Electronics & Appliance Repair Services',
+  description: 'Professional electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, and more. Expert technicians, same-day service.',
+  keywords: 'electronics repair, appliance repair, TV repair, AC repair, washing machine repair, refrigerator repair, Hyderabad, Pragathi Nagar, home appliances',
+}
+
+const ServicesPage = () => {
+  const services = [
+    {
+      icon: Tv,
+      title: 'TV Repair',
+      description: 'Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs.',
+      features: ['Screen Repair', 'Power Issues', 'Audio Problems', 'Smart TV Setup', 'Remote Issues', 'HDMI Problems'],
+      href: '/services/tv-repair',
+      color: 'bg-blue-500',
+      price: 'Starting from ₹500'
+    },
+    {
+      icon: Wind,
+      title: 'AC Repair',
+      description: 'Complete AC repair and maintenance services for all types of air conditioners.',
+      features: ['Gas Filling', 'Compressor Repair', 'Cooling Issues', 'Maintenance', 'Filter Cleaning', 'Remote Problems'],
+      href: '/services/ac-repair',
+      color: 'bg-cyan-500',
+      price: 'Starting from ₹800'
+    },
+    {
+      icon: WashingMachine,
+      title: 'Washing Machine Repair',
+      description: 'Expert washing machine repair for all brands and models.',
+      features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems', 'Door Issues', 'Control Panel'],
+      href: '/services/washing-machine-repair',
+      color: 'bg-indigo-500',
+      price: 'Starting from ₹600'
+    },
+    {
+      icon: Refrigerator,
+      title: 'Refrigerator Repair',
+      description: 'Comprehensive refrigerator repair services for all types of fridges.',
+      features: ['Cooling Issues', 'Compressor Repair', 'Thermostat', 'Door Seals', 'Ice Maker', 'Water Dispenser'],
+      href: '/services/refrigerator-repair',
+      color: 'bg-green-500',
+      price: 'Starting from ₹700'
+    },
+    {
+      icon: Microwave,
+      title: 'Microwave Repair',
+      description: 'Professional microwave oven repair and maintenance services.',
+      features: ['Heating Issues', 'Turntable Problems', 'Door Switches', 'Control Panel', 'Magnetron Issues', 'Timer Problems'],
+      href: '/services/microwave-repair',
+      color: 'bg-orange-500',
+      price: 'Starting from ₹400'
+    },
+    {
+      icon: Laptop,
+      title: 'Laptop Repair',
+      description: 'Expert laptop repair services for all major brands and models.',
+      features: ['Screen Replacement', 'Keyboard Repair', 'Battery Issues', 'Software Problems', 'Hardware Issues', 'Data Recovery'],
+      href: '/services/laptop-repair',
+      color: 'bg-purple-500',
+      price: 'Starting from ₹800'
+    },
+    {
+      icon: Smartphone,
+      title: 'Mobile Repair',
+      description: 'Professional mobile phone repair services for all smartphone brands.',
+      features: ['Screen Repair', 'Battery Replacement', 'Charging Port', 'Software Issues', 'Camera Problems', 'Speaker Issues'],
+      href: '/services/mobile-repair',
+      color: 'bg-pink-500',
+      price: 'Starting from ₹300'
+    },
+    {
+      icon: Monitor,
+      title: 'Home Appliances',
+      description: 'Repair services for all home appliances and electronic devices.',
+      features: ['Mixer Grinder', 'Iron', 'Geyser', 'Water Purifier', 'Induction Cooker', 'Electric Kettle'],
+      href: '/services/home-appliances',
+      color: 'bg-teal-500',
+      price: 'Starting from ₹200'
+    }
+  ]
+
+  return (
+    <div className="pt-16 min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-primary-600 to-blue-700 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Our Services
+            </h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Professional electronics and appliance repair services in Hyderabad. 
+              We fix it right the first time, every time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
+                <Link
+                  key={service.title}
+                  href={service.href}
+                  className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                >
+                  <div className="p-6">
+                    {/* Icon */}
+                    <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="h-8 w-8 text-white" />
+                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors duration-200">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    {/* Price */}
+                    <div className="text-primary-600 font-semibold text-sm mb-4">
+                      {service.price}
+                    </div>
+
+                    {/* Features */}
+                    <ul className="space-y-1 mb-4">
+                      {service.features.slice(0, 3).map((feature, featureIndex) => (
+                        <li key={featureIndex} className="text-xs text-gray-500 flex items-center">
+                          <div className="w-1 h-1 bg-primary-400 rounded-full mr-2"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Learn More */}
+                    <div className="flex items-center text-primary-600 font-medium text-sm group-hover:text-primary-700 transition-colors duration-200">
+                      Learn More
+                      <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why Choose Our Services?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We're committed to providing the best repair services in Hyderabad with 
+              professional expertise and customer satisfaction.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Same Day Service</h3>
+              <p className="text-gray-600">Most repairs completed within 24 hours</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">🛡️</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">100% Guarantee</h3>
+              <p className="text-gray-600">We stand behind our work</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl">💰</span>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Transparent Pricing</h3>
+              <p className="text-gray-600">No hidden fees or surprises</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-primary-600 to-blue-700">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Ready to Get Your Appliance Fixed?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Contact us today for fast, reliable, and affordable repair services.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="tel:+919666111327"
+              className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
+            >
+              Call Now: +91 96661 11327
+            </Link>
+            <Link
+              href="/contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-colors duration-200"
+            >
+              Get Free Quote
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default ServicesPage
