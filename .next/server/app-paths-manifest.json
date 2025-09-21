@@ -1,4 +1,15 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/services/mobile-repair/page": "app/services/mobile-repair/page.js",
+  "/page": "app/page.js",
+  "/services/home-appliances/page": "app/services/home-appliances/page.js",
+  "/services/laptop-repair/page": "app/services/laptop-repair/page.js",
+  "/book-service/page": "app/book-service/page.js",
+  "/services/ac-repair/page": "app/services/ac-repair/page.js",
+  "/services/washing-machine-repair/page": "app/services/washing-machine-repair/page.js",
+  "/services/refrigerator-repair/page": "app/services/refrigerator-repair/page.js",
+  "/services/microwave-repair/page": "app/services/microwave-repair/page.js",
+  "/services/page": "app/services/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/services/tv-repair/page": "app/services/tv-repair/page.js"
 }

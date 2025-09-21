@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, Thermometer, Zap, Settings } from 'lucide-react'
-import WhatsAppButton, { WhatsAppLink } from '@/components/WhatsAppButton'
 import Link from 'next/link'
+import { GetQuoteButton } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Samsung AC Repair Service - ApplianceCares.in | Expert Samsung AC Repair',
@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 }
 
 export default function SamsungACRepairPage() {
-  const whatsappMessage = 'Hi! I need help with Samsung AC repair in Hyderabad. Please provide me with a quote and schedule a service.'
 
   const commonIssues = [
     'Samsung AC Not Cooling',
@@ -77,12 +76,12 @@ export default function SamsungACRepairPage() {
               Professional Samsung AC repair service in Hyderabad. Expert technicians for all Samsung air conditioner models. Same day service available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppLink
-                message={whatsappMessage}
+              <GetQuoteButton
+                serviceType="samsung-ac"
                 className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300"
               >
-                WhatsApp for Samsung AC
-              </WhatsAppLink>
+                Get Quote for Samsung AC
+              </GetQuoteButton>
               <Link
                 href="tel:+919666111327"
                 className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
@@ -137,12 +136,10 @@ export default function SamsungACRepairPage() {
                 <p className="text-blue-700 mb-6">
                   Professional repair service for all Samsung AC models
                 </p>
-                <WhatsAppLink
-                  message={whatsappMessage}
+                <GetQuoteButton
+                  serviceType="samsung-ac"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold"
-                >
-                  Get Quote via WhatsApp
-                </WhatsAppLink>
+                />
               </div>
             </div>
           </div>
@@ -272,12 +269,12 @@ export default function SamsungACRepairPage() {
             Contact us now for professional Samsung AC repair service
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <WhatsAppLink
-              message={whatsappMessage}
+            <GetQuoteButton
+              serviceType="samsung-ac"
               className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300"
             >
-              WhatsApp for Samsung AC
-            </WhatsAppLink>
+              Get Quote for Samsung AC
+            </GetQuoteButton>
             <Link
               href="tel:+919666111327"
               className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"

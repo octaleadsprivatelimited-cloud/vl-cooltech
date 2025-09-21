@@ -8,9 +8,9 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services',
-  description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, and more. Trusted by thousands of customers.',
-  keywords: 'electronics repair, appliance repair, TV repair, AC repair, washing machine repair, refrigerator repair, Hyderabad, Pragathi Nagar, home appliances, electronic services',
+  title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
+  description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
+  keywords: 'electronics repair Hyderabad, appliance repair Hyderabad, TV repair Hyderabad, AC repair Hyderabad, washing machine repair Hyderabad, refrigerator repair Hyderabad, laptop repair Hyderabad, mobile repair Hyderabad, home appliances repair Hyderabad, HITEC City repair, Gachibowli repair, Kondapur repair, Madhapur repair, Jubilee Hills repair, Banjara Hills repair, Pragathi Nagar repair, same day service Hyderabad, doorstep repair service Hyderabad, emergency repair Hyderabad, Samsung repair Hyderabad, LG repair Hyderabad, Whirlpool repair Hyderabad, Dell laptop repair Hyderabad, iPhone repair Hyderabad, OnePlus repair Hyderabad, Xiaomi repair Hyderabad, TV repair near me, AC repair near me, washing machine repair near me, refrigerator repair near me, laptop repair near me, mobile repair near me, home service Hyderabad, pickup delivery repair Hyderabad, certified technician Hyderabad, genuine parts repair Hyderabad, warranty repair service Hyderabad',
   authors: [{ name: 'ApplianceCares.in' }],
   creator: 'ApplianceCares.in',
   publisher: 'ApplianceCares.in',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services',
-    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, and more.',
+    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
+    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
     url: 'https://appliancecares.in',
     siteName: 'ApplianceCares.in',
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ApplianceCares.in - Electronics & Appliance Repair Services',
+        alt: 'ApplianceCares.in - Electronics & Appliance Repair Services in Hyderabad - TV Repair, AC Repair, Washing Machine Repair, Refrigerator Repair, Laptop Repair, Mobile Repair',
       },
     ],
     locale: 'en_IN',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services',
-    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, and more.',
+    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
+    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -84,7 +84,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "ApplianceCares.in",
-              "description": "Professional electronics and appliance repair services in Hyderabad",
+              "alternateName": "Appliance Cares Hyderabad",
+              "description": "Professional electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.",
               "url": "https://appliancecares.in",
               "telephone": "+91 96661 11327",
               "email": "info@appliancecares.in",
@@ -93,6 +94,7 @@ export default function RootLayout({
                 "streetAddress": "Pragathi Nagar",
                 "addressLocality": "Hyderabad",
                 "addressRegion": "Telangana",
+                "postalCode": "500016",
                 "addressCountry": "IN"
               },
               "geo": {
@@ -102,6 +104,41 @@ export default function RootLayout({
               },
               "openingHours": "Mo-Su 08:00-20:00",
               "priceRange": "$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "1000",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Rajesh Kumar"
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "4.9",
+                    "bestRating": "5"
+                  },
+                  "reviewBody": "Excellent TV repair service! My Samsung LED TV was repaired within 2 hours. The technician was professional and explained everything clearly. Highly recommended for electronics repair in Hyderabad!"
+                },
+                {
+                  "@type": "Review",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Priya Sharma"
+                  },
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "4.9",
+                    "bestRating": "5"
+                  },
+                  "reviewBody": "Great washing machine repair service in Gachibowli. My LG washing machine was making strange noises and they fixed it perfectly. Same day service with genuine parts!"
+                }
+              ],
               "serviceArea": {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
@@ -111,40 +148,146 @@ export default function RootLayout({
                 },
                 "geoRadius": "50000"
               },
+              "areaServed": [
+                "Hyderabad", "Secunderabad", "Cyberabad", "HITEC City", "Gachibowli", 
+                "Kondapur", "Madhapur", "Jubilee Hills", "Banjara Hills", "Pragathi Nagar",
+                "Kukatpally", "Miyapur", "Serilingampally", "Chandanagar", "Alwal",
+                "Malkajgiri", "Lal Bahadur Nagar", "Dilsukhnagar", "Uppal", "Nagole",
+                "LB Nagar", "Vanastalipuram", "Hayathnagar", "Ramachandrapuram",
+                "Patancheru", "Sangareddy", "Bolarum", "Bowenpally", "Tarnaka",
+                "Neredmet", "Ameerpet", "Somajiguda", "Begumpet", "Punjagutta",
+                "Khairatabad", "Masab Tank", "Nampally", "Abids", "Koti",
+                "Sultan Bazar", "Charminar", "Malakpet", "Kothapet", "Saroornagar",
+                "Boduppal", "Moinabad", "Shadnagar", "Shamshabad", "Rajendra Nagar",
+                "Balanagar", "Jeedimetla", "Qutbullapur", "Bachupally", "Nizampet",
+                "Manikonda", "Tellapur", "Gopanpally", "Kokapet", "Nanakramguda",
+                "Raidurg", "Khajaguda", "Neknampur", "Kapra", "Uppal Kalan",
+                "Peerzadiguda", "Ghatkesar", "Medchal", "Shamirpet", "Sainikpuri",
+                "Vikarabad", "Lakdikapul", "Falaknuma", "Santoshnagar", "Chandrayangutta",
+                "Rangareddy", "Ibrahimpatnam", "Maheshwaram", "Mahabubnagar", "Medak"
+              ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Electronics and Appliance Repair Services",
+                "name": "Electronics and Appliance Repair Services in Hyderabad",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "TV Repair"
+                      "name": "TV Repair",
+                      "description": "Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs in Hyderabad"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "AC Repair"
+                      "name": "AC Repair",
+                      "description": "Complete AC repair and maintenance services for all types of air conditioners in Hyderabad"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Washing Machine Repair"
+                      "name": "Washing Machine Repair",
+                      "description": "Expert washing machine repair for all brands and models in Hyderabad"
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Refrigerator Repair"
+                      "name": "Refrigerator Repair",
+                      "description": "Comprehensive refrigerator repair services for all types of fridges in Hyderabad"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Microwave Repair",
+                      "description": "Professional microwave oven repair and maintenance services in Hyderabad"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Laptop Repair",
+                      "description": "Expert laptop repair services for all major brands and models in Hyderabad"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Mobile Repair",
+                      "description": "Professional mobile phone repair services for all smartphone brands in Hyderabad"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Home Appliances Repair",
+                      "description": "Repair services for all home appliances and electronic devices in Hyderabad"
                     }
                   }
                 ]
-              }
+              },
+              "makesOffer": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Same Day Service"
+                  },
+                  "description": "Same day repair service available for all electronics and appliances in Hyderabad"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Home Service"
+                  },
+                  "description": "Doorstep repair service at your home or office in Hyderabad"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Emergency Repair"
+                  },
+                  "description": "24/7 emergency repair service for urgent appliance issues in Hyderabad"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Free Pickup and Delivery"
+                  },
+                  "description": "Free pickup and delivery service for appliance repair in Hyderabad"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Warranty Service"
+                  },
+                  "description": "Comprehensive warranty on all repairs with genuine parts in Hyderabad"
+                }
+              ],
+              "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI", "Net Banking"],
+              "currenciesAccepted": "INR",
+              "image": "https://appliancecares.in/og-image.jpg",
+              "logo": "https://appliancecares.in/logo.png",
+              "sameAs": [
+                "https://www.facebook.com/appliancecares",
+                "https://www.instagram.com/appliancecares",
+                "https://www.twitter.com/appliancecares",
+                "https://www.youtube.com/appliancecares"
+              ]
             })
           }}
         />

@@ -2,13 +2,16 @@
 
 import { Phone, Calendar, MessageCircle, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { getWhatsAppUrl } from '@/utils/whatsapp-messages'
 
 interface CTAProps {
   variant?: 'primary' | 'secondary' | 'outline'
   size?: 'sm' | 'md' | 'lg'
-  action?: 'call' | 'book' | 'whatsapp' | 'contact'
+  action?: 'call' | 'book' | 'whatsapp' | 'contact' | 'quote'
   className?: string
   children?: React.ReactNode
+  serviceType?: string
+  brand?: string
 }
 
 const CTA = ({ 
@@ -16,14 +19,16 @@ const CTA = ({
   size = 'md', 
   action = 'call',
   className = '',
-  children 
+  children,
+  serviceType = 'general',
+  brand
 }: CTAProps) => {
   const baseClasses = "inline-flex items-center justify-center font-semibold transition-all duration-300 hover:scale-105 transform focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none"
   
   const sizeClasses = {
-    sm: 'px-4 py-2 text-sm rounded-lg',
-    md: 'px-6 py-3 text-base rounded-lg',
-    lg: 'px-8 py-4 text-lg rounded-xl'
+    sm: 'px-3 sm:px-4 py-2 text-xs sm:text-sm rounded-lg',
+    md: 'px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-lg',
+    lg: 'px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-xl'
   }
   
   const variantClasses = {
@@ -46,17 +51,23 @@ const CTA = ({
           icon: Calendar,
           text: 'Book Service'
         }
-      case 'whatsapp':
-        return {
-          href: 'https://wa.me/919666111327',
-          icon: MessageCircle,
-          text: 'WhatsApp'
-        }
       case 'contact':
         return {
           href: '/contact',
           icon: ArrowRight,
           text: 'Contact Us'
+        }
+      case 'quote':
+        return {
+          href: getWhatsAppUrl(serviceType, brand),
+          icon: MessageCircle,
+          text: 'Get Quote'
+        }
+      case 'whatsapp':
+        return {
+          href: getWhatsAppUrl(serviceType, brand),
+          icon: MessageCircle,
+          text: 'WhatsApp'
         }
       default:
         return {
@@ -70,14 +81,16 @@ const CTA = ({
   const actionContent = getActionContent()
   const Icon = actionContent.icon
 
+  const isExternalLink = action === 'whatsapp' || action === 'quote'
+  
   return (
     <Link
       href={actionContent.href}
-      target={action === 'whatsapp' ? '_blank' : undefined}
-      rel={action === 'whatsapp' ? 'noopener noreferrer' : undefined}
+      target={isExternalLink ? '_blank' : undefined}
+      rel={isExternalLink ? 'noopener noreferrer' : undefined}
       className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
     >
-      <Icon className="h-5 w-5 mr-2" />
+      <Icon className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
       {children || actionContent.text}
     </Link>
   )
@@ -92,8 +105,18 @@ export const BookServiceButton = ({ size = 'lg', className = '' }: { size?: 'md'
   <CTA action="book" variant="primary" size={size} className={className} />
 )
 
-export const WhatsAppButton = ({ size = 'lg', className = '' }: { size?: 'md' | 'lg', className?: string }) => (
-  <CTA action="whatsapp" variant="secondary" size={size} className={className} />
+export const GetQuoteButton = ({ 
+  size = 'lg', 
+  className = '', 
+  serviceType = 'general',
+  brand
+}: { 
+  size?: 'md' | 'lg', 
+  className?: string,
+  serviceType?: string,
+  brand?: string
+}) => (
+  <CTA action="quote" variant="secondary" size={size} className={className} serviceType={serviceType} brand={brand} />
 )
 
 export const ContactButton = ({ size = 'md', className = '' }: { size?: 'md' | 'lg', className?: string }) => (
@@ -105,7 +128,7 @@ interface CTASectionProps {
   title: string
   description: string
   variant?: 'primary' | 'secondary'
-  actions?: ('call' | 'book' | 'whatsapp' | 'contact')[]
+  actions?: ('call' | 'book' | 'contact')[]
 }
 
 export const CTASection = ({ 
@@ -119,15 +142,15 @@ export const CTASection = ({
   const subtextClass = variant === 'primary' ? 'text-primary-100' : 'text-gray-300'
 
   return (
-    <section className={`${bgClass} py-16`}>
+    <section className={`${bgClass} py-12 sm:py-16`}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className={`text-3xl font-bold ${textClass} mb-4`}>
+        <h2 className={`text-2xl sm:text-3xl font-bold ${textClass} mb-3 sm:mb-4`}>
           {title}
         </h2>
-        <p className={`text-xl ${subtextClass} mb-8`}>
+        <p className={`text-lg sm:text-xl ${subtextClass} mb-6 sm:mb-8`}>
           {description}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           {actions.map((action, index) => (
             <CTA
               key={index}

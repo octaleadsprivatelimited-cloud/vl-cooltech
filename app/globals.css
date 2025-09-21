@@ -259,46 +259,146 @@ a:hover {
   animation: glow 2s ease-in-out infinite alternate;
 }
 
-/* Modern WhatsApp Button */
-.whatsapp-button {
+/* WhatsApp Button Styles */
+.whatsapp-float {
   position: fixed;
   bottom: 24px;
   right: 24px;
   z-index: 1000;
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: #25D366;
   color: white;
   border: none;
-  border-radius: 50px;
-  padding: 16px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.whatsapp-button:hover {
-  background: linear-gradient(135deg, #128C7E 0%, #0d6b5a 100%);
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+.whatsapp-float:hover {
+  background: #128C7E;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
 }
 
-.whatsapp-button:active {
-  transform: translateY(-2px) scale(1.02);
+.whatsapp-float:active {
+  transform: scale(0.95);
 }
 
-/* Responsive Design Utilities */
-@media (max-width: 640px) {
-  .whatsapp-button {
+/* Pulse animation for WhatsApp button */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.1);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+}
+
+.whatsapp-float.animate-pulse {
+  animation: whatsapp-pulse 2s infinite;
+}
+
+
+/* Enhanced Responsive Design for All Devices */
+/* Extra Small Devices (phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .whatsapp-float {
     bottom: 16px;
     right: 16px;
-    padding: 12px 20px;
-    font-size: 14px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Ultra-compact mobile layout */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Small Devices (phones, 481px and up) */
+@media (min-width: 481px) and (max-width: 640px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Medium Devices (tablets, 641px and up) */
+@media (min-width: 641px) and (max-width: 768px) {
+}
+
+/* Large Devices (desktops, 769px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Extra Large Devices (large desktops, 1025px and up) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* Ultra Wide Screens (1441px and up) */
+@media (min-width: 1441px) {
+  /* Enhanced spacing for ultra-wide screens */
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Universal Mobile Optimizations */
+@media (max-width: 768px) {
+  /* Ensure proper touch targets on mobile */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Improve text readability on mobile */
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet-specific optimizations */
+  .grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop Optimizations */
+@media (min-width: 1025px) {
+  /* Enhanced desktop experience */
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Better spacing for desktop */
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

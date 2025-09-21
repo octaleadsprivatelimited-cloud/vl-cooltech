@@ -66,54 +66,54 @@ const Footer = () => {
       <div className="absolute inset-0 bg-white/5"></div>
       
       {/* Main Footer */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center mb-4">
-              <div className="h-12 w-12 bg-gradient-to-br from-black to-gray-800 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">A</span>
+            <div className="flex items-center mb-3 sm:mb-4">
+              <div className="h-10 w-10 sm:h-12 sm:w-12 bg-gradient-to-br from-black to-gray-800 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg sm:text-xl">A</span>
               </div>
-              <span className="ml-3 text-xl font-bold text-white">ApplianceCares</span>
+              <span className="ml-3 text-lg sm:text-xl font-bold text-white">ApplianceCares</span>
             </div>
-            <p className="text-gray-300 mb-6 text-sm leading-relaxed">
+            <p className="text-gray-300 mb-4 sm:mb-6 text-sm leading-relaxed">
               Professional electronics and appliance repair services in Hyderabad. 
               Trusted by thousands of customers for reliable, affordable, and quality repairs.
             </p>
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
-                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
-                  <Phone className="h-4 w-4" />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black/30 rounded-lg flex items-center justify-center mr-2 sm:mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">+91 96661 11327</div>
+                  <div className="font-semibold text-xs sm:text-sm">+91 96661 11327</div>
                   <div className="text-xs text-gray-400">Call us anytime</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
-                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
-                  <Mail className="h-4 w-4" />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black/30 rounded-lg flex items-center justify-center mr-2 sm:mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">info@appliancecares.in</div>
+                  <div className="font-semibold text-xs sm:text-sm">info@appliancecares.in</div>
                   <div className="text-xs text-gray-400">Email support</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
-                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
-                  <MapPin className="h-4 w-4" />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black/30 rounded-lg flex items-center justify-center mr-2 sm:mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">Pragathi Nagar, Hyderabad</div>
+                  <div className="font-semibold text-xs sm:text-sm">Pragathi Nagar, Hyderabad</div>
                   <div className="text-xs text-gray-400">Service area</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
-                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
-                  <Clock className="h-4 w-4" />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-black/30 rounded-lg flex items-center justify-center mr-2 sm:mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">Mon-Sun: 8:00 AM - 8:00 PM</div>
+                  <div className="font-semibold text-xs sm:text-sm">Mon-Sun: 8:00 AM - 8:00 PM</div>
                   <div className="text-xs text-gray-400">24/7 Emergency service</div>
                 </div>
               </div>
@@ -175,9 +175,9 @@ const Footer = () => {
           </div>
 
           {/* Mobile Accordion */}
-          <div className="lg:hidden space-y-6">
+          <div className="lg:hidden space-y-4 sm:space-y-6">
             {/* Services */}
-            <div className="bg-black/30 rounded-lg p-4">
+            <div className="bg-black/30 rounded-lg p-3 sm:p-4">
               <button
                 onClick={() => toggleSection('services')}
                 className="flex items-center justify-between w-full text-left py-2"
@@ -207,7 +207,7 @@ const Footer = () => {
             </div>
 
             {/* Company */}
-            <div className="bg-black/30 rounded-lg p-4">
+            <div className="bg-black/30 rounded-lg p-3 sm:p-4">
               <button
                 onClick={() => toggleSection('company')}
                 className="flex items-center justify-between w-full text-left py-2"
@@ -237,7 +237,7 @@ const Footer = () => {
             </div>
 
             {/* Support */}
-            <div className="bg-black/30 rounded-lg p-4">
+            <div className="bg-black/30 rounded-lg p-3 sm:p-4">
               <button
                 onClick={() => toggleSection('support')}
                 className="flex items-center justify-between w-full text-left py-2"
@@ -267,7 +267,7 @@ const Footer = () => {
             </div>
 
             {/* Legal */}
-            <div className="bg-black/30 rounded-lg p-4">
+            <div className="bg-black/30 rounded-lg p-3 sm:p-4">
               <button
                 onClick={() => toggleSection('legal')}
                 className="flex items-center justify-between w-full text-left py-2"
@@ -299,20 +299,20 @@ const Footer = () => {
         </div>
 
         {/* Social Links & Bottom */}
-        <div className="mt-8 pt-6 border-t border-gray-800/50">
+        <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-800/50">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             {/* Social Links */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-3 sm:space-x-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon
                 return (
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 bg-black/30 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800/50 transition-all duration-200 group"
+                    className="w-9 h-9 sm:w-10 sm:h-10 bg-black/30 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800/50 transition-all duration-200 group"
                     aria-label={social.name}
                   >
-                    <Icon className="h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform duration-200" />
                   </a>
                 )
               })}

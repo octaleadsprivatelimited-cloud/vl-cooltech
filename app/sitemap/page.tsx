@@ -43,7 +43,6 @@ const Sitemap = () => {
 
   const quickLinks = [
     { name: 'Call Now', href: 'tel:+919666111327', icon: Phone },
-    { name: 'WhatsApp', href: 'https://wa.me/919666111327', icon: Mail },
     { name: 'Email Us', href: 'mailto:info@appliancecares.in', icon: Mail },
     { name: 'Book Online', href: '/book-service', icon: Calendar },
     { name: 'Track Service', href: '/track-service', icon: Search }

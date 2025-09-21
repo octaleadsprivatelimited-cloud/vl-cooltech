@@ -1,10 +1,12 @@
-import { Monitor, CheckCircle, Clock, Shield, Wrench, Star, Phone } from 'lucide-react'
+import { Monitor, CheckCircle, Clock, Shield, Wrench, Star, Phone, MapPin } from 'lucide-react'
 import Link from 'next/link'
+import { GetQuoteButton } from '@/components/CTA'
+import ServiceImages from '@/components/ServiceImages'
 
 export const metadata = {
-  title: 'Washing Machine Repair Services - ApplianceCares.in | Professional Washing Machine Repair in Hyderabad',
-  description: 'Expert washing machine repair services in Hyderabad. We repair all brands of washing machines. Drum issues, motor problems, water leakage. Same-day service. Call +91 96661 11327',
-  keywords: 'washing machine repair, washing machine service, drum repair, motor repair, water leakage, Hyderabad, Pragathi Nagar, washing machine maintenance',
+  title: 'Washing Machine Repair Hyderabad | Samsung, LG, Whirlpool Washing Machine Repair | ApplianceCares.in',
+  description: 'Professional washing machine repair service in Hyderabad. We repair Samsung, LG, Whirlpool, IFB, Bosch washing machines. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 96661 11327.',
+  keywords: 'washing machine repair Hyderabad, Samsung washing machine repair, LG washing machine repair, Whirlpool washing machine repair, IFB washing machine repair, Bosch washing machine repair, washing machine repair near me, washing machine repair HITEC City, washing machine repair Gachibowli, washing machine repair Kondapur, washing machine repair Madhapur, washing machine repair Jubilee Hills, washing machine repair Banjara Hills, washing machine repair Pragathi Nagar, same day washing machine repair, emergency washing machine repair, washing machine service Hyderabad, drum repair Hyderabad, motor repair Hyderabad, water leakage repair, washing machine maintenance Hyderabad',
 }
 
 export default function WashingMachineRepair() {
@@ -47,50 +49,33 @@ export default function WashingMachineRepair() {
   ]
 
   return (
-    <div className="pt-16 min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-600 to-purple-700 py-20">
+      <section className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                Professional Washing Machine Repair
-              </h1>
-              <p className="text-xl text-indigo-100 mb-8">
-                Expert washing machine repair for all brands including front load, top load, 
-                and semi-automatic machines. Same-day service with warranty.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="tel:+919666111327"
-                  className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2"
-                >
-                  <Phone className="h-5 w-5" />
-                  Call Now: +91 96661 11327
-                </Link>
-                <Link
-                  href="/contact"
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200 text-center"
-                >
-                  Get Free Quote
-                </Link>
-              </div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-center">
-                <Monitor className="h-24 w-24 text-white mx-auto mb-6" />
-                <h3 className="text-2xl font-bold text-white mb-4">All Washing Machine Brands</h3>
-                <p className="text-indigo-100 mb-6">
-                  We repair all major washing machine brands with expert technicians.
-                </p>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  {brands.slice(0, 6).map((brand) => (
-                    <div key={brand} className="bg-white/20 rounded px-3 py-2">
-                      {brand}
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+              Professional <span className="text-yellow-300">Washing Machine Repair</span> in Hyderabad
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
+              Expert washing machine repair for all brands including Samsung, LG, Whirlpool, IFB, Bosch. 
+              Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Link
+                href="tel:+919666111327"
+                className="bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="sm:hidden">Call Now</span>
+              </Link>
+              <GetQuoteButton
+                serviceType="washing-machine-repair"
+                className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-white hover:text-indigo-600 transition-colors duration-200 text-center text-sm sm:text-base"
+              >
+                Get Free Quote
+              </GetQuoteButton>
             </div>
           </div>
         </div>
@@ -155,12 +140,11 @@ export default function WashingMachineRepair() {
                 <p className="text-gray-600 mb-4">{problem.solution}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-indigo-600 font-semibold">{problem.price}</span>
-                  <Link
-                    href="/contact"
+                  <GetQuoteButton 
+                    size="sm" 
+                    serviceType="washing-machine-repair"
                     className="text-indigo-600 hover:text-indigo-700 font-medium"
-                  >
-                    Get Quote →
-                  </Link>
+                  />
                 </div>
               </div>
             ))}
@@ -221,12 +205,12 @@ export default function WashingMachineRepair() {
             >
               Call Now: +91 96661 11327
             </Link>
-            <Link
-              href="/contact"
+            <GetQuoteButton
+              serviceType="washing-machine-repair"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-indigo-600 transition-colors duration-200"
             >
               Get Free Quote
-            </Link>
+            </GetQuoteButton>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ interface CTASectionProps {
   title: string
   description: string
   variant?: 'primary' | 'secondary' | 'gradient' | 'dark'
-  actions?: ('call' | 'book' | 'whatsapp' | 'contact')[]
+  actions?: ('call' | 'book' | 'contact')[]
   showStats?: boolean
   className?: string
 }
@@ -92,22 +92,6 @@ const CTASection = ({
           >
             <Calendar className="h-5 w-5 mr-2" />
             Book Service
-          </Link>
-        )
-      case 'whatsapp':
-        return (
-          <Link
-            href="https://wa.me/919666111327"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${baseClasses} ${
-              variantClasses.buttonVariant === 'primary' 
-                ? 'bg-green-600 text-white hover:bg-green-700 focus:ring-green-500' 
-                : 'bg-white text-green-600 hover:bg-green-50 focus:ring-green-500'
-            }`}
-          >
-            <MessageCircle className="h-5 w-5 mr-2" />
-            WhatsApp
           </Link>
         )
       case 'contact':
@@ -197,7 +181,7 @@ export const ServiceCTA = ({ className = '' }: { className?: string }) => (
     title="Ready to Book Your Service?"
     description="Don't let broken appliances disrupt your daily routine. Schedule your repair service today and get back to normal quickly."
     variant="primary"
-    actions={['call', 'book', 'whatsapp']}
+    actions={['call', 'book']}
     className={className}
   />
 )
@@ -207,7 +191,7 @@ export const SupportCTA = ({ className = '' }: { className?: string }) => (
     title="Need Help or Have Questions?"
     description="Our customer support team is here to help you with any questions about our services. Get in touch with us today."
     variant="dark"
-    actions={['call', 'whatsapp', 'contact']}
+    actions={['call', 'contact']}
     className={className}
   />
 )
@@ -217,7 +201,7 @@ export const EmergencyCTA = ({ className = '' }: { className?: string }) => (
     title="Emergency Repair Service Available"
     description="Urgent appliance repair needed? We provide emergency services for critical issues. Call us now for immediate assistance."
     variant="secondary"
-    actions={['call', 'whatsapp']}
+    actions={['call']}
     className={className}
   />
 )

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, Thermometer, Zap, Settings } from 'lucide-react'
-import WhatsAppButton, { WhatsAppLink } from '@/components/WhatsAppButton'
 import Link from 'next/link'
+import { GetQuoteButton } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'Blue Star AC Repair Service - ApplianceCares.in | Expert Blue Star AC Repair',
@@ -77,12 +77,12 @@ export default function BlueStarACRepairPage() {
               Professional Blue Star AC repair service in Hyderabad. Expert technicians for all Blue Star air conditioner models. Same day service available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsAppLink
-                message={whatsappMessage}
+              <GetQuoteButton
+                serviceType="blue-star-ac"
                 className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300"
               >
-                WhatsApp for Blue Star AC
-              </WhatsAppLink>
+                Get Quote for Blue Star AC
+              </GetQuoteButton>
               <Link
                 href="tel:+919666111327"
                 className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"

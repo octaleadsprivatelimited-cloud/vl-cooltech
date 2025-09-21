@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import { GetQuoteButton } from '@/components/CTA'
 import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight, Sparkles } from 'lucide-react'
 
 const Services = () => {
@@ -31,64 +32,64 @@ const Services = () => {
   const services = [
     {
       icon: Tv,
-      title: 'TV Repair',
-      description: 'Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs.',
+      title: 'TV Repair Hyderabad',
+      description: 'Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs in Hyderabad. Samsung, LG, Sony, Panasonic, TCL, OnePlus, Mi TV repair.',
       features: ['Screen Repair', 'Power Issues', 'Audio Problems', 'Smart TV Setup'],
       href: '/services/tv-repair',
       color: 'bg-blue-500'
     },
     {
       icon: Wind,
-      title: 'AC Repair',
-      description: 'Complete AC repair and maintenance services for all types of air conditioners.',
+      title: 'AC Repair Hyderabad',
+      description: 'Complete AC repair and maintenance services for all types of air conditioners in Hyderabad. Samsung, LG, Daikin, Voltas, Blue Star, Carrier AC repair.',
       features: ['Gas Filling', 'Compressor Repair', 'Cooling Issues', 'Maintenance'],
       href: '/services/ac-repair',
       color: 'bg-cyan-500'
     },
     {
       icon: Monitor,
-      title: 'Washing Machine Repair',
-      description: 'Expert washing machine repair for all brands and models.',
+      title: 'Washing Machine Repair Hyderabad',
+      description: 'Expert washing machine repair for all brands and models in Hyderabad. Samsung, LG, Whirlpool, IFB washing machine repair.',
       features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems'],
       href: '/services/washing-machine-repair',
       color: 'bg-indigo-500'
     },
     {
       icon: Refrigerator,
-      title: 'Refrigerator Repair',
-      description: 'Comprehensive refrigerator repair services for all types of fridges.',
+      title: 'Refrigerator Repair Hyderabad',
+      description: 'Comprehensive refrigerator repair services for all types of fridges in Hyderabad. Samsung, LG, Whirlpool, Godrej refrigerator repair.',
       features: ['Cooling Issues', 'Compressor Repair', 'Thermostat', 'Door Seals'],
       href: '/services/refrigerator-repair',
       color: 'bg-green-500'
     },
     {
       icon: Microwave,
-      title: 'Microwave Repair',
-      description: 'Professional microwave oven repair and maintenance services.',
+      title: 'Microwave Repair Hyderabad',
+      description: 'Professional microwave oven repair and maintenance services in Hyderabad. Samsung, LG, Whirlpool, IFB microwave repair.',
       features: ['Heating Issues', 'Turntable Problems', 'Door Switches', 'Control Panel'],
       href: '/services/microwave-repair',
       color: 'bg-orange-500'
     },
     {
       icon: Laptop,
-      title: 'Laptop Repair',
-      description: 'Expert laptop repair services for all major brands and models.',
+      title: 'Laptop Repair Hyderabad',
+      description: 'Expert laptop repair services for all major brands and models in Hyderabad. Dell, HP, Lenovo, Asus, Acer, MacBook repair.',
       features: ['Screen Replacement', 'Keyboard Repair', 'Battery Issues', 'Software Problems'],
       href: '/services/laptop-repair',
       color: 'bg-purple-500'
     },
     {
       icon: Smartphone,
-      title: 'Mobile Repair',
-      description: 'Professional mobile phone repair services for all smartphone brands.',
+      title: 'Mobile Repair Hyderabad',
+      description: 'Professional mobile phone repair services for all smartphone brands in Hyderabad. iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo mobile repair.',
       features: ['Screen Repair', 'Battery Replacement', 'Charging Port', 'Software Issues'],
       href: '/services/mobile-repair',
       color: 'bg-pink-500'
     },
     {
       icon: Monitor,
-      title: 'Home Appliances',
-      description: 'Repair services for all home appliances and electronic devices.',
+      title: 'Home Appliances Repair Hyderabad',
+      description: 'Repair services for all home appliances and electronic devices in Hyderabad. Mixer grinder, iron, geyser, water purifier repair.',
       features: ['Mixer Grinder', 'Iron', 'Geyser', 'Water Purifier'],
       href: '/services/home-appliances',
       color: 'bg-teal-500'
@@ -110,16 +111,16 @@ const Services = () => {
             <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Services</span>
+            Our <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Services in Hyderabad</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional repair services for all your electronics and home appliances. 
-            We fix it right the first time, every time.
+            Professional repair services for all your electronics and home appliances in Hyderabad. 
+            We fix it right the first time, every time. Serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             const isVisible = visibleCards.includes(index)
@@ -140,36 +141,36 @@ const Services = () => {
                 {/* Hover Effect Background */}
                 <div className={`absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
                 
-                <div className="relative p-6">
+                <div className="relative p-6 sm:p-8">
                   {/* Icon */}
-                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300 relative ${
+                  <div className={`w-14 h-14 sm:w-18 sm:h-18 ${service.color} rounded-xl sm:rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-all duration-300 relative ${
                     isHovered ? 'shadow-lg' : ''
                   }`}>
-                    <Icon className="h-8 w-8 text-white group-hover:animate-pulse" />
+                    <Icon className="h-7 w-7 sm:h-9 sm:w-9 text-white group-hover:animate-pulse" />
                     {/* Glow effect */}
-                    <div className={`absolute inset-0 ${service.color} rounded-2xl blur-md opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
+                    <div className={`absolute inset-0 ${service.color} rounded-xl sm:rounded-2xl blur-md opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-200">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed">
                     {service.description}
                   </p>
 
                   {/* Features */}
-                  <ul className="space-y-1">
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="text-xs text-gray-500 flex items-center group-hover:text-gray-700 transition-colors duration-200">
-                        <div className="w-1 h-1 bg-blue-400 rounded-full mr-2 group-hover:bg-blue-600 transition-colors duration-200"></div>
+                      <li key={featureIndex} className="text-sm text-gray-500 flex items-center group-hover:text-gray-700 transition-colors duration-200">
+                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2 group-hover:bg-blue-600 transition-colors duration-200"></div>
                         {feature}
                       </li>
                     ))}
                   </ul>
 
                   {/* Learn More */}
-                  <div className="mt-4 flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700 transition-colors duration-200">
+                  <div className="mt-6 flex items-center text-blue-600 font-medium text-base group-hover:text-blue-700 transition-colors duration-200">
                     Learn More
                     <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
@@ -180,27 +181,28 @@ const Services = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Don't see your appliance listed?
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+              Don't see your appliance listed? We repair everything in Hyderabad!
             </h3>
-            <p className="text-gray-600 mb-6">
-              We repair all types of electronics and home appliances. Contact us for a free quote.
+            <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
+              We repair all types of electronics and home appliances in Hyderabad. Serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Contact us for a free quote.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="tel:+919666111327"
-                className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
+                className="bg-primary-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-sm sm:text-base"
               >
-                Call Now: +91 96661 11327
+                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="sm:hidden">Call Now</span>
               </Link>
-              <Link
-                href="/contact"
-                className="border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200"
+              <GetQuoteButton
+                serviceType="general"
+                className="border-2 border-primary-600 text-primary-600 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200 text-sm sm:text-base"
               >
                 Get Free Quote
-              </Link>
+              </GetQuoteButton>
             </div>
           </div>
         </div>

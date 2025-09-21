@@ -20,11 +20,11 @@ const CustomerSupport = () => {
     },
     {
       icon: MessageCircle,
-      title: 'WhatsApp Support',
-      description: 'Quick support via WhatsApp',
+      title: 'Phone Support',
+      description: 'Quick support via phone call',
       contact: '+91 96661 11327',
       availability: '9 AM - 9 PM',
-      action: 'Chat Now'
+      action: 'Call Now'
     },
     {
       icon: Mail,

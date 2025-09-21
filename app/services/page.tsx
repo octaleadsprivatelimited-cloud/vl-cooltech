@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { GetQuoteButton } from '@/components/CTA'
 import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight } from 'lucide-react'
 
 export const metadata = {
@@ -84,15 +85,15 @@ const ServicesPage = () => {
   ]
 
   return (
-    <div className="pt-16 min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-blue-700 py-20">
+      <section className="bg-gradient-to-br from-primary-600 to-blue-700 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Our Services
             </h1>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Professional electronics and appliance repair services in Hyderabad. 
               We fix it right the first time, every time.
             </p>
@@ -201,7 +202,7 @@ const ServicesPage = () => {
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Get Your Appliance Fixed?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white mb-8">
             Contact us today for fast, reliable, and affordable repair services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -211,12 +212,12 @@ const ServicesPage = () => {
             >
               Call Now: +91 96661 11327
             </Link>
-            <Link
-              href="/contact"
+            <GetQuoteButton
+              serviceType="general"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary-600 transition-colors duration-200"
             >
               Get Free Quote
-            </Link>
+            </GetQuoteButton>
           </div>
         </div>
       </section>
