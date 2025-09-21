@@ -69,16 +69,16 @@ const ServiceImages = ({ serviceType = 'general' }: ServiceImagesProps) => {
       {currentImages.map((service, index) => {
         const Icon = service.icon
         return (
-           <Link
-             key={index}
-             href={service.href || '#'}
-             className="group relative block h-48 sm:h-56 lg:h-64 transform hover:scale-105 transition-all duration-300"
-             style={{ animationDelay: `${index * 0.1}s` }}
-           >
+            <Link
+              key={index}
+              href={'href' in service ? service.href : '#'}
+              className="group relative block h-48 sm:h-56 lg:h-64 transform hover:scale-105 transition-all duration-300"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
              {/* Service Content */}
              <div className="relative flex flex-col h-full">
                {/* Full Block Image */}
-               {service.image ? (
+                {'image' in service && service.image ? (
                  <div className="relative flex-1 mb-3 sm:mb-4 overflow-hidden rounded-xl sm:rounded-2xl">
                    <Image
                      src={service.image}

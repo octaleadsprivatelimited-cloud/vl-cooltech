@@ -1,8 +1,8 @@
 'use client'
 
-import CTA, { CallNowButton, BookServiceButton, WhatsAppButton, ContactButton } from './CTA'
+import CTA, { CallNowButton, BookServiceButton, ContactButton } from './CTA'
 import CTASection, { HeroCTA, ServiceCTA, SupportCTA, EmergencyCTA } from './CTASection'
-import WhatsAppButton as WhatsApp, { WhatsAppLink, WhatsAppContactCard } from './WhatsAppButton'
+import WhatsAppButton, { WhatsAppLink } from './WhatsAppButton'
 
 const CTAExamples = () => {
   return (
@@ -47,14 +47,10 @@ const CTAExamples = () => {
             <WhatsAppLink>Send WhatsApp Message</WhatsAppLink>
           </div>
           
-          <div>
-            <h3 className="text-lg font-semibold mb-4">WhatsApp Contact Card</h3>
-            <WhatsAppContactCard />
-          </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Floating WhatsApp Button</h3>
-            <WhatsApp showFloating={true} showChatBubble={true} />
+            <WhatsAppButton />
           </div>
         </div>
       </section>
@@ -77,7 +73,7 @@ const CTAExamples = () => {
           title="Custom CTA Section"
           description="This is a custom CTA section with specific actions and styling."
           variant="gradient"
-          actions={['call', 'book', 'whatsapp']}
+          actions={['call', 'book', 'contact']}
           showStats={true}
         />
       </section>

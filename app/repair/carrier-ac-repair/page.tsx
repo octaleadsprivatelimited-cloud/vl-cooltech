@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, Thermometer, Zap, Settings } from 'lucide-react'
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
+import { WhatsAppLink } from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
   title: 'Carrier AC Repair Service - ApplianceCares.in | Expert Carrier AC Repair',

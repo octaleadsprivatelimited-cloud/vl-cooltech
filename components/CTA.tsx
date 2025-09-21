@@ -109,14 +109,18 @@ export const GetQuoteButton = ({
   size = 'lg', 
   className = '', 
   serviceType = 'general',
-  brand
+  brand,
+  children
 }: { 
-  size?: 'md' | 'lg', 
+  size?: 'sm' | 'md' | 'lg', 
   className?: string,
   serviceType?: string,
-  brand?: string
+  brand?: string,
+  children?: React.ReactNode
 }) => (
-  <CTA action="quote" variant="secondary" size={size} className={className} serviceType={serviceType} brand={brand} />
+  <CTA action="quote" variant="secondary" size={size} className={className} serviceType={serviceType} brand={brand}>
+    {children}
+  </CTA>
 )
 
 export const ContactButton = ({ size = 'md', className = '' }: { size?: 'md' | 'lg', className?: string }) => (

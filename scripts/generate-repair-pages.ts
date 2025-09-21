@@ -234,7 +234,7 @@ function generateAllRepairPages() {
   }
 
   const allKeywords = generateAllKeywords()
-  const generatedPages = []
+  const generatedPages: Array<{slug: string, keyword: string, category: string, path: string}> = []
 
   allKeywords.forEach(keyword => {
     const slug = generateSlug(keyword)
@@ -276,7 +276,7 @@ function generateAllRepairPages() {
 // Generate sitemap entries
 function generateSitemapEntries() {
   const allKeywords = generateAllKeywords()
-  const sitemapEntries = []
+  const sitemapEntries: Array<{url: string, lastmod: string, changefreq: string, priority: number}> = []
 
   allKeywords.forEach(keyword => {
     const slug = generateSlug(keyword)

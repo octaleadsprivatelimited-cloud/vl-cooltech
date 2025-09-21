@@ -8,6 +8,13 @@ interface WhatsAppButtonProps {
   className?: string
 }
 
+interface WhatsAppLinkProps {
+  phoneNumber?: string
+  message?: string
+  className?: string
+  children: React.ReactNode
+}
+
 const WhatsAppButton = ({ 
   phoneNumber = '+919666111327',
   message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
@@ -38,4 +45,28 @@ const WhatsAppButton = ({
   )
 }
 
+const WhatsAppLink = ({ 
+  phoneNumber = '+919666111327',
+  message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
+  className = '',
+  children
+}: WhatsAppLinkProps) => {
+  const handleWhatsAppClick = () => {
+    const encodedMessage = encodeURIComponent(message)
+    const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodedMessage}`
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer')
+  }
+
+  return (
+    <button
+      onClick={handleWhatsAppClick}
+      className={className}
+      aria-label="Contact us on WhatsApp"
+    >
+      {children}
+    </button>
+  )
+}
+
 export default WhatsAppButton
+export { WhatsAppLink }

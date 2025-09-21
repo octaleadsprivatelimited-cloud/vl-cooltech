@@ -282,7 +282,7 @@ export const applianceKeywords = {
 
 // Generate all possible combinations for SEO
 export const generateAllKeywords = () => {
-  const allKeywords = []
+  const allKeywords: string[] = []
   
   Object.values(applianceKeywords).forEach(category => {
     if (category.brands) allKeywords.push(...category.brands)
