@@ -1,129 +1,399 @@
-export const metadata = {
-  title: 'Terms of Service - ApplianceCares.in | Electronics & Appliance Repair Services',
-  description: 'Terms of Service for ApplianceCares.in - Learn about our service terms and conditions.',
-  robots: {
-    index: true,
-    follow: true,
-  },
+import type { Metadata } from 'next'
+import { FileText, Shield, AlertCircle, CheckCircle, Phone, Mail, Calendar, User } from 'lucide-react'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service - ApplianceCares.in | Service Terms & Conditions',
+  description: 'Read our terms of service and conditions for appliance repair services. Understand your rights and obligations when using ApplianceCares.in services.',
+  keywords: 'terms of service, terms and conditions, service terms, user agreement, legal terms',
 }
 
-export default function TermsOfService() {
+const TermsOfService = () => {
+  const serviceTerms = [
+    {
+      title: 'Service Provision',
+      description: 'We agree to provide professional appliance repair services as requested by the customer.'
+    },
+    {
+      title: 'Service Scheduling',
+      description: 'Services will be scheduled at mutually convenient times. Cancellation policy applies.'
+    },
+    {
+      title: 'Payment Terms',
+      description: 'Payment is due upon completion of service. We accept cash, card, and digital payments.'
+    },
+    {
+      title: 'Warranty Coverage',
+      description: 'All repairs come with a 90-day warranty covering parts and labor.'
+    }
+  ]
+
+  const customerObligations = [
+    'Provide accurate information about the appliance and issue',
+    'Ensure safe access to the appliance for repair',
+    'Pay service charges as agreed upon completion',
+    'Allow reasonable time for diagnosis and repair',
+    'Follow post-repair care instructions',
+    'Notify us immediately of any issues with completed repairs'
+  ]
+
+  const serviceLimitations = [
+    'Services subject to availability of qualified technicians',
+    'Repair success depends on appliance condition and issue severity',
+    'Some repairs may require parts that are not immediately available',
+    'Services limited to areas within our coverage zone',
+    'Emergency services may incur additional charges',
+    'Services may be rescheduled due to weather or safety conditions'
+  ]
+
+  const liabilityTerms = [
+    {
+      title: 'Service Quality',
+      description: 'We strive to provide quality service but cannot guarantee repair success in all cases.'
+    },
+    {
+      title: 'Damage Limitation',
+      description: 'Our liability is limited to the cost of the service provided, except in cases of proven negligence.'
+    },
+    {
+      title: 'Third Party Damages',
+      description: 'We are not liable for damages to other appliances or property not related to our service.'
+    },
+    {
+      title: 'Force Majeure',
+      description: 'We are not liable for service delays due to circumstances beyond our control.'
+    }
+  ]
+
+  const cancellationPolicy = [
+    'Free cancellation up to 24 hours before scheduled service',
+    'Cancellation within 24 hours may incur a cancellation fee',
+    'No-show charges apply for missed appointments',
+    'Emergency cancellations will be handled on a case-by-case basis',
+    'Rescheduling is allowed once without additional charges'
+  ]
+
+  const disputeResolution = [
+    'We encourage direct communication to resolve any issues',
+    'Customer complaints will be investigated promptly',
+    'Mediation services available for unresolved disputes',
+    'Legal jurisdiction lies with the courts of Hyderabad, Telangana',
+    'Alternative dispute resolution methods may be used'
+  ]
+
   return (
-    <div className="pt-16 min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-6">
-              <strong>Last updated:</strong> January 1, 2024
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Terms of Service
+            </h1>
+            <p className="text-xl text-primary-100 max-w-3xl mx-auto">
+              Please read these terms carefully before using our appliance repair services. 
+              These terms govern your relationship with ApplianceCares.in.
             </p>
+          </div>
+        </div>
+      </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Service Agreement</h2>
-              <p className="text-gray-700 mb-4">
-                By using our services, you agree to these terms and conditions. ApplianceCares.in 
-                provides professional electronics and appliance repair services in Hyderabad and surrounding areas.
-              </p>
+      {/* Introduction */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-primary-50 rounded-xl p-8 mb-12">
+            <div className="flex items-start space-x-4">
+              <FileText className="h-8 w-8 text-primary-600 mt-1 flex-shrink-0" />
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  Agreement to Terms
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  By using our services, you agree to be bound by these Terms of Service. 
+                  These terms constitute a legal agreement between you and ApplianceCares.in. 
+                  If you do not agree to these terms, please do not use our services. 
+                  We reserve the right to modify these terms at any time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Terms */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Service Terms
+            </h2>
+            <p className="text-lg text-gray-600">
+              Terms governing our appliance repair services
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {serviceTerms.map((term, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {term.title}
+                </h3>
+                <p className="text-gray-600">
+                  {term.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Service Scope</h2>
-              <p className="text-gray-700 mb-4">Our services include:</p>
-              <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>TV repair and maintenance</li>
-                <li>AC repair and servicing</li>
-                <li>Washing machine repair</li>
-                <li>Refrigerator repair</li>
-                <li>Microwave repair</li>
-                <li>Laptop and mobile repair</li>
-                <li>Home appliance repair</li>
+      {/* Customer Obligations */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Customer Obligations
+            </h2>
+            <p className="text-lg text-gray-600">
+              Your responsibilities when using our services
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-xl p-8">
+            <ul className="space-y-4">
+              {customerObligations.map((obligation, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">{obligation}</span>
+                </li>
+              ))}
               </ul>
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Pricing and Payment</h2>
-              <p className="text-gray-700 mb-4">
-                All prices are quoted in advance and are subject to change. Payment is due upon 
-                completion of service unless otherwise agreed. We accept cash, UPI, and other 
-                digital payment methods.
-              </p>
+      {/* Service Limitations */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Service Limitations
+            </h2>
+            <p className="text-lg text-gray-600">
+              Important limitations to our services
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-sm">
+            <ul className="space-y-4">
+              {serviceLimitations.map((limitation, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <AlertCircle className="h-5 w-5 text-orange-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">{limitation}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Warranty</h2>
-              <p className="text-gray-700 mb-4">
-                We provide warranty on all repairs as follows:
-              </p>
-              <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Labor warranty: 90 days from service date</li>
-                <li>Parts warranty: As per manufacturer warranty</li>
-                <li>Warranty covers the same issue that was repaired</li>
-                <li>Warranty does not cover damage due to misuse or accidents</li>
+      {/* Liability Terms */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Liability & Limitations
+            </h2>
+            <p className="text-lg text-gray-600">
+              Our liability limitations and disclaimers
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            {liabilityTerms.map((term, index) => (
+              <div key={index} className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {term.title}
+                </h3>
+                <p className="text-gray-600">
+                  {term.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+            </section>
+
+      {/* Cancellation Policy */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Cancellation Policy
+            </h2>
+            <p className="text-lg text-gray-600">
+              Terms for cancelling or rescheduling services
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-sm">
+            <ul className="space-y-4">
+              {cancellationPolicy.map((policy, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <Calendar className="h-5 w-5 text-primary-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">{policy}</span>
+                </li>
+              ))}
               </ul>
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Service Guarantee</h2>
-              <p className="text-gray-700 mb-4">
-                We guarantee our work. If you are not satisfied with our service, we will:
-              </p>
-              <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Return to fix the issue at no additional cost</li>
-                <li>Provide a full refund if the issue cannot be resolved</li>
-                <li>Replace parts if they fail within the warranty period</li>
+      {/* Dispute Resolution */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Dispute Resolution
+            </h2>
+            <p className="text-lg text-gray-600">
+              How we handle disputes and complaints
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-xl p-8">
+            <ul className="space-y-4">
+              {disputeResolution.map((resolution, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">{resolution}</span>
+                </li>
+              ))}
               </ul>
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Customer Responsibilities</h2>
-              <p className="text-gray-700 mb-4">Customers are responsible for:</p>
-              <ul className="list-disc pl-6 text-gray-700 mb-4">
-                <li>Providing accurate information about the appliance issue</li>
-                <li>Ensuring safe access to the appliance</li>
-                <li>Backing up data before laptop/mobile repairs</li>
-                <li>Following care instructions after service</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Limitation of Liability</h2>
-              <p className="text-gray-700 mb-4">
-                Our liability is limited to the cost of the service provided. We are not responsible 
-                for any indirect, incidental, or consequential damages.
+      {/* Governing Law */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl p-8 shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Governing Law
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              These Terms of Service shall be governed by and construed in accordance with the laws of India. 
+              Any disputes arising from these terms or our services shall be subject to the exclusive 
+              jurisdiction of the courts in Hyderabad, Telangana.
+            </p>
+            <div className="bg-primary-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-2">Important Notice</h3>
+              <p className="text-gray-700 text-sm">
+                By using our services, you acknowledge that you have read, understood, and agree to be bound 
+                by these Terms of Service. If you have any questions, please contact us before using our services.
               </p>
+            </div>
+          </div>
+        </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Cancellation Policy</h2>
-              <p className="text-gray-700 mb-4">
-                Service appointments can be cancelled or rescheduled with at least 2 hours notice. 
-                Same-day cancellations may incur a cancellation fee.
-              </p>
-            </section>
+      {/* Contact Information */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Questions About These Terms?
+            </h2>
+            <p className="text-lg text-gray-600">
+              Contact us if you have any questions about our terms of service
+            </p>
+          </div>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Contact Information</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-primary-50 rounded-xl p-8">
+              <div className="flex items-center space-x-3 mb-6">
+                <Phone className="h-6 w-6 text-primary-600" />
+                <h3 className="text-xl font-bold text-gray-900">Call Us</h3>
+              </div>
               <p className="text-gray-700 mb-4">
-                For questions about these terms, please contact us:
+                Speak with our customer service team
               </p>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <p className="text-gray-700 mb-2"><strong>Email:</strong> info@appliancecares.in</p>
-                <p className="text-gray-700 mb-2"><strong>Phone:</strong> +91 96661 11327</p>
-                <p className="text-gray-700"><strong>Address:</strong> Pragathi Nagar, Hyderabad, TG</p>
+              <Link
+                href="tel:+919666111327"
+                className="text-primary-600 hover:text-primary-700 font-semibold"
+              >
+                +91 96661 11327
+              </Link>
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-8">
+              <div className="flex items-center space-x-3 mb-6">
+                <Mail className="h-6 w-6 text-primary-600" />
+                <h3 className="text-xl font-bold text-gray-900">Email Us</h3>
+              </div>
+              <p className="text-gray-700 mb-4">
+                Send us your questions via email
+              </p>
+              <Link
+                href="mailto:legal@appliancecares.in"
+                className="text-primary-600 hover:text-primary-700 font-semibold"
+              >
+                legal@appliancecares.in
+              </Link>
+            </div>
+          </div>
               </div>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to Terms</h2>
-              <p className="text-gray-700">
-                We reserve the right to modify these terms at any time. Changes will be posted on 
-                this page with an updated revision date.
+      {/* Terms Updates */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Terms Updates
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            We may update these Terms of Service from time to time. 
+            Any changes will be posted on this page with an updated revision date.
+          </p>
+          <div className="bg-white rounded-xl p-6 shadow-sm">
+            <div className="flex items-center justify-center space-x-4">
+              <Calendar className="h-5 w-5 text-primary-600" />
+              <p className="text-gray-600">
+                <strong>Last Updated:</strong> January 2024<br />
+                <strong>Effective Date:</strong> January 1, 2024
               </p>
-            </section>
+            </div>
           </div>
         </div>
-      </div>
+            </section>
+
+      {/* Contact CTA */}
+      <section className="py-16 bg-primary-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Need Clarification?
+          </h2>
+          <p className="text-xl text-primary-100 mb-8">
+            Our team is here to help you understand these terms
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/customer-support"
+              className="btn bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300"
+            >
+              Contact Support
+            </Link>
+            <Link
+              href="tel:+919666111327"
+              className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold text-lg text-center hover:scale-105 transform transition-all duration-300"
+            >
+              Call Now
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
+
+export default TermsOfService

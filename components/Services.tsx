@@ -1,7 +1,33 @@
+'use client'
+
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, WashingMachine } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight, Sparkles } from 'lucide-react'
 
 const Services = () => {
+  const [visibleCards, setVisibleCards] = useState<number[]>([])
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-index') || '0')
+            setVisibleCards(prev => [...prev, index])
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    const cards = sectionRef.current?.querySelectorAll('[data-index]')
+    cards?.forEach(card => observer.observe(card))
+
+    return () => observer.disconnect()
+  }, [])
+
   const services = [
     {
       icon: Tv,
@@ -70,12 +96,21 @@ const Services = () => {
   ]
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50/30 to-indigo-50/30"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200/20 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-indigo-200/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Sparkles className="h-6 w-6 text-blue-500 animate-pulse" />
+            <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="text-primary-600">Services</span>
+            Our <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional repair services for all your electronics and home appliances. 
@@ -87,20 +122,36 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
+            const isVisible = visibleCards.includes(index)
+            const isHovered = hoveredCard === index
+            
             return (
               <Link
                 key={service.title}
                 href={service.href}
-                className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                data-index={index}
+                onMouseEnter={() => setHoveredCard(index)}
+                onMouseLeave={() => setHoveredCard(null)}
+                className={`group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform border border-gray-100 hover:border-gray-300 relative overflow-hidden ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <div className="p-6">
+                {/* Hover Effect Background */}
+                <div className={`absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                
+                <div className="relative p-6">
                   {/* Icon */}
-                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="h-8 w-8 text-white" />
+                  <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-all duration-300 relative ${
+                    isHovered ? 'shadow-lg' : ''
+                  }`}>
+                    <Icon className="h-8 w-8 text-white group-hover:animate-pulse" />
+                    {/* Glow effect */}
+                    <div className={`absolute inset-0 ${service.color} rounded-2xl blur-md opacity-0 group-hover:opacity-30 transition-opacity duration-300`}></div>
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors duration-200">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-200">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
@@ -110,16 +161,17 @@ const Services = () => {
                   {/* Features */}
                   <ul className="space-y-1">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="text-xs text-gray-500 flex items-center">
-                        <div className="w-1 h-1 bg-primary-400 rounded-full mr-2"></div>
+                      <li key={featureIndex} className="text-xs text-gray-500 flex items-center group-hover:text-gray-700 transition-colors duration-200">
+                        <div className="w-1 h-1 bg-blue-400 rounded-full mr-2 group-hover:bg-blue-600 transition-colors duration-200"></div>
                         {feature}
                       </li>
                     ))}
                   </ul>
 
                   {/* Learn More */}
-                  <div className="mt-4 text-primary-600 font-medium text-sm group-hover:text-primary-700 transition-colors duration-200">
-                    Learn More →
+                  <div className="mt-4 flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700 transition-colors duration-200">
+                    Learn More
+                    <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
                 </div>
               </Link>

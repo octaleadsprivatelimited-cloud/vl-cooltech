@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight, WashingMachine } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Services - ApplianceCares.in | Electronics & Appliance Repair Services',
@@ -28,7 +28,7 @@ const ServicesPage = () => {
       price: 'Starting from ₹800'
     },
     {
-      icon: WashingMachine,
+      icon: Monitor,
       title: 'Washing Machine Repair',
       description: 'Expert washing machine repair for all brands and models.',
       features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems', 'Door Issues', 'Control Panel'],

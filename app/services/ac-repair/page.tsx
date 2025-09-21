@@ -109,9 +109,25 @@ export default function ACRepair() {
             </p>
           </div>
 
+          {/* Service Image */}
+          <div className="mb-16">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                alt="Professional AC Repair Service"
+                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Expert AC Repair Technicians</h3>
+                <p className="text-lg">Professional AC service with genuine parts and warranty</p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center">
+              <div key={index} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
                 <CheckCircle className="h-8 w-8 text-cyan-600 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">{service}</h3>
               </div>

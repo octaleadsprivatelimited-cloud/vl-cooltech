@@ -60,52 +60,77 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gradient-to-br from-black via-gray-900 to-black text-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-gray-900/20"></div>
+      <div className="absolute inset-0 bg-white/5"></div>
+      
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="h-8 w-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
+              <div className="h-12 w-12 bg-gradient-to-br from-black to-gray-800 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-xl">A</span>
               </div>
-              <span className="ml-2 text-xl font-bold">ApplianceCares</span>
+              <span className="ml-3 text-xl font-bold text-white">ApplianceCares</span>
             </div>
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-300 mb-6 text-sm leading-relaxed">
               Professional electronics and appliance repair services in Hyderabad. 
               Trusted by thousands of customers for reliable, affordable, and quality repairs.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center text-gray-300">
-                <Phone className="h-4 w-4 mr-3" />
-                <span>+91 96661 11327</span>
+              <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Phone className="h-4 w-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">+91 96661 11327</div>
+                  <div className="text-xs text-gray-400">Call us anytime</div>
+                </div>
               </div>
-              <div className="flex items-center text-gray-300">
-                <Mail className="h-4 w-4 mr-3" />
-                <span>info@appliancecares.in</span>
+              <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Mail className="h-4 w-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">info@appliancecares.in</div>
+                  <div className="text-xs text-gray-400">Email support</div>
+                </div>
               </div>
-              <div className="flex items-center text-gray-300">
-                <MapPin className="h-4 w-4 mr-3" />
-                <span>Pragathi Nagar, Hyderabad, TG</span>
+              <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <MapPin className="h-4 w-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">Pragathi Nagar, Hyderabad</div>
+                  <div className="text-xs text-gray-400">Service area</div>
+                </div>
               </div>
-              <div className="flex items-center text-gray-300">
-                <Clock className="h-4 w-4 mr-3" />
-                <span>Mon-Sun: 8:00 AM - 8:00 PM</span>
+              <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
+                <div className="w-8 h-8 bg-black/30 rounded-lg flex items-center justify-center mr-3 group-hover:bg-gray-800/50 transition-colors duration-200">
+                  <Clock className="h-4 w-4" />
+                </div>
+                <div>
+                  <div className="font-semibold text-sm">Mon-Sun: 8:00 AM - 8:00 PM</div>
+                  <div className="text-xs text-gray-400">24/7 Emergency service</div>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Services - Desktop */}
           <div className="hidden lg:block">
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Our Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
                   <Link 
                     href={service.href}
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-all duration-200 flex items-center group"
                   >
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mr-3 group-hover:bg-white transition-colors duration-200"></div>
                     {service.name}
                   </Link>
                 </li>
@@ -115,14 +140,15 @@ const Footer = () => {
 
           {/* Company - Desktop */}
           <div className="hidden lg:block">
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Company</h3>
             <ul className="space-y-2">
               {company.map((item) => (
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-all duration-200 flex items-center group"
                   >
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mr-3 group-hover:bg-white transition-colors duration-200"></div>
                     {item.name}
                   </Link>
                 </li>
@@ -132,14 +158,15 @@ const Footer = () => {
 
           {/* Support & Legal - Desktop */}
           <div className="hidden lg:block">
-            <h3 className="text-lg font-semibold mb-4">Support & Legal</h3>
+            <h3 className="text-lg font-bold mb-4 text-white">Support & Legal</h3>
             <ul className="space-y-2">
               {[...support, ...legal].map((item) => (
                 <li key={item.name}>
                   <Link 
                     href={item.href}
-                    className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                    className="text-gray-300 hover:text-white transition-all duration-200 flex items-center group"
                   >
+                    <div className="w-2 h-2 bg-gray-500 rounded-full mr-3 group-hover:bg-white transition-colors duration-200"></div>
                     {item.name}
                   </Link>
                 </li>
@@ -148,28 +175,29 @@ const Footer = () => {
           </div>
 
           {/* Mobile Accordion */}
-          <div className="lg:hidden space-y-4">
+          <div className="lg:hidden space-y-6">
             {/* Services */}
-            <div>
+            <div className="bg-black/30 rounded-lg p-4">
               <button
                 onClick={() => toggleSection('services')}
                 className="flex items-center justify-between w-full text-left py-2"
               >
-                <h3 className="text-lg font-semibold">Our Services</h3>
+                <h3 className="text-base font-bold text-white">Our Services</h3>
                 <ChevronDown 
-                  className={`h-5 w-5 transition-transform duration-200 ${
+                  className={`h-5 w-5 transition-transform duration-200 text-gray-400 ${
                     openSections.includes('services') ? 'rotate-180' : ''
                   }`} 
                 />
               </button>
               {openSections.includes('services') && (
-                <ul className="mt-2 space-y-2 pl-4">
+                <ul className="mt-3 space-y-2 pl-4">
                   {services.map((service) => (
                     <li key={service.name}>
                       <Link 
                         href={service.href}
-                        className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                        className="text-gray-300 hover:text-blue-400 transition-all duration-200 flex items-center group"
                       >
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:bg-blue-400 transition-colors duration-200"></div>
                         {service.name}
                       </Link>
                     </li>
@@ -179,26 +207,27 @@ const Footer = () => {
             </div>
 
             {/* Company */}
-            <div>
+            <div className="bg-black/30 rounded-lg p-4">
               <button
                 onClick={() => toggleSection('company')}
                 className="flex items-center justify-between w-full text-left py-2"
               >
-                <h3 className="text-lg font-semibold">Company</h3>
+                <h3 className="text-base font-bold text-white">Company</h3>
                 <ChevronDown 
-                  className={`h-5 w-5 transition-transform duration-200 ${
+                  className={`h-5 w-5 transition-transform duration-200 text-gray-400 ${
                     openSections.includes('company') ? 'rotate-180' : ''
                   }`} 
                 />
               </button>
               {openSections.includes('company') && (
-                <ul className="mt-2 space-y-2 pl-4">
+                <ul className="mt-3 space-y-2 pl-4">
                   {company.map((item) => (
                     <li key={item.name}>
                       <Link 
                         href={item.href}
-                        className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                        className="text-gray-300 hover:text-blue-400 transition-all duration-200 flex items-center group"
                       >
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:bg-blue-400 transition-colors duration-200"></div>
                         {item.name}
                       </Link>
                     </li>
@@ -208,26 +237,27 @@ const Footer = () => {
             </div>
 
             {/* Support */}
-            <div>
+            <div className="bg-black/30 rounded-lg p-4">
               <button
                 onClick={() => toggleSection('support')}
                 className="flex items-center justify-between w-full text-left py-2"
               >
-                <h3 className="text-lg font-semibold">Support</h3>
+                <h3 className="text-base font-bold text-white">Support</h3>
                 <ChevronDown 
-                  className={`h-5 w-5 transition-transform duration-200 ${
+                  className={`h-5 w-5 transition-transform duration-200 text-gray-400 ${
                     openSections.includes('support') ? 'rotate-180' : ''
                   }`} 
                 />
               </button>
               {openSections.includes('support') && (
-                <ul className="mt-2 space-y-2 pl-4">
+                <ul className="mt-3 space-y-2 pl-4">
                   {support.map((item) => (
                     <li key={item.name}>
                       <Link 
                         href={item.href}
-                        className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                        className="text-gray-300 hover:text-blue-400 transition-all duration-200 flex items-center group"
                       >
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:bg-blue-400 transition-colors duration-200"></div>
                         {item.name}
                       </Link>
                     </li>
@@ -237,26 +267,27 @@ const Footer = () => {
             </div>
 
             {/* Legal */}
-            <div>
+            <div className="bg-black/30 rounded-lg p-4">
               <button
                 onClick={() => toggleSection('legal')}
                 className="flex items-center justify-between w-full text-left py-2"
               >
-                <h3 className="text-lg font-semibold">Legal</h3>
+                <h3 className="text-base font-bold text-white">Legal</h3>
                 <ChevronDown 
-                  className={`h-5 w-5 transition-transform duration-200 ${
+                  className={`h-5 w-5 transition-transform duration-200 text-gray-400 ${
                     openSections.includes('legal') ? 'rotate-180' : ''
                   }`} 
                 />
               </button>
               {openSections.includes('legal') && (
-                <ul className="mt-2 space-y-2 pl-4">
+                <ul className="mt-3 space-y-2 pl-4">
                   {legal.map((item) => (
                     <li key={item.name}>
                       <Link 
                         href={item.href}
-                        className="text-gray-300 hover:text-primary-400 transition-colors duration-200"
+                        className="text-gray-300 hover:text-blue-400 transition-all duration-200 flex items-center group"
                       >
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 group-hover:bg-blue-400 transition-colors duration-200"></div>
                         {item.name}
                       </Link>
                     </li>
@@ -267,26 +298,34 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Links */}
-        <div className="mt-8 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-4 mb-4 md:mb-0">
+        {/* Social Links & Bottom */}
+        <div className="mt-8 pt-6 border-t border-gray-800/50">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+            {/* Social Links */}
+            <div className="flex space-x-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon
                 return (
                   <a
                     key={social.name}
                     href={social.href}
-                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
+                    className="w-10 h-10 bg-black/30 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-800/50 transition-all duration-200 group"
                     aria-label={social.name}
                   >
-                    <Icon className="h-5 w-5" />
+                    <Icon className="h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
                   </a>
                 )
               })}
             </div>
-            <div className="text-gray-400 text-sm">
-              © 2024 ApplianceCares.in. All rights reserved.
+            
+            {/* Copyright */}
+            <div className="text-center lg:text-right">
+              <div className="text-gray-400 text-xs mb-1">
+                © 2024 ApplianceCares.in. All rights reserved.
+              </div>
+              <div className="text-gray-500 text-xs">
+                Professional Electronics & Appliance Repair Services
+              </div>
             </div>
           </div>
         </div>

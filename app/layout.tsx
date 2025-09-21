@@ -75,6 +75,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0ea5e9" />
+        <meta name="color-scheme" content="light dark" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           type="application/ld+json"
@@ -148,13 +149,15 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
-        <WhatsAppButton />
+      <body className={`${inter.className} antialiased`}>
+        <div className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+          <Header />
+          <main className="relative">
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppButton />
+        </div>
       </body>
     </html>
   )

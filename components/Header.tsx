@@ -33,73 +33,75 @@ const Header = () => {
   ]
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+    <header className={`fixed w-full z-50 transition-all duration-500 ${
+      isScrolled 
+        ? 'bg-white/95 backdrop-blur-xl shadow-xl border-b border-gray-200/50' 
+        : 'bg-transparent'
     }`}>
       {/* Top bar */}
-      <div className="bg-primary-600 text-white py-2">
+      <div className="bg-gradient-to-r from-electric-900 via-primary-800 to-cosmic-900 text-white py-3 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+91 96661 11327</span>
+            <div className="flex items-center space-x-8">
+              <div className="flex items-center space-x-2 group hover:text-electric-200 transition-colors duration-200">
+                <Phone className="h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
+                <span className="font-medium">+91 96661 11327</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
-                <span>info@appliancecares.in</span>
+              <div className="flex items-center space-x-2 group hover:text-cosmic-200 transition-colors duration-200">
+                <Mail className="h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
+                <span className="font-medium">info@appliancecares.in</span>
               </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <MapPin className="h-4 w-4" />
-              <span>Pragathi Nagar, Hyderabad</span>
+            <div className="flex items-center space-x-2 group hover:text-sunset-200 transition-colors duration-200">
+              <MapPin className="h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
+              <span className="font-medium">Pragathi Nagar, Hyderabad</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white shadow-sm">
+      <nav className="bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-18 min-h-[72px]">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center">
-                <div className="h-8 w-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">A</span>
+              <Link href="/" className="flex items-center group">
+                <div className="h-10 w-10 bg-gradient-to-br from-electric-600 to-cosmic-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
+                  <span className="text-white font-bold text-xl">A</span>
                 </div>
-                <span className="ml-2 text-xl font-bold text-gray-900">
+                <span className="ml-3 text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-electric-600 group-hover:to-cosmic-600 transition-all duration-300">
                   ApplianceCares
                 </span>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+            <div className="hidden md:flex items-center">
+              <div className="ml-10 flex items-center space-x-2">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                    className="text-gray-700 hover:text-electric-600 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:bg-electric-50 hover:shadow-sm"
                   >
                     {item.name}
                   </Link>
                 ))}
                 <div className="relative group">
-                  <button className="text-gray-700 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center">
+                  <button className="text-gray-700 hover:text-electric-600 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center hover:bg-electric-50 hover:shadow-sm">
                     Services
-                    <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </button>
-                  <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <div className="py-1">
+                  <div className="absolute left-0 mt-2 w-72 bg-white/95 backdrop-blur-xl rounded-xl shadow-2xl border border-gray-200/50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div className="py-2">
                       {services.map((service) => (
                         <Link
                           key={service.name}
                           href={service.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
+                          className="block px-6 py-3 text-sm text-gray-700 hover:bg-electric-50 hover:text-electric-600 transition-all duration-200 font-medium hover:translate-x-1"
                         >
                           {service.name}
                         </Link>
@@ -111,11 +113,12 @@ const Header = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center">
               <Link
                 href="tel:+919666111327"
-                className="bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-colors duration-200"
+                className="bg-gradient-to-r from-electric-500 to-primary-600 text-white px-6 py-3 rounded-xl text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 hover:from-electric-400 hover:to-primary-500 flex items-center"
               >
+                <Phone className="h-4 w-4 mr-2" />
                 Call Now
               </Link>
             </div>
@@ -124,7 +127,7 @@ const Header = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-primary-600 p-2"
+                className="text-gray-700 hover:text-electric-600 p-3 rounded-lg hover:bg-electric-50 transition-all duration-200"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -134,37 +137,38 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-200 shadow-lg">
+            <div className="px-4 pt-4 pb-6 space-y-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-700 hover:text-primary-600 block px-4 py-3 rounded-lg text-base font-semibold hover:bg-primary-50 transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2">
-                <div className="text-gray-500 text-sm font-medium px-3 py-2">Services</div>
+              <div className="pt-4 border-t border-gray-200">
+                <div className="text-gray-500 text-sm font-semibold px-4 py-2 mb-2">Services</div>
                 {services.map((service) => (
                   <Link
                     key={service.name}
                     href={service.href}
-                    className="text-gray-600 hover:text-primary-600 block px-6 py-2 text-sm"
+                    className="text-gray-600 hover:text-primary-600 block px-6 py-3 text-sm font-medium hover:bg-primary-50 rounded-lg transition-all duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {service.name}
                   </Link>
                 ))}
               </div>
-              <div className="pt-4">
+              <div className="pt-6">
                 <Link
                   href="tel:+919666111327"
-                  className="bg-primary-600 text-white block text-center px-3 py-2 rounded-md text-base font-medium"
+                  className="btn btn-primary w-full text-center px-4 py-3 rounded-xl text-base font-semibold shadow-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
+                  <Phone className="h-5 w-5 mr-2" />
                   Call Now
                 </Link>
               </div>
