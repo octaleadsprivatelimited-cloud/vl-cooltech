@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Tv, Wind, Monitor, Refrigerator, Microwave, Laptop, Smartphone, Wrench } from 'lucide-react'
+import { Tv, Wind, Monitor, Refrigerator, Microwave, Wrench } from 'lucide-react'
 
 interface ServiceImagesProps {
   serviceType?: string
@@ -14,8 +14,6 @@ const ServiceImages = ({ serviceType = 'general' }: ServiceImagesProps) => {
        { icon: Monitor, label: 'Washing Machine', color: 'from-indigo-500 to-indigo-600', href: '/services/washing-machine-repair', image: '/images/services/washing-machine-repair/washing-machine.webp' },
        { icon: Refrigerator, label: 'Refrigerator', color: 'from-green-500 to-green-600', href: '/services/refrigerator-repair', image: '/images/services/refrigerator-repair/refrigerator.webp' },
        { icon: Microwave, label: 'Microwave', color: 'from-orange-500 to-orange-600', href: '/services/microwave-repair', image: '/images/services/microwave-repair/microwave.webp' },
-       { icon: Laptop, label: 'Laptop', color: 'from-purple-500 to-purple-600', href: '/services/laptop-repair', image: '/images/services/laptop-repair/laptop.webp' },
-       { icon: Smartphone, label: 'Mobile', color: 'from-pink-500 to-pink-600', href: '/services/mobile-repair', image: '/images/services/mobile-repair/mobile.webp' },
        { icon: Wrench, label: 'Home Appliances', color: 'from-teal-500 to-teal-600', href: '/services/home-appliances', image: '/images/services/home-appliances/home-appliances.jpeg' }
     ],
     tv: [
@@ -48,18 +46,6 @@ const ServiceImages = ({ serviceType = 'general' }: ServiceImagesProps) => {
       { icon: Microwave, label: 'Grill', color: 'from-yellow-500 to-yellow-600' },
       { icon: Microwave, label: 'Smart', color: 'from-amber-500 to-amber-600' }
     ],
-    laptop: [
-      { icon: Laptop, label: 'Dell', color: 'from-purple-500 to-purple-600' },
-      { icon: Laptop, label: 'HP', color: 'from-blue-500 to-blue-600' },
-      { icon: Laptop, label: 'Lenovo', color: 'from-red-500 to-red-600' },
-      { icon: Laptop, label: 'MacBook', color: 'from-gray-500 to-gray-600' }
-    ],
-    mobile: [
-      { icon: Smartphone, label: 'iPhone', color: 'from-gray-500 to-gray-600' },
-      { icon: Smartphone, label: 'Samsung', color: 'from-blue-500 to-blue-600' },
-      { icon: Smartphone, label: 'OnePlus', color: 'from-red-500 to-red-600' },
-      { icon: Smartphone, label: 'Xiaomi', color: 'from-orange-500 to-orange-600' }
-    ]
   }
 
   const currentImages = serviceImages[serviceType as keyof typeof serviceImages] || serviceImages.general

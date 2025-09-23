@@ -29,22 +29,18 @@ export default function WashingMachineRepair() {
     {
       issue: 'Washing Machine Not Spinning',
       solution: 'Motor or belt repair/replacement',
-      price: '₹800-2500'
     },
     {
       issue: 'Water Leakage',
       solution: 'Seal or gasket replacement',
-      price: '₹400-1200'
     },
     {
       issue: 'Drum Not Moving',
       solution: 'Motor or drum bearing repair',
-      price: '₹1000-3000'
     },
     {
       issue: 'Door Not Opening',
       solution: 'Door lock mechanism repair',
-      price: '₹300-800'
     }
   ]
 
@@ -138,8 +134,7 @@ export default function WashingMachineRepair() {
               <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{problem.issue}</h3>
                 <p className="text-gray-600 mb-4">{problem.solution}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-indigo-600 font-semibold">{problem.price}</span>
+                <div className="flex justify-end items-center">
                   <GetQuoteButton 
                     size="sm" 
                     serviceType="washing-machine-repair"

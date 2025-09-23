@@ -117,8 +117,6 @@ public/
 │   │   ├── washing-machine-repair/
 │   │   ├── refrigerator-repair/
 │   │   ├── microwave-repair/
-│   │   ├── laptop-repair/
-│   │   ├── mobile-repair/
 │   │   └── home-appliances/
 │   ├── hero/
 │   ├── logos/

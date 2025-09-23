@@ -1,4 +1,4 @@
-import { Shield, Clock, Wrench, DollarSign, Phone, Star } from 'lucide-react'
+import { Shield, Clock, Wrench, Phone, Star } from 'lucide-react'
 
 const WhyChooseUs = () => {
   const features = [
@@ -19,12 +19,6 @@ const WhyChooseUs = () => {
       title: 'Expert Technicians',
       description: 'Our certified technicians have 15+ years of experience in Hyderabad and are trained on the latest technology for all major brands.',
       color: 'bg-purple-500'
-    },
-    {
-      icon: DollarSign,
-      title: 'Transparent Pricing',
-      description: 'No hidden fees, no surprises. Get a free quote before we start any work. Competitive prices across all areas of Hyderabad.',
-      color: 'bg-orange-500'
     },
     {
       icon: Phone,

@@ -366,14 +366,6 @@ export const serviceKeywordsMap = {
     'Microwave repair', 'Samsung microwave repair', 'LG microwave repair', 'Whirlpool microwave repair',
     'IFB microwave repair', 'Solo microwave repair', 'Convection microwave repair'
   ],
-  laptopRepair: [
-    'Laptop repair', 'Dell laptop repair', 'HP laptop repair', 'Lenovo laptop repair',
-    'Asus laptop repair', 'MacBook repair', 'Laptop screen replacement', 'Laptop keyboard repair'
-  ],
-  mobileRepair: [
-    'Mobile repair', 'Smartphone repair', 'iPhone repair', 'Samsung mobile repair',
-    'OnePlus mobile repair', 'Mobile screen replacement', 'Mobile battery replacement'
-  ],
   homeAppliances: [
     'Home appliances repair', 'Mixer grinder repair', 'Iron repair', 'Geyser repair',
     'Water purifier repair', 'RO water purifier repair', 'Chimney repair'

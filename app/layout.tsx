@@ -103,7 +103,6 @@ export default function RootLayout({
                 "longitude": "78.4867"
               },
               "openingHours": "Mo-Su 08:00-20:00",
-              "priceRange": "$$",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",

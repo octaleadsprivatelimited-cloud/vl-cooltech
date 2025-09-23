@@ -22,7 +22,6 @@ const Hero = () => {
     { name: 'Washing Machine Repair', href: '/services/washing-machine-repair' },
     { name: 'Refrigerator Repair', href: '/services/refrigerator-repair' },
     { name: 'Microwave Repair', href: '/services/microwave-repair' },
-    { name: 'Laptop Repair', href: '/services/laptop-repair' }
   ]
 
   return (

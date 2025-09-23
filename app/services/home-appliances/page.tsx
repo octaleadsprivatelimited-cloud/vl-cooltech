@@ -28,22 +28,18 @@ export default function HomeAppliancesRepair() {
     {
       issue: 'Mixer Grinder Not Working',
       solution: 'Motor or blade repair/replacement',
-      price: '₹200-800'
     },
     {
       issue: 'Iron Not Heating',
       solution: 'Heating element or thermostat repair',
-      price: '₹300-600'
     },
     {
       issue: 'Geyser Not Heating',
       solution: 'Heating element or thermostat repair',
-      price: '₹500-1500'
     },
     {
       issue: 'Water Purifier Issues',
       solution: 'Filter replacement or pump repair',
-      price: '₹400-1200'
     }
   ]
 
@@ -139,8 +135,7 @@ export default function HomeAppliancesRepair() {
               <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{problem.issue}</h3>
                 <p className="text-gray-600 mb-4">{problem.solution}</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-teal-600 font-semibold">{problem.price}</span>
+                <div className="flex justify-end items-center">
                   <GetQuoteButton 
                     size="sm" 
                     serviceType="home-appliances"

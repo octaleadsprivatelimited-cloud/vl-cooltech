@@ -22,8 +22,6 @@ const Sitemap = () => {
     { name: 'Washing Machine Repair', href: '/services/washing-machine-repair', description: 'Washing machine repair services' },
     { name: 'Refrigerator Repair', href: '/services/refrigerator-repair', description: 'Refrigerator repair and maintenance' },
     { name: 'Microwave Repair', href: '/services/microwave-repair', description: 'Microwave oven repair services' },
-    { name: 'Laptop Repair', href: '/services/laptop-repair', description: 'Laptop and computer repair services' },
-    { name: 'Mobile Repair', href: '/services/mobile-repair', description: 'Mobile phone repair services' },
     { name: 'Home Appliances', href: '/services/home-appliances', description: 'General home appliance repair' }
   ]
 

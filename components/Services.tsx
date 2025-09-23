@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
-import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight, Sparkles } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Microwave, Monitor, ArrowRight, Sparkles } from 'lucide-react'
 
 const Services = () => {
   const [visibleCards, setVisibleCards] = useState<number[]>([])
@@ -71,22 +71,6 @@ const Services = () => {
       color: 'bg-orange-500'
     },
     {
-      icon: Laptop,
-      title: 'Laptop Repair Hyderabad',
-      description: 'Expert laptop repair services for all major brands and models in Hyderabad. Dell, HP, Lenovo, Asus, Acer, MacBook repair.',
-      features: ['Screen Replacement', 'Keyboard Repair', 'Battery Issues', 'Software Problems'],
-      href: '/services/laptop-repair',
-      color: 'bg-purple-500'
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile Repair Hyderabad',
-      description: 'Professional mobile phone repair services for all smartphone brands in Hyderabad. iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo mobile repair.',
-      features: ['Screen Repair', 'Battery Replacement', 'Charging Port', 'Software Issues'],
-      href: '/services/mobile-repair',
-      color: 'bg-pink-500'
-    },
-    {
       icon: Monitor,
       title: 'Home Appliances Repair Hyderabad',
       description: 'Repair services for all home appliances and electronic devices in Hyderabad. Mixer grinder, iron, geyser, water purifier repair.',
@@ -120,7 +104,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {services.map((service, index) => {
             const Icon = service.icon
             const isVisible = visibleCards.includes(index)

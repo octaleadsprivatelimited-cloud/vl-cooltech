@@ -1,243 +1,40 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/app/_not-found/page-b594cd94f1ea2cd6.js"
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/css/715c705fc2bce926.css",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/layout-dd2a1e20deffbd2d.js"
-    ],
-    "/book-service/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/book-service/page-63878b26547a0ccd.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/592-c8a0eb0b5967a275.js",
-      "static/chunks/app/page-554c50b58b00cdc1.js"
-    ],
-    "/track-service/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/track-service/page-ea435704fff75980.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/app/contact/page-a8e2dab4554d3b8c.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/app/about/page-57b9221c8d34b026.js"
-    ],
-    "/refund-policy/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/refund-policy/page-791ffa9f1819216f.js"
-    ],
-    "/customer-support/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/customer-support/page-54009a261ab6e39a.js"
-    ],
-    "/repair/blue-star-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/blue-star-ac-repair/page-5707a7c144aa234a.js"
-    ],
-    "/privacy-policy/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/privacy-policy/page-673c3c825ba618cb.js"
-    ],
-    "/repair/carrier-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/carrier-ac-repair/page-e9db55c7ee2ae8e9.js"
-    ],
-    "/repair/daikin-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/daikin-ac-repair/page-1fcb9aa209ce947f.js"
-    ],
-    "/repair/[slug]/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/[slug]/page-448bd0a1c5ff19c9.js"
-    ],
-    "/repair/samsung-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/samsung-ac-repair/page-a326afd2e6a07e3e.js"
-    ],
-    "/repair/voltas-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/voltas-ac-repair/page-d8692532a99ccd50.js"
-    ],
-    "/service-areas/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/service-areas/page-d05265c397027ee4.js"
-    ],
-    "/repair/lg-ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/repair/lg-ac-repair/page-693e193220500dc7.js"
-    ],
-    "/services/laptop-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/laptop-repair/page-43788d79639b3ad2.js"
-    ],
-    "/services/home-appliances/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/home-appliances/page-33feb9eb509ffd8e.js"
-    ],
-    "/services/ac-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/ac-repair/page-176b21bc82284841.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/services/microwave-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/microwave-repair/page-d099d0410dd1e901.js"
-    ],
-    "/services/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/page-1fe912da1cb809f4.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/microwave-repair/page.js"
     ],
     "/services/refrigerator-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/refrigerator-repair/page-36fe0cc74a461528.js"
-    ],
-    "/services/mobile-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/mobile-repair/page-21b397a716d5e858.js"
-    ],
-    "/services/washing-machine-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/washing-machine-repair/page-9b2e1e03cd2953cc.js"
-    ],
-    "/sitemap/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/sitemap/page-ece9eb32277a410e.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/refrigerator-repair/page.js"
     ],
     "/services/tv-repair/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/services/tv-repair/page-464f7100ee4d1cef.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/tv-repair/page.js"
     ],
-    "/warranty/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/warranty/page-abf3403e396c5af1.js"
+    "/services/ac-repair/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/ac-repair/page.js"
     ],
-    "/terms-of-service/page": [
-      "static/chunks/webpack-df9508188de4c63c.js",
-      "static/chunks/fd9d1056-0807e69ea9c303ac.js",
-      "static/chunks/117-8e81c8c82ad61c9e.js",
-      "static/chunks/main-app-539f5e7e3f821af1.js",
-      "static/chunks/972-66fe8c15ab2ed532.js",
-      "static/chunks/app/terms-of-service/page-92cb0f0d9bc887b2.js"
+    "/services/washing-machine-repair/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/washing-machine-repair/page.js"
     ]
   }
 }

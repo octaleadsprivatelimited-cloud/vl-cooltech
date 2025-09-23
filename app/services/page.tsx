@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
-import { Tv, Wind, Refrigerator, Microwave, Laptop, Smartphone, Monitor, ArrowRight } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Microwave, Monitor, ArrowRight } from 'lucide-react'
 
 export const metadata = {
   title: 'Our Services - ApplianceCares.in | Electronics & Appliance Repair Services',
@@ -17,7 +17,6 @@ const ServicesPage = () => {
       features: ['Screen Repair', 'Power Issues', 'Audio Problems', 'Smart TV Setup', 'Remote Issues', 'HDMI Problems'],
       href: '/services/tv-repair',
       color: 'bg-blue-500',
-      price: 'Starting from ₹500'
     },
     {
       icon: Wind,
@@ -26,7 +25,6 @@ const ServicesPage = () => {
       features: ['Gas Filling', 'Compressor Repair', 'Cooling Issues', 'Maintenance', 'Filter Cleaning', 'Remote Problems'],
       href: '/services/ac-repair',
       color: 'bg-cyan-500',
-      price: 'Starting from ₹800'
     },
     {
       icon: Monitor,
@@ -35,7 +33,6 @@ const ServicesPage = () => {
       features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems', 'Door Issues', 'Control Panel'],
       href: '/services/washing-machine-repair',
       color: 'bg-indigo-500',
-      price: 'Starting from ₹600'
     },
     {
       icon: Refrigerator,
@@ -44,7 +41,6 @@ const ServicesPage = () => {
       features: ['Cooling Issues', 'Compressor Repair', 'Thermostat', 'Door Seals', 'Ice Maker', 'Water Dispenser'],
       href: '/services/refrigerator-repair',
       color: 'bg-green-500',
-      price: 'Starting from ₹700'
     },
     {
       icon: Microwave,
@@ -53,25 +49,6 @@ const ServicesPage = () => {
       features: ['Heating Issues', 'Turntable Problems', 'Door Switches', 'Control Panel', 'Magnetron Issues', 'Timer Problems'],
       href: '/services/microwave-repair',
       color: 'bg-orange-500',
-      price: 'Starting from ₹400'
-    },
-    {
-      icon: Laptop,
-      title: 'Laptop Repair',
-      description: 'Expert laptop repair services for all major brands and models.',
-      features: ['Screen Replacement', 'Keyboard Repair', 'Battery Issues', 'Software Problems', 'Hardware Issues', 'Data Recovery'],
-      href: '/services/laptop-repair',
-      color: 'bg-purple-500',
-      price: 'Starting from ₹800'
-    },
-    {
-      icon: Smartphone,
-      title: 'Mobile Repair',
-      description: 'Professional mobile phone repair services for all smartphone brands.',
-      features: ['Screen Repair', 'Battery Replacement', 'Charging Port', 'Software Issues', 'Camera Problems', 'Speaker Issues'],
-      href: '/services/mobile-repair',
-      color: 'bg-pink-500',
-      price: 'Starting from ₹300'
     },
     {
       icon: Monitor,
@@ -80,7 +57,6 @@ const ServicesPage = () => {
       features: ['Mixer Grinder', 'Iron', 'Geyser', 'Water Purifier', 'Induction Cooker', 'Electric Kettle'],
       href: '/services/home-appliances',
       color: 'bg-teal-500',
-      price: 'Starting from ₹200'
     }
   ]
 
@@ -104,7 +80,7 @@ const ServicesPage = () => {
       {/* Services Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon
               return (
@@ -127,10 +103,6 @@ const ServicesPage = () => {
                       {service.description}
                     </p>
 
-                    {/* Price */}
-                    <div className="text-primary-600 font-semibold text-sm mb-4">
-                      {service.price}
-                    </div>
 
                     {/* Features */}
                     <ul className="space-y-1 mb-4">

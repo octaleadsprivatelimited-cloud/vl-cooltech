@@ -18,21 +18,8 @@ export const getWhatsAppMessage = (serviceType: string, brand?: string): string 
     'washing-machine-repair': `${baseMessage} washing machine repair ${location}`,
     'refrigerator-repair': `${baseMessage} refrigerator repair ${location}`,
     'microwave-repair': `${baseMessage} microwave repair ${location}`,
-    'laptop-repair': `${baseMessage} laptop repair ${location}`,
-    'mobile-repair': `${baseMessage} mobile phone repair ${location}`,
     'home-appliances': `${baseMessage} home appliance repair ${location}`,
     
-    // Mobile Brand-Specific Services
-    'iphone-mobile': `${baseMessage} iPhone repair ${location}`,
-    'samsung-mobile': `${baseMessage} Samsung mobile repair ${location}`,
-    'oneplus-mobile': `${baseMessage} OnePlus mobile repair ${location}`,
-    'xiaomi-mobile': `${baseMessage} Xiaomi mobile repair ${location}`,
-    'vivo-mobile': `${baseMessage} Vivo mobile repair ${location}`,
-    'oppo-mobile': `${baseMessage} Oppo mobile repair ${location}`,
-    'realme-mobile': `${baseMessage} Realme mobile repair ${location}`,
-    'motorola-mobile': `${baseMessage} Motorola mobile repair ${location}`,
-    'nokia-mobile': `${baseMessage} Nokia mobile repair ${location}`,
-    'google-pixel-mobile': `${baseMessage} Google Pixel mobile repair ${location}`,
     
     // General Services
     'general': `${baseMessage} appliance repair services ${location}`,
@@ -68,8 +55,6 @@ export const serviceTypeMapping: { [key: string]: string } = {
   '/services/washing-machine-repair': 'washing-machine-repair',
   '/services/refrigerator-repair': 'refrigerator-repair',
   '/services/microwave-repair': 'microwave-repair',
-  '/services/laptop-repair': 'laptop-repair',
-  '/services/mobile-repair': 'mobile-repair',
   '/services/home-appliances': 'home-appliances',
   
   // Brand-specific repair pages
