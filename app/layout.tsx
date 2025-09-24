@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     siteName: 'ApplianceCares.in',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'ApplianceCares.in - Electronics & Appliance Repair Services in Hyderabad - TV Repair, AC Repair, Washing Machine Repair, Refrigerator Repair, Laptop Repair, Mobile Repair',
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'ApplianceCares.in Logo',
       },
     ],
     locale: 'en_IN',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
     description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
-    images: ['/og-image.jpg'],
+    images: ['/logo.png'],
   },
   robots: {
     index: true,
@@ -69,10 +69,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" href="/images/hero/Appliance cares logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/hero/Appliance cares logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/hero/Appliance cares logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/hero/Appliance cares logo.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0ea5e9" />
         <meta name="color-scheme" content="light dark" />
@@ -87,7 +87,7 @@ export default function RootLayout({
               "alternateName": "Appliance Cares Hyderabad",
               "description": "Professional electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.",
               "url": "https://appliancecares.in",
-              "telephone": "+91 96661 11327",
+              "telephone": "+91 7780225280",
               "email": "info@appliancecares.in",
               "address": {
                 "@type": "PostalAddress",

@@ -6,7 +6,7 @@ import ServiceImages from '@/components/ServiceImages'
 
 export const metadata: Metadata = {
   title: 'AC Repair Service Hyderabad | Samsung, LG, Daikin AC Repair | ApplianceCares.in',
-  description: 'Professional AC repair service in Hyderabad. We repair Samsung, LG, Daikin, Voltas, Blue Star, Carrier ACs. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 96661 11327.',
+  description: 'Professional AC repair service in Hyderabad. We repair Samsung, LG, Daikin, Voltas, Blue Star, Carrier ACs. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 77802 25280.',
   keywords: 'AC repair Hyderabad, Samsung AC repair, LG AC repair, Daikin AC repair, Voltas AC repair, Blue Star AC repair, Carrier AC repair, AC repair near me, AC repair HITEC City, AC repair Gachibowli, AC repair Kondapur, AC repair Madhapur, AC repair Jubilee Hills, AC repair Banjara Hills, AC repair Pragathi Nagar, same day AC repair, emergency AC repair, AC service Hyderabad, AC gas filling Hyderabad, AC maintenance Hyderabad',
 }
 
@@ -67,11 +67,11 @@ export default function ACRepair() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-yellow-400 text-cyan-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -257,11 +257,11 @@ export default function ACRepair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+919666111327"
+              href="tel:+917780225280"
               className="bg-yellow-400 text-cyan-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
-              Call Now: +91 96661 11327
+              Call Now: +91 77802 25280
             </Link>
             <Link
               href="/book-service"

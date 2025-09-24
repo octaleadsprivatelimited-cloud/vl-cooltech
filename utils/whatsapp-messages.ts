@@ -41,7 +41,7 @@ export const getWhatsAppMessage = (serviceType: string, brand?: string): string 
 
 // Generate WhatsApp URL with message
 export const getWhatsAppUrl = (serviceType: string, brand?: string): string => {
-  const phoneNumber = '919666111327'
+  const phoneNumber = '917780225280'
   const message = getWhatsAppMessage(serviceType, brand)
   const encodedMessage = encodeURIComponent(message)
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`

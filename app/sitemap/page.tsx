@@ -40,14 +40,14 @@ const Sitemap = () => {
   ]
 
   const quickLinks = [
-    { name: 'Call Now', href: 'tel:+919666111327', icon: Phone },
+    { name: 'Call Now', href: 'tel:+917780225280', icon: Phone },
     { name: 'Email Us', href: 'mailto:info@appliancecares.in', icon: Mail },
     { name: 'Book Online', href: '/book-service', icon: Calendar },
     { name: 'Track Service', href: '/track-service', icon: Search }
   ]
 
   const contactInfo = [
-    { label: 'Phone', value: '+91 96661 11327', icon: Phone },
+    { label: 'Phone', value: '+91 77802 25280', icon: Phone },
     { label: 'Email', value: 'info@appliancecares.in', icon: Mail },
     { label: 'Address', value: 'Pragathi Nagar, Hyderabad, Telangana', icon: MapPin },
     { label: 'Service Hours', value: '8:00 AM - 8:00 PM (Mon-Sat)', icon: Calendar }

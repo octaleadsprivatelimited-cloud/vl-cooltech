@@ -11,30 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/services/microwave-repair/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/microwave-repair/page.js"
-    ],
-    "/services/refrigerator-repair/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/refrigerator-repair/page.js"
-    ],
     "/services/tv-repair/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/services/tv-repair/page.js"
     ],
-    "/services/ac-repair/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/ac-repair/page.js"
+      "static/chunks/app/about/page.js"
     ],
-    "/services/washing-machine-repair/page": [
+    "/services/microwave-repair/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/services/washing-machine-repair/page.js"
+      "static/chunks/app/services/microwave-repair/page.js"
     ]
   }
 }

@@ -16,7 +16,7 @@ interface WhatsAppLinkProps {
 }
 
 const WhatsAppButton = ({ 
-  phoneNumber = '+919666111327',
+  phoneNumber = '+917780225280',
   message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
   className = ''
 }: WhatsAppButtonProps) => {
@@ -46,7 +46,7 @@ const WhatsAppButton = ({
 }
 
 const WhatsAppLink = ({ 
-  phoneNumber = '+919666111327',
+  phoneNumber = '+917780225280',
   message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
   className = '',
   children

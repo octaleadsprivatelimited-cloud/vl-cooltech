@@ -4,7 +4,7 @@ import { GetQuoteButton } from '@/components/CTA'
 
 export const metadata = {
   title: 'Home Appliances Repair Services - ApplianceCares.in | Professional Home Appliance Repair in Hyderabad',
-  description: 'Expert home appliance repair services in Hyderabad. We repair mixer grinder, iron, geyser, water purifier, induction cooker. Same-day service. Call +91 96661 11327',
+  description: 'Expert home appliance repair services in Hyderabad. We repair mixer grinder, iron, geyser, water purifier, induction cooker. Same-day service. Call +91 77802 25280',
   keywords: 'home appliance repair, mixer grinder repair, iron repair, geyser repair, water purifier repair, induction cooker repair, Hyderabad, Pragathi Nagar, home appliances service',
 }
 
@@ -59,11 +59,11 @@ export default function HomeAppliancesRepair() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Link
-                  href="tel:+919666111327"
+                  href="tel:+917780225280"
                   className="bg-white text-teal-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                  <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                   <span className="sm:hidden">Call Now</span>
                 </Link>
                 <GetQuoteButton
@@ -159,10 +159,10 @@ export default function HomeAppliancesRepair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+919666111327"
+              href="tel:+917780225280"
               className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              Call Now: +91 96661 11327
+              Call Now: +91 77802 25280
             </Link>
             <GetQuoteButton
               serviceType="home-appliances"

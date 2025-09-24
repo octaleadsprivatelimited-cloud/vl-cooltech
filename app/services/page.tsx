@@ -179,10 +179,10 @@ const ServicesPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+919666111327"
+              href="tel:+917780225280"
               className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              Call Now: +91 96661 11327
+              Call Now: +91 77802 25280
             </Link>
             <GetQuoteButton
               serviceType="general"

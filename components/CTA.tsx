@@ -41,7 +41,7 @@ const CTA = ({
     switch (action) {
       case 'call':
         return {
-          href: 'tel:+919666111327',
+          href: 'tel:+917780225280',
           icon: Phone,
           text: 'Call Now'
         }
@@ -71,7 +71,7 @@ const CTA = ({
         }
       default:
         return {
-          href: 'tel:+919666111327',
+          href: 'tel:+917780225280',
           icon: Phone,
           text: 'Call Now'
         }

@@ -69,7 +69,7 @@ const CTASection = ({
       case 'call':
         return (
           <Link
-            href="tel:+919666111327"
+            href="tel:+917780225280"
             className={`${baseClasses} ${
               variantClasses.buttonVariant === 'primary' 
                 ? 'bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500' 

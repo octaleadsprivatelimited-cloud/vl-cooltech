@@ -112,11 +112,11 @@ export default function ServiceAreas() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-5 w-5" />
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -240,11 +240,11 @@ export default function ServiceAreas() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+919666111327"
+              href="tel:+917780225280"
               className="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Phone className="h-5 w-5" />
-              <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+              <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
               <span className="sm:hidden">Call Now</span>
             </Link>
             <Link

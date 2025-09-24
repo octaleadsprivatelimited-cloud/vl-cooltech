@@ -245,7 +245,7 @@ const ContactForm = () => {
             <Phone className="h-5 w-5 text-primary-600" />
             <div>
               <div className="font-medium text-gray-900">Phone</div>
-              <div className="text-gray-600">+91 96661 11327</div>
+              <div className="text-gray-600">+91 77802 25280</div>
             </div>
           </div>
           <div className="flex items-center gap-3">

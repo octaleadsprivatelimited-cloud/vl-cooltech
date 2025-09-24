@@ -36,7 +36,7 @@ if [ ! -f ".env.local" ]; then
     cat > .env.local << EOF
 # ApplianceCares.in Environment Variables
 NEXT_PUBLIC_SITE_URL=https://appliancecares.in
-NEXT_PUBLIC_PHONE=+919666111327
+NEXT_PUBLIC_PHONE=+917780225280
 NEXT_PUBLIC_EMAIL=info@appliancecares.in
 NEXT_PUBLIC_ADDRESS=Pragathi Nagar, Hyderabad, TG
 EOF
@@ -79,7 +79,7 @@ echo "3. Customize the content in the components and pages"
 echo "4. Deploy to Vercel, Netlify, or your preferred hosting platform"
 echo ""
 echo "📞 Contact Information:"
-echo "Phone: +91 96661 11327"
+echo "Phone: +91 77802 25280"
 echo "Email: info@appliancecares.in"
 echo "Location: Pragathi Nagar, Hyderabad, TG"
 echo ""

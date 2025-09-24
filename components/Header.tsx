@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react'
 
@@ -45,13 +46,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center group">
-              <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
-                <span className="text-white font-bold text-lg sm:text-xl">A</span>
-              </div>
-              <span className="ml-2 sm:ml-3 text-lg sm:text-2xl font-bold text-white group-hover:text-blue-400 transition-all duration-300">
-                  <span className="hidden sm:inline">ApplianceCares</span>
-                  <span className="sm:hidden">AC</span>
-                </span>
+                <div className="relative overflow-hidden flex items-center justify-center h-14 w-14 sm:h-[72px] sm:w-[72px] rounded-xl p-2 shadow-lg group-hover:shadow-xl transform transition-transform duration-300 ease-out group-hover:scale-125 will-change-transform">
+                  <Image src="/images/hero/Appliance cares logo.png" alt="Appliance Cares logo" fill className="object-cover object-top" priority />
+                </div>
               </Link>
             </div>
 
@@ -94,7 +91,7 @@ const Header = () => {
             {/* CTA Button */}
             <div className="hidden md:flex items-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg text-xs font-semibold shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 hover:from-blue-500 hover:to-blue-600 flex items-center whitespace-nowrap"
               >
                 <Phone className="h-3 w-3 mr-1" />
@@ -175,7 +172,7 @@ const Header = () => {
                   : 'translate-y-6 opacity-0'
               }`} style={{ transitionDelay: '600ms' }}>
                 <Link
-                  href="tel:+919666111327"
+                  href="tel:+917780225280"
                   className="bg-gradient-to-r from-blue-600 to-blue-700 text-white w-full text-center px-4 py-3 rounded-xl text-base font-semibold shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 flex items-center justify-center"
                   onClick={() => setIsMenuOpen(false)}
                 >

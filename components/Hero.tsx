@@ -125,11 +125,11 @@ const Hero = () => {
             {/* CTA Buttons - Hidden on mobile and tablet */}
             <div className="hidden lg:flex flex-row gap-2 sm:gap-4">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="group bg-gradient-to-r from-electric-500 to-primary-600 text-white px-3 sm:px-6 py-3 rounded-lg font-semibold text-xs sm:text-sm hover:from-electric-400 hover:to-primary-500 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform hover:shadow-electric-500/25 flex-1"
               >
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 group-hover:animate-pulse" />
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden text-xs">Call Now</span>
               </Link>
               <Link

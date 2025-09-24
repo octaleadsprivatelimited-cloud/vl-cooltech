@@ -175,10 +175,10 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-primary-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-sm sm:text-base"
               >
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <GetQuoteButton
