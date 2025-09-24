@@ -303,7 +303,7 @@ const PrivacyPolicy = () => {
                 Speak with our privacy team directly
               </p>
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
                 +91 96661 11327

@@ -97,7 +97,7 @@ Create these environment variables in your hosting platform:
 
 ```env
 NEXT_PUBLIC_SITE_URL=https://appliancecares.in
-NEXT_PUBLIC_PHONE=+919666111327
+NEXT_PUBLIC_PHONE=+917780225280
 NEXT_PUBLIC_EMAIL=info@appliancecares.in
 NEXT_PUBLIC_ADDRESS=Pragathi Nagar, Hyderabad, TG
 ```
@@ -138,7 +138,7 @@ Value: appliancecares.in
 1. Create Google My Business listing
 2. Add business information:
    - Name: ApplianceCares.in
-   - Phone: +91 96661 11327
+   - Phone: +91 77802 25280
    - Address: Pragathi Nagar, Hyderabad, TG
    - Hours: 8 AM - 8 PM (Mon-Sun)
 

@@ -282,7 +282,7 @@ const RefundPolicy = () => {
               Contact Support
             </Link>
             <Link
-              href="tel:+919666111327"
+                href="tel:+917780225280"
               className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold text-lg text-center hover:scale-105 transform transition-all duration-300"
             >
               Call Now

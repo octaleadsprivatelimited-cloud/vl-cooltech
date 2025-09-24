@@ -209,7 +209,7 @@ export default function About() {
                 <Phone className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600">+91 96661 11327</p>
+              <p className="text-gray-600">+91 77802 25280</p>
             </div>
 
             <div className="text-center">

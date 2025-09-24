@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 export const metadata = {
   title: 'Contact Us - ApplianceCares.in | Electronics & Appliance Repair Services in Hyderabad',
-  description: 'Contact ApplianceCares.in for professional electronics and appliance repair services in Hyderabad. Call +91 96661 11327 or email info@appliancecares.in. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.',
+  description: 'Contact ApplianceCares.in for professional electronics and appliance repair services in Hyderabad. Call +91 77802 25280 or email info@appliancecares.in. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.',
   keywords: 'contact, electronics repair, appliance repair, Hyderabad, HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, phone, email, service booking, TV repair contact, AC repair contact, washing machine repair contact, refrigerator repair contact, laptop repair contact, mobile repair contact, same day service Hyderabad, emergency repair Hyderabad, doorstep service Hyderabad',
 }
 
@@ -34,7 +34,7 @@ export default function Contact() {
                 <Phone className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Phone</h3>
-              <p className="text-gray-600 mb-2">+91 96661 11327</p>
+              <p className="text-gray-600 mb-2">+91 77802 25280</p>
               <p className="text-sm text-gray-500">Available 24/7</p>
             </div>
 

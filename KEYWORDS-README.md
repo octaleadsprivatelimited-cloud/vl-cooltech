@@ -192,7 +192,7 @@ components/
 ## 📞 **Support**
 
 For questions or issues:
-- **WhatsApp**: +91 96661 11327
+- **WhatsApp**: +91 77802 25280
 - **Email**: info@appliancecares.in
 - **Website**: https://appliancecares.in
 

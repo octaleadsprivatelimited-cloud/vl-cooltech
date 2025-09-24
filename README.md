@@ -203,7 +203,7 @@ This project is proprietary software for ApplianceCares.in.
 
 For technical support or questions about this website, contact:
 - Email: info@appliancecares.in
-- Phone: +91 96661 11327
+- Phone: +91 77802 25280
 
 ---
 

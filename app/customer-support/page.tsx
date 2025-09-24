@@ -14,7 +14,7 @@ const CustomerSupport = () => {
       icon: Phone,
       title: 'Phone Support',
       description: 'Speak directly with our support team',
-      contact: '+91 96661 11327',
+      contact: '+91 77802 25280',
       availability: '24/7 Available',
       action: 'Call Now'
     },
@@ -22,7 +22,7 @@ const CustomerSupport = () => {
       icon: MessageCircle,
       title: 'Phone Support',
       description: 'Quick support via phone call',
-      contact: '+91 96661 11327',
+      contact: '+91 77802 25280',
       availability: '9 AM - 9 PM',
       action: 'Call Now'
     },
@@ -39,7 +39,7 @@ const CustomerSupport = () => {
   const faqs = [
     {
       question: 'How do I book a service?',
-      answer: 'You can book a service by calling us at +91 96661 11327 or by filling out our online booking form. We offer same-day service for urgent repairs.'
+      answer: 'You can book a service by calling us at +91 77802 25280 or by filling out our online booking form. We offer same-day service for urgent repairs.'
     },
     {
       question: 'What areas do you cover?',

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Star, Shield, Clock, CheckCircle, Sparkles, Zap } from 'lucide-react'
 import ServiceImages from './ServiceImages'
 
@@ -27,12 +28,16 @@ const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 overflow-hidden">
       {/* Household Appliances Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/household-appliances-background.jpg')"
-        }}
-      ></div>
+      <div className="absolute inset-0">
+        <Image
+          src="/images/household-appliances-background.jpg"
+          alt="Household appliances repair background"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+      </div>
       
       {/* Overlay for text readability */}
       <div className="absolute inset-0 bg-black/60"></div>
