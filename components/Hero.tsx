@@ -130,14 +130,6 @@ const Hero = () => {
             {/* CTA Buttons - Hidden on mobile and tablet */}
             <div className="hidden lg:flex flex-row gap-2 sm:gap-4">
               <Link
-                href="tel:+917780225280"
-                className="group bg-gradient-to-r from-electric-500 to-primary-600 text-white px-3 sm:px-6 py-3 rounded-lg font-semibold text-xs sm:text-sm hover:from-electric-400 hover:to-primary-500 transition-all duration-300 flex items-center justify-center gap-1 sm:gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform hover:shadow-electric-500/25 flex-1"
-              >
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 group-hover:animate-pulse" />
-                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
-                <span className="sm:hidden text-xs">Call Now</span>
-              </Link>
-              <Link
                 href={selectedService ? services.find(s => s.name === selectedService)?.href || '/contact' : '/contact'}
                 className="group border-2 border-gradient-to-r from-cosmic-400 to-secondary-400 bg-gradient-to-r from-cosmic-500/20 to-secondary-500/20 text-white px-3 sm:px-6 py-3 rounded-lg font-semibold text-xs sm:text-sm hover:from-cosmic-400/30 hover:to-secondary-400/30 hover:border-cosmic-300 transition-all duration-300 text-center hover:scale-105 transform backdrop-blur-sm flex-1"
               >

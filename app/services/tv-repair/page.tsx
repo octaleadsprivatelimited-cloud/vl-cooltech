@@ -5,7 +5,7 @@ import { GetQuoteButton } from '@/components/CTA'
 
 export const metadata: Metadata = {
   title: 'TV Repair Service Hyderabad | Samsung, LG, Sony TV Repair | ApplianceCares.in',
-  description: 'Professional TV repair service in Hyderabad. We repair Samsung, LG, Sony, Panasonic, TCL, OnePlus, Mi TVs. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 96661 11327.',
+  description: 'Professional TV repair service in Hyderabad. We repair Samsung, LG, Sony, Panasonic, TCL, OnePlus, Mi TVs. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 77802 25280.',
   keywords: 'TV repair Hyderabad, Samsung TV repair, LG TV repair, Sony TV repair, Panasonic TV repair, TCL TV repair, OnePlus TV repair, Mi TV repair, LED TV repair, LCD TV repair, Smart TV repair, OLED TV repair, TV repair near me, TV repair HITEC City, TV repair Gachibowli, TV repair Kondapur, TV repair Madhapur, TV repair Jubilee Hills, TV repair Banjara Hills, TV repair Pragathi Nagar, same day TV repair, emergency TV repair, TV screen replacement, TV repair service Hyderabad, professional TV repair, TV repair technician Hyderabad',
 }
 
@@ -67,11 +67,11 @@ export default function TVRepair() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-yellow-400 text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -261,7 +261,7 @@ export default function TVRepair() {
               className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
-              Call Now: +91 96661 11327
+              Call Now: +91 77802 25280
             </Link>
             <Link
               href="/book-service"

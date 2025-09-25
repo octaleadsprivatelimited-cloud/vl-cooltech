@@ -1,1 +1,7 @@
-{}
+{
+  "/services/page": "app/services/page.js",
+  "/services/tv-repair/page": "app/services/tv-repair/page.js",
+  "/services/microwave-repair/page": "app/services/microwave-repair/page.js",
+  "/services/refrigerator-repair/page": "app/services/refrigerator-repair/page.js",
+  "/services/washing-machine-repair/page": "app/services/washing-machine-repair/page.js"
+}

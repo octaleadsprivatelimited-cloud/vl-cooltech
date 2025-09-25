@@ -239,7 +239,7 @@ const securityHeaders = [
 
 For technical support:
 - Email: info@appliancecares.in
-- Phone: +91 96661 11327
+- Phone: +91 77802 25280
 - Location: Pragathi Nagar, Hyderabad, TG
 
 ## 🔄 Updates & Maintenance

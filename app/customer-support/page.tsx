@@ -229,7 +229,7 @@ const CustomerSupport = () => {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-gray-500" />
-                    <span className="text-gray-600">+91 96661 11327</span>
+                    <span className="text-gray-600">+91 77802 25280</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail className="h-4 w-4 text-gray-500" />

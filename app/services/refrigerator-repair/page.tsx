@@ -6,7 +6,7 @@ import ServiceImages from '@/components/ServiceImages'
 
 export const metadata: Metadata = {
   title: 'Refrigerator Repair Hyderabad | Samsung, LG, Whirlpool Refrigerator Repair | ApplianceCares.in',
-  description: 'Professional refrigerator repair service in Hyderabad. We repair Samsung, LG, Whirlpool, Godrej refrigerators. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 96661 11327.',
+  description: 'Professional refrigerator repair service in Hyderabad. We repair Samsung, LG, Whirlpool, Godrej refrigerators. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 77802 25280.',
   keywords: 'refrigerator repair Hyderabad, Samsung refrigerator repair, LG refrigerator repair, Whirlpool refrigerator repair, Godrej refrigerator repair, refrigerator repair near me, refrigerator repair HITEC City, refrigerator repair Gachibowli, refrigerator repair Kondapur, refrigerator repair Madhapur, refrigerator repair Jubilee Hills, refrigerator repair Banjara Hills, refrigerator repair Pragathi Nagar, same day refrigerator repair, emergency refrigerator repair, fridge repair Hyderabad, refrigerator service Hyderabad, refrigerator maintenance Hyderabad',
 }
 
@@ -67,11 +67,11 @@ export default function RefrigeratorRepair() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="bg-yellow-400 text-green-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Call Now: +91 96661 11327</span>
+                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -255,7 +255,7 @@ export default function RefrigeratorRepair() {
               className="bg-yellow-400 text-green-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
-              Call Now: +91 96661 11327
+              Call Now: +91 77802 25280
             </Link>
             <Link
               href="/book-service"

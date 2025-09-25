@@ -319,10 +319,10 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-right">
               <div className="text-gray-400 text-xs mb-1">
-                © 2024 ApplianceCares.in. All rights reserved.
+                © 2025 ApplianceCares.in. All rights reserved.
               </div>
-              <div className="text-gray-500 text-xs">
-                Professional Electronics & Appliance Repair Services
+              <div className="text-gray-500 text-xs mt-1">
+                Designed and developed by <a href="http://octaleads.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">Octaleads Pvt Ltd</a>
               </div>
             </div>
           </div>

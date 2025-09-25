@@ -306,7 +306,7 @@ const PrivacyPolicy = () => {
                 href="tel:+917780225280"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                +91 96661 11327
+                +91 77802 25280
               </Link>
             </div>
           </div>

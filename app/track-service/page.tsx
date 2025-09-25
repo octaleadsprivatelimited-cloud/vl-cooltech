@@ -21,7 +21,7 @@ const TrackService = () => {
       address: 'Pragathi Nagar, Hyderabad',
       status: 'In Progress',
       technician: 'Suresh Kumar',
-      technicianPhone: '+91 96661 11327',
+      technicianPhone: '+91 77802 25280',
       estimatedTime: '2-3 hours',
       issue: 'AC not cooling properly',
       bookedDate: '2024-01-15',
@@ -329,10 +329,10 @@ const TrackService = () => {
                 Speak directly with our customer support team
               </p>
               <Link
-                href="tel:+919666111327"
+                href="tel:+917780225280"
                 className="btn btn-primary px-6 py-3 rounded-lg font-semibold"
               >
-                +91 96661 11327
+                +91 77802 25280
               </Link>
             </div>
             <div className="text-center">

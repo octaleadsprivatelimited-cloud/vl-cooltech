@@ -227,8 +227,8 @@ const RefundPolicy = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-gray-500" />
-                  <Link href="tel:+919666111327" className="text-primary-600 hover:text-primary-700">
-                    +91 96661 11327
+                  <Link href="tel:+917780225280" className="text-primary-600 hover:text-primary-700">
+                    +91 77802 25280
                   </Link>
                 </div>
                 <div className="flex items-center space-x-3">

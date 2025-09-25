@@ -280,7 +280,7 @@ export default function LGACRepairPage() {
               WhatsApp for LG AC
             </WhatsAppLink>
             <Link
-              href="tel:+919666111327"
+              href="tel:+917780225280"
               className="bg-white text-red-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
