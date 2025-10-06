@@ -25,6 +25,14 @@ const TermsOfService = () => {
     {
       title: 'Warranty Coverage',
       description: 'All repairs come with a 90-day warranty covering parts and labor.'
+    },
+    {
+      title: 'Data Collection & Analytics',
+      description: 'We use Google Tag Manager and Analytics to improve our services. You can opt out of tracking at any time.'
+    },
+    {
+      title: 'AI-Generated Content Disclosure',
+      description: 'Some content on our website may be generated using AI tools. We maintain accuracy and transparency in all communications.'
     }
   ]
 
@@ -359,8 +367,8 @@ const TermsOfService = () => {
             <div className="flex items-center justify-center space-x-4">
               <Calendar className="h-5 w-5 text-primary-600" />
               <p className="text-gray-600">
-                <strong>Last Updated:</strong> January 2024<br />
-                <strong>Effective Date:</strong> January 1, 2024
+                <strong>Last Updated:</strong> January 2025<br />
+                <strong>Effective Date:</strong> January 1, 2025
               </p>
             </div>
           </div>

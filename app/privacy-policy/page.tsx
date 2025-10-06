@@ -29,6 +29,11 @@ const PrivacyPolicy = () => {
       icon: FileText,
       title: 'Communication Records',
       items: ['Call recordings', 'Email correspondence', 'SMS messages', 'Service feedback']
+    },
+    {
+      icon: Eye,
+      title: 'Website Analytics Data',
+      items: ['IP address and location', 'Browser type and version', 'Device information', 'Website usage patterns', 'Page views and session duration', 'Referral sources and search terms']
     }
   ]
 
@@ -227,6 +232,83 @@ const PrivacyPolicy = () => {
         </div>
             </section>
 
+      {/* Google Analytics & Tag Manager */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Google Analytics & Tag Manager
+            </h2>
+            <p className="text-lg text-gray-600">
+              How we use Google services to improve our website
+            </p>
+          </div>
+
+          <div className="bg-blue-50 rounded-xl p-8 mb-8">
+            <div className="flex items-start space-x-4">
+              <Eye className="h-8 w-8 text-blue-600 mt-1 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Google Tag Manager & Analytics
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  We use Google Tag Manager (GTM) and Google Analytics to understand how visitors interact with our website. 
+                  This helps us improve our services and user experience.
+                </p>
+                <div className="bg-white rounded-lg p-4">
+                  <h4 className="font-semibold text-gray-900 mb-2">Data Collected by Google Services:</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li>• Website usage statistics and user behavior</li>
+                    <li>• Device and browser information</li>
+                    <li>• Geographic location (country/city level)</li>
+                    <li>• Traffic sources and referral information</li>
+                    <li>• Page views, session duration, and bounce rates</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-yellow-50 rounded-xl p-8">
+            <div className="flex items-start space-x-4">
+              <AlertCircle className="h-8 w-8 text-yellow-600 mt-1 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Your Consent & Control
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  You can control your data collection preferences through our cookie consent banner. 
+                  You can also opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a 
+                    href="https://tools.google.com/dlpage/gaoptout" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn bg-yellow-600 text-white hover:bg-yellow-700 px-6 py-3 rounded-lg font-semibold text-center hover:scale-105 transform transition-all duration-300"
+                  >
+                    Google Analytics Opt-out
+                  </a>
+                  <button 
+                    onClick={() => {
+                      // This would trigger the consent banner
+                      if (typeof window !== 'undefined' && window.gtag) {
+                        window.gtag('consent', 'update', {
+                          'analytics_storage': 'denied'
+                        });
+                      }
+                    }}
+                    className="btn border-2 border-yellow-600 text-yellow-600 hover:bg-yellow-600 hover:text-white px-6 py-3 rounded-lg font-semibold text-center hover:scale-105 transform transition-all duration-300"
+                  >
+                    Disable Analytics Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Data Sharing */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -327,8 +409,8 @@ const PrivacyPolicy = () => {
             <div className="flex items-center justify-center space-x-4">
               <Calendar className="h-5 w-5 text-primary-600" />
               <p className="text-gray-600">
-                <strong>Last Updated:</strong> January 2024<br />
-                <strong>Effective Date:</strong> January 1, 2024
+                <strong>Last Updated:</strong> January 2025<br />
+                <strong>Effective Date:</strong> January 1, 2025
               </p>
             </div>
           </div>
