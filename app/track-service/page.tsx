@@ -1,16 +1,9 @@
 'use client'
 
-import type { Metadata } from 'next'
 import { useState } from 'react'
 import { Search, Clock, MapPin, User, Phone, Wrench, CheckCircle, AlertCircle, Package, Truck } from 'lucide-react'
 import Link from 'next/link'
 import type { CSSProperties } from 'react'
-
-export const metadata: Metadata = {
-  title: 'VL CoolTech | Track Your Service Request',
-  description:
-    'Enter your VL CoolTech tracking ID or registered phone number to monitor technician assignment, arrival window and completion status for appliance repairs across Hyderabad.',
-}
 
 const TrackService = () => {
   const [trackingId, setTrackingId] = useState('')

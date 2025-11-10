@@ -1,15 +1,8 @@
-import type { Metadata } from 'next'
+'use client'
+
 import type { CSSProperties } from 'react'
 import { Cookie, Shield, Settings, Eye, AlertCircle, CheckCircle, Calendar } from 'lucide-react'
 import Link from 'next/link'
-
-export const metadata: Metadata = {
-  title: 'VL CoolTech Cookie Policy | Cookie Usage & Preference Management',
-  description:
-    'Learn how VL CoolTech uses cookies and similar technologies to operate vlcooltech.com and deliver AC, refrigerator, washing machine, LED TV, water purifier and electrical service experiences across Hyderabad West. Understand how to manage your cookie preferences.',
-  keywords:
-    'VL CoolTech cookie policy, cookies Hyderabad AC service, cookie preferences, analytics cookies, privacy Hyderabad West',
-}
 
 const CookiePolicy = () => {
   const cookieTypes = [

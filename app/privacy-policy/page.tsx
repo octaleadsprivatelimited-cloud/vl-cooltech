@@ -1,14 +1,13 @@
-import type { Metadata } from 'next'
+'use client'
+
 import type { CSSProperties } from 'react'
 import { Shield, Lock, Eye, FileText, Mail, Phone, Calendar, AlertCircle, User, Wrench, MapPin, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
-  title: 'VL CoolTech Privacy Policy | AC & Appliance Service Data Protection',
-  description:
-    'Understand how VL CoolTech collects, uses and safeguards personal data for AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services across Hyderabad West.',
-  keywords:
-    'VL CoolTech privacy policy, AC service data protection, appliance service privacy Hyderabad, personal information VL CoolTech, visiting charge privacy, Hyderabad West appliance services',
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
 }
 
 const PrivacyPolicy = () => {

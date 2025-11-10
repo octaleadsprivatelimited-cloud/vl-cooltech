@@ -114,53 +114,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Meet the skilled technicians who make our exceptional service possible.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-2xl p-8 text-center">
-              <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">SK</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Srinivas – AC Lead</h3>
-              <p className="text-gray-600 mb-4">12+ years handling split, inverter and VRF systems</p>
-              <p className="text-sm text-gray-500">
-                Heads our AC division, manages complex inverter PCB repairs and mentors junior technicians on safety and best practices.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-2xl p-8 text-center">
-              <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">RK</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Lavanya – Appliance Specialist</h3>
-              <p className="text-gray-600 mb-4">10+ years in refrigerator & washing machine diagnostics</p>
-              <p className="text-sm text-gray-500">
-                Ensures every refrigerator and washing machine job uses genuine spares and preventive maintenance checklists.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-2xl p-8 text-center">
-              <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl font-bold">MK</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mahesh – Electrical & Water Purifier Expert</h3>
-              <p className="text-gray-600 mb-4">9+ years managing electrical, RO/UV systems</p>
-              <p className="text-sm text-gray-500">
-                Handles electrical upgrades, MCB panels, RO purifier AMC schedules and complex leakage troubleshooting.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Stats */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
