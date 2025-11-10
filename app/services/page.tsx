@@ -1,77 +1,90 @@
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
-import { Tv, Wind, Refrigerator, Microwave, Monitor, ArrowRight } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Wrench, RotateCcw, Sparkles, Zap, ArrowRight } from 'lucide-react'
+import type { CSSProperties } from 'react'
 
 export const metadata = {
-  title: 'Our Services - ApplianceCares.in | Electronics & Appliance Repair Services',
-  description: 'Professional electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, and more. Expert technicians, same-day service.',
-  keywords: 'electronics repair, appliance repair, TV repair, AC repair, washing machine repair, refrigerator repair, Hyderabad, Pragathi Nagar, home appliances',
+  title: 'VL CoolTech Services | AC, Refrigerator, Washing Machine, LED TV & Electrical Care',
+  description:
+    'Explore VL CoolTech’s AC repair, installation, foam cleaning, inverter AC diagnostics, refrigerator, washing machine, LED/QLED TV, water purifier and electrical services. Same-day doorstep support across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur and Greater Hyderabad with ₹299 visiting charge.',
+  keywords:
+    'VL CoolTech services, AC repair Ameenpur, AC installation Beeramguda, AC foam cleaning Hyderabad, inverter AC service Patancheru, refrigerator repair BHEL Township, washing machine repair Miyapur, LED TV repair Lingampally, water purifier service Hyderabad west, electrical works Hyderabad',
 }
 
 const ServicesPage = () => {
   const services = [
     {
-      icon: Tv,
-      title: 'TV Repair',
-      description: 'Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs.',
-      features: ['Screen Repair', 'Power Issues', 'Audio Problems', 'Smart TV Setup', 'Remote Issues', 'HDMI Problems'],
-      href: '/services/tv-repair',
-      color: 'bg-blue-500',
-    },
-    {
       icon: Wind,
-      title: 'AC Repair',
-      description: 'Complete AC repair and maintenance services for all types of air conditioners.',
-      features: ['Gas Filling', 'Compressor Repair', 'Cooling Issues', 'Maintenance', 'Filter Cleaning', 'Remote Problems'],
+      title: 'AC Repair & Service',
+      description: 'Split, window and inverter AC diagnostics with experienced technicians and genuine spares.',
+      features: ['Gas top-up & leak fix', 'Cooling & sensor issues', 'PCB repair', 'Emergency breakdown visits'],
       href: '/services/ac-repair',
       color: 'bg-cyan-500',
     },
     {
-      icon: Monitor,
-      title: 'Washing Machine Repair',
-      description: 'Expert washing machine repair for all brands and models.',
-      features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems', 'Door Issues', 'Control Panel'],
-      href: '/services/washing-machine-repair',
-      color: 'bg-indigo-500',
+      icon: Wrench,
+      title: 'AC Installation & Relocation',
+      description: 'Professional installation, dismantling and shifting for split and window AC units with proper vacuuming.',
+      features: ['New AC installation', 'Relocation & re-install', 'Copper piping & insulation', 'Stabilizer & wiring setup'],
+      href: '/services/ac-repair#installation',
+      color: 'bg-blue-500',
+    },
+    {
+      icon: Sparkles,
+      title: 'AC Foam & Deep Cleaning',
+      description: 'High-pressure foam jet cleaning that restores airflow, removes odour and improves AC efficiency.',
+      features: ['Indoor/outdoor coil wash', 'Drain tray & blower cleaning', 'Anti-fungal treatment', 'Seasonal maintenance plans'],
+      href: '/services/ac-repair#cleaning',
+      color: 'bg-sky-500',
     },
     {
       icon: Refrigerator,
-      title: 'Refrigerator Repair',
-      description: 'Comprehensive refrigerator repair services for all types of fridges.',
-      features: ['Cooling Issues', 'Compressor Repair', 'Thermostat', 'Door Seals', 'Ice Maker', 'Water Dispenser'],
+      title: 'Refrigerator & Freezer Service',
+      description: 'Cooling solutions for single door, double door, side-by-side and deep freezers with coolant handling expertise.',
+      features: ['Cooling complaints', 'Compressor & relay service', 'Thermostat & sensors', 'Door gasket replacement'],
       href: '/services/refrigerator-repair',
       color: 'bg-green-500',
     },
     {
-      icon: Microwave,
-      title: 'Microwave Repair',
-      description: 'Professional microwave oven repair and maintenance services.',
-      features: ['Heating Issues', 'Turntable Problems', 'Door Switches', 'Control Panel', 'Magnetron Issues', 'Timer Problems'],
-      href: '/services/microwave-repair',
-      color: 'bg-orange-500',
+      icon: RotateCcw,
+      title: 'Washing Machine Repair',
+      description: 'Top-load, front-load, semi-automatic and inverter washing machine repairs with original spares.',
+      features: ['Drum & bearing repair', 'Motor & belt replacement', 'Water inlet/drainage fix', 'Error code troubleshooting'],
+      href: '/services/washing-machine-repair',
+      color: 'bg-indigo-500',
     },
     {
-      icon: Monitor,
-      title: 'Home Appliances',
-      description: 'Repair services for all home appliances and electronic devices.',
-      features: ['Mixer Grinder', 'Iron', 'Geyser', 'Water Purifier', 'Induction Cooker', 'Electric Kettle'],
+      icon: Tv,
+      title: 'LED & QLED TV Repair',
+      description: 'Board-level repair, backlight replacement and panel calibration for LED, QLED and Smart TVs.',
+      features: ['Backlight kits', 'Display & panel', 'No power / sound', 'Smart TV software'],
+      href: '/services/tv-repair',
+      color: 'bg-purple-500',
+    },
+    {
+      icon: Zap,
+      title: 'Water Purifier & Electrical Works',
+      description: 'RO/UV purifier service, filter replacement and residential electrical troubleshooting by certified electricians.',
+      features: ['RO filter & membrane change', 'Motor & SMPS', 'Wiring & MCB upgrades', 'Appliance electrical setup'],
       href: '/services/home-appliances',
-      color: 'bg-teal-500',
+      color: 'bg-amber-500',
     }
   ]
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-blue-700 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
+      <section
+        className="page-hero bg-gradient-to-br from-primary-600 to-blue-700 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(12, 74, 110, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Our Services
+              VL CoolTech Services
             </h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Professional electronics and appliance repair services in Hyderabad. 
-              We fix it right the first time, every time.
+              Visiting charge ₹299 | Same-day doorstep AC, refrigerator, washing machine, LED TV, water purifier and electrical services across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur and Greater Hyderabad.
             </p>
           </div>
         </div>
@@ -132,11 +145,10 @@ const ServicesPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Our Services?
+              Why Choose VL CoolTech?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're committed to providing the best repair services in Hyderabad with 
-              professional expertise and customer satisfaction.
+              We combine specialised AC expertise with comprehensive appliance and electrical support, transparent pricing and prompt response across Hyderabad West.
             </p>
           </div>
 
@@ -145,16 +157,16 @@ const ServicesPage = () => {
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Same Day Service</h3>
-              <p className="text-gray-600">Most repairs completed within 24 hours</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Same-Day Slots</h3>
+              <p className="text-gray-600">Priority coverage for Ameenpur, Beeramguda, Patancheru, BHEL Township & Lingampally</p>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🛡️</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">100% Guarantee</h3>
-              <p className="text-gray-600">We stand behind our work</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Service Warranty</h3>
+              <p className="text-gray-600">Genuine spares, workmanship guarantee and post-service support</p>
             </div>
 
             <div className="text-center">
@@ -162,7 +174,7 @@ const ServicesPage = () => {
                 <span className="text-2xl">💰</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Transparent Pricing</h3>
-              <p className="text-gray-600">No hidden fees or surprises</p>
+              <p className="text-gray-600">Flat ₹299 visiting charge adjusted in the final invoice</p>
             </div>
           </div>
         </div>
@@ -172,17 +184,17 @@ const ServicesPage = () => {
       <section className="py-20 bg-gradient-to-r from-primary-600 to-blue-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Get Your Appliance Fixed?
+            Ready to Book Your VL CoolTech Technician?
           </h2>
           <p className="text-xl text-white mb-8">
-            Contact us today for fast, reliable, and affordable repair services.
+            Call or WhatsApp to secure your slot. We’ll share technician details, visiting charge and ETA immediately.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              Call Now: +91 77802 25280
+              Call Now: +91 96763 33505
             </Link>
             <GetQuoteButton
               serviceType="general"

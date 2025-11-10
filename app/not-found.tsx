@@ -10,7 +10,7 @@ export default function NotFound() {
           <div className="w-20 h-20 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center">
             <Wrench className="h-10 w-10 text-primary-600" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">ApplianceCares.in</h1>
+          <h1 className="text-2xl font-bold text-gray-900">VL CoolTech</h1>
         </div>
 
         {/* 404 Content */}
@@ -94,10 +94,10 @@ export default function NotFound() {
             Need help? Contact our support team
           </p>
           <Link
-            href="tel:+917780225280"
+            href="tel:+919676333505"
             className="text-primary-600 hover:text-primary-700 font-semibold"
           >
-            +91 77802 25280
+            +91 96763 33505
           </Link>
         </div>
       </div>

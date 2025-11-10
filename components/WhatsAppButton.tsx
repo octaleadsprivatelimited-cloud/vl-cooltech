@@ -16,8 +16,8 @@ interface WhatsAppLinkProps {
 }
 
 const WhatsAppButton = ({ 
-  phoneNumber = '+917780225280',
-  message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
+  phoneNumber = '+919676333505',
+  message = 'Hi VL CoolTech! I need help with AC/appliance service in Ameenpur-BEERamguda area. Please share the visiting charge and earliest slot.',
   className = ''
 }: WhatsAppButtonProps) => {
   const handleWhatsAppClick = () => {
@@ -46,8 +46,8 @@ const WhatsAppButton = ({
 }
 
 const WhatsAppLink = ({ 
-  phoneNumber = '+917780225280',
-  message = 'Hi! I need help with appliance repair services in Hyderabad. Please provide me with a quote.',
+  phoneNumber = '+919676333505',
+  message = 'Hi VL CoolTech! I need help with AC/appliance service in Ameenpur-BEERamguda area. Please share the visiting charge and earliest slot.',
   className = '',
   children
 }: WhatsAppLinkProps) => {

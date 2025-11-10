@@ -9,32 +9,32 @@ import ConsentBanner from '@/components/ConsentBanner'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
-  description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
-  keywords: 'electronics repair Hyderabad, appliance repair Hyderabad, TV repair Hyderabad, AC repair Hyderabad, washing machine repair Hyderabad, refrigerator repair Hyderabad, laptop repair Hyderabad, mobile repair Hyderabad, home appliances repair Hyderabad, HITEC City repair, Gachibowli repair, Kondapur repair, Madhapur repair, Jubilee Hills repair, Banjara Hills repair, Pragathi Nagar repair, same day service Hyderabad, doorstep repair service Hyderabad, emergency repair Hyderabad, Samsung repair Hyderabad, LG repair Hyderabad, Whirlpool repair Hyderabad, Dell laptop repair Hyderabad, iPhone repair Hyderabad, OnePlus repair Hyderabad, Xiaomi repair Hyderabad, TV repair near me, AC repair near me, washing machine repair near me, refrigerator repair near me, laptop repair near me, mobile repair near me, home service Hyderabad, pickup delivery repair Hyderabad, certified technician Hyderabad, genuine parts repair Hyderabad, warranty repair service Hyderabad',
-  authors: [{ name: 'ApplianceCares.in' }],
-  creator: 'ApplianceCares.in',
-  publisher: 'ApplianceCares.in',
+  title: 'VL CoolTech - AC, Refrigerator & Appliance Service in Ameenpur & Hyderabad',
+  description: 'VL CoolTech provides professional air conditioner, refrigerator, washing machine, LED TV, water purifier and electrical services across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. Certified technicians, doorstep visits, visiting charge ₹299 and same-day support.',
+  keywords: 'VL CoolTech, AC repair Ameenpur, AC service Beeramguda, refrigerator repair Patancheru, washing machine repair Miyapur, inverter AC service Hyderabad, AC installation Ameenpur, AC uninstallation Beeramguda, AC general service Hyderabad, AC foam cleaning, water purifier repair Hyderabad, LED TV repair Ameenpur, QLED TV service Hyderabad, electrical work Sangareddy, doorstep AC service Hyderabad West, visiting charges 299',
+  authors: [{ name: 'VL CoolTech' }],
+  creator: 'VL CoolTech',
+  publisher: 'VL CoolTech',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://appliancecares.in'),
+  metadataBase: new URL('https://vlcooltech.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
-    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
-    url: 'https://appliancecares.in',
-    siteName: 'ApplianceCares.in',
+    title: 'VL CoolTech - AC, Refrigerator & Appliance Service in Ameenpur & Hyderabad',
+    description: 'VL CoolTech provides professional AC repair, installation, washing machine, refrigerator, LED TV and water purifier services across Ameenpur, Beeramguda, Patancheru, Miyapur and Greater Hyderabad. Same-day doorstep visits with visiting charge ₹299.',
+    url: 'https://vlcooltech.com',
+    siteName: 'VL CoolTech',
     images: [
       {
         url: '/logo.png',
         width: 512,
         height: 512,
-        alt: 'ApplianceCares.in Logo',
+        alt: 'VL CoolTech Logo',
       },
     ],
     locale: 'en_IN',
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ApplianceCares.in - Professional Electronics & Appliance Repair Services in Hyderabad',
-    description: 'Expert electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Trusted by 5000+ customers.',
+    title: 'VL CoolTech - AC, Refrigerator & Appliance Service in Ameenpur & Hyderabad',
+    description: 'Doorstep AC, refrigerator, washing machine, LED TV and electrical services by VL CoolTech across Hyderabad West. Professional technicians, quick turnaround and transparent pricing.',
     images: ['/logo.png'],
   },
   robots: {
@@ -109,30 +109,30 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "ApplianceCares.in",
-              "alternateName": "Appliance Cares Hyderabad",
-              "description": "Professional electronics and appliance repair services in Hyderabad. We repair TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.",
-              "url": "https://appliancecares.in",
-              "telephone": "+91 7780225280",
-              "email": "info@appliancecares.in",
+              "name": "VL CoolTech",
+              "alternateName": "VL CoolTech Appliance Services",
+              "description": "Expert AC, refrigerator, washing machine, LED TV, water purifier and electrical services in Ameenpur, Beeramguda, Patancheru, Miyapur and Greater Hyderabad. Same-day doorstep visits with visiting charge ₹299.",
+              "url": "https://vlcooltech.com",
+              "telephone": "+91 9676333505",
+              "email": "vlcooltech@gmail.com",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Pragathi Nagar",
-                "addressLocality": "Hyderabad",
+                "streetAddress": "114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda",
+                "addressLocality": "Sangareddy District",
                 "addressRegion": "Telangana",
-                "postalCode": "500016",
+                "postalCode": "502032",
                 "addressCountry": "IN"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "17.3850",
-                "longitude": "78.4867"
+                "latitude": "17.5185",
+                "longitude": "78.3135"
               },
               "openingHours": "Mo-Su 08:00-20:00",
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",
-                "reviewCount": "1000",
+                "reviewCount": "500",
                 "bestRating": "5",
                 "worstRating": "1"
               },
@@ -141,74 +141,63 @@ export default function RootLayout({
                   "@type": "Review",
                   "author": {
                     "@type": "Person",
-                    "name": "Rajesh Kumar"
+                    "name": "Ravi Teja"
                   },
                   "reviewRating": {
                     "@type": "Rating",
-                    "ratingValue": "4.9",
+                    "ratingValue": "5",
                     "bestRating": "5"
                   },
-                  "reviewBody": "Excellent TV repair service! My Samsung LED TV was repaired within 2 hours. The technician was professional and explained everything clearly. Highly recommended for electronics repair in Hyderabad!"
+                  "reviewBody": "Quick response for our inverter AC repair in Ameenpur. The VL CoolTech technician fixed the cooling issue and refilled gas within a couple of hours. Very professional and transparent pricing."
                 },
                 {
                   "@type": "Review",
                   "author": {
                     "@type": "Person",
-                    "name": "Priya Sharma"
+                    "name": "Sruthi Reddy"
                   },
                   "reviewRating": {
                     "@type": "Rating",
-                    "ratingValue": "4.9",
+                    "ratingValue": "4.8",
                     "bestRating": "5"
                   },
-                  "reviewBody": "Great washing machine repair service in Gachibowli. My LG washing machine was making strange noises and they fixed it perfectly. Same day service with genuine parts!"
+                  "reviewBody": "They serviced our split AC units and cleaned the filters thoroughly. Visiting charge was ₹299 as promised and they explained the maintenance clearly. Highly recommend VL CoolTech for AC service in Beeramguda."
                 }
               ],
               "serviceArea": {
                 "@type": "GeoCircle",
                 "geoMidpoint": {
                   "@type": "GeoCoordinates",
-                  "latitude": "17.3850",
-                  "longitude": "78.4867"
+                  "latitude": "17.5185",
+                  "longitude": "78.3135"
                 },
-                "geoRadius": "50000"
+                "geoRadius": "45000"
               },
               "areaServed": [
-                "Hyderabad", "Secunderabad", "Cyberabad", "HITEC City", "Gachibowli", 
-                "Kondapur", "Madhapur", "Jubilee Hills", "Banjara Hills", "Pragathi Nagar",
-                "Kukatpally", "Miyapur", "Serilingampally", "Chandanagar", "Alwal",
-                "Malkajgiri", "Lal Bahadur Nagar", "Dilsukhnagar", "Uppal", "Nagole",
-                "LB Nagar", "Vanastalipuram", "Hayathnagar", "Ramachandrapuram",
-                "Patancheru", "Sangareddy", "Bolarum", "Bowenpally", "Tarnaka",
-                "Neredmet", "Ameerpet", "Somajiguda", "Begumpet", "Punjagutta",
-                "Khairatabad", "Masab Tank", "Nampally", "Abids", "Koti",
-                "Sultan Bazar", "Charminar", "Malakpet", "Kothapet", "Saroornagar",
-                "Boduppal", "Moinabad", "Shadnagar", "Shamshabad", "Rajendra Nagar",
-                "Balanagar", "Jeedimetla", "Qutbullapur", "Bachupally", "Nizampet",
-                "Manikonda", "Tellapur", "Gopanpally", "Kokapet", "Nanakramguda",
-                "Raidurg", "Khajaguda", "Neknampur", "Kapra", "Uppal Kalan",
-                "Peerzadiguda", "Ghatkesar", "Medchal", "Shamirpet", "Sainikpuri",
-                "Vikarabad", "Lakdikapul", "Falaknuma", "Santoshnagar", "Chandrayangutta",
-                "Rangareddy", "Ibrahimpatnam", "Maheshwaram", "Mahabubnagar", "Medak"
+                "Ameenpur", "Beeramguda", "Patancheru", "BHEL Township", "Lingampally",
+                "Tellapur", "Chandanagar", "Miyapur", "Bollaram", "BHEL MIG", "Kondapur",
+                "Hafeezpet", "Serilingampally", "Kukatpally", "Bachupally", "Nizampet",
+                "Gachibowli", "HITEC City", "Manikonda", "Madhapur", "JNTU", "Ramachandrapuram",
+                "Hyderabad", "Secunderabad", "Sangareddy"
               ],
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
-                "name": "Electronics and Appliance Repair Services in Hyderabad",
+                "name": "AC & Home Appliance Services by VL CoolTech",
                 "itemListElement": [
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "TV Repair",
-                      "description": "Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs in Hyderabad"
+                      "name": "Split & Window AC Repair",
+                      "description": "Comprehensive AC repair, gas refilling, inverter AC diagnostics, PCB repair and seasonal service packages."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "AC Repair",
-                      "description": "Complete AC repair and maintenance services for all types of air conditioners in Hyderabad"
+                      "name": "AC Installation & Uninstallation",
+                      "description": "Professional installation, relocation, dismantling and reinstallation for split and window air conditioners."
                     }
                   },
                   {
@@ -216,47 +205,47 @@ export default function RootLayout({
                     "itemOffered": {
                       "@type": "Service",
                       "name": "Washing Machine Repair",
-                      "description": "Expert washing machine repair for all brands and models in Hyderabad"
+                      "description": "Front-load and top-load washing machine repair, drum replacement, leak fixing and regular servicing."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Refrigerator Repair",
-                      "description": "Comprehensive refrigerator repair services for all types of fridges in Hyderabad"
+                      "name": "Refrigerator Service",
+                      "description": "Single door, double door, side-by-side and deep freezer repair including cooling issues and compressor service."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Microwave Repair",
-                      "description": "Professional microwave oven repair and maintenance services in Hyderabad"
+                      "name": "LED & QLED TV Repair",
+                      "description": "Display, backlight, motherboard and sound repairs for LED, QLED and Smart TVs."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Laptop Repair",
-                      "description": "Expert laptop repair services for all major brands and models in Hyderabad"
+                      "name": "Water Purifier Service",
+                      "description": "RO and UV water purifier maintenance, filter replacement and leak resolution."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Mobile Repair",
-                      "description": "Professional mobile phone repair services for all smartphone brands in Hyderabad"
+                      "name": "Electrical Works",
+                      "description": "Residential electrical troubleshooting, wiring, MCB installation and appliance electrical setup."
                     }
                   },
                   {
                     "@type": "Offer",
                     "itemOffered": {
                       "@type": "Service",
-                      "name": "Home Appliances Repair",
-                      "description": "Repair services for all home appliances and electronic devices in Hyderabad"
+                      "name": "Annual Maintenance",
+                      "description": "Custom AMC plans for apartments, villas and commercial spaces covering AC and appliance maintenance."
                     }
                   }
                 ]
@@ -268,7 +257,7 @@ export default function RootLayout({
                     "@type": "Service",
                     "name": "Same Day Service"
                   },
-                  "description": "Same day repair service available for all electronics and appliances in Hyderabad"
+                  "description": "Same-day AC and appliance service across Ameenpur, Beeramguda, Patancheru and nearby areas."
                 },
                 {
                   "@type": "Offer",
@@ -276,7 +265,7 @@ export default function RootLayout({
                     "@type": "Service",
                     "name": "Home Service"
                   },
-                  "description": "Doorstep repair service at your home or office in Hyderabad"
+                  "description": "Doorstep inspection, service and repair with transparent visiting charge of ₹299."
                 },
                 {
                   "@type": "Offer",
@@ -284,7 +273,7 @@ export default function RootLayout({
                     "@type": "Service",
                     "name": "Emergency Repair"
                   },
-                  "description": "24/7 emergency repair service for urgent appliance issues in Hyderabad"
+                  "description": "Emergency breakdown support for critical AC, refrigerator and electrical issues."
                 },
                 {
                   "@type": "Offer",
@@ -292,7 +281,7 @@ export default function RootLayout({
                     "@type": "Service",
                     "name": "Free Pickup and Delivery"
                   },
-                  "description": "Free pickup and delivery service for appliance repair in Hyderabad"
+                  "description": "Pickup and delivery available for workshop-level repairs based on assessment."
                 },
                 {
                   "@type": "Offer",
@@ -300,19 +289,14 @@ export default function RootLayout({
                     "@type": "Service",
                     "name": "Warranty Service"
                   },
-                  "description": "Comprehensive warranty on all repairs with genuine parts in Hyderabad"
+                  "description": "Service warranty provided on all completed repairs with genuine spares."
                 }
               ],
               "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI", "Net Banking"],
               "currenciesAccepted": "INR",
-              "image": "https://appliancecares.in/og-image.jpg",
-              "logo": "https://appliancecares.in/logo.png",
-              "sameAs": [
-                "https://www.facebook.com/appliancecares",
-                "https://www.instagram.com/appliancecares",
-                "https://www.twitter.com/appliancecares",
-                "https://www.youtube.com/appliancecares"
-              ]
+              "image": "https://vlcooltech.com/og-image.jpg",
+              "logo": "https://vlcooltech.com/logo.png",
+              "sameAs": []
             })
           }}
         />

@@ -1,3 +1,8 @@
 {
+  "/services/ac-repair/page": "app/services/ac-repair/page.js",
+  "/services/inverter-ac-service/page": "app/services/inverter-ac-service/page.js",
+  "/book-service/page": "app/book-service/page.js",
+  "/services/electrical-services/page": "app/services/electrical-services/page.js",
+  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js"
 }

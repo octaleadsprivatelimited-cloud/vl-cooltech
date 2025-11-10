@@ -16,21 +16,24 @@ const Footer = () => {
   }
 
   const services = [
-    { name: 'TV Repair', href: '/services/tv-repair' },
-    { name: 'AC Repair', href: '/services/ac-repair' },
+    { name: 'AC Repair & General Service', href: '/services/ac-repair' },
+    { name: 'AC Installation & Dismantling', href: '/services/ac-repair#installation' },
+    { name: 'Inverter AC Repair Specialists', href: '/services/ac-repair#inverter' },
+    { name: 'AC Foam & Deep Cleaning', href: '/services/ac-repair#cleaning' },
+    { name: 'Refrigerator Repair & Service', href: '/services/refrigerator-repair' },
     { name: 'Washing Machine Repair', href: '/services/washing-machine-repair' },
-    { name: 'Refrigerator Repair', href: '/services/refrigerator-repair' },
-    { name: 'Microwave Repair', href: '/services/microwave-repair' },
-    { name: 'Home Appliances', href: '/services/home-appliances' },
+    { name: 'LED & QLED TV Repair', href: '/services/tv-repair' },
+    { name: 'Water Purifier Service', href: '/services/home-appliances#water-purifier' },
+    { name: 'Electrical Works', href: '/services/home-appliances#electrical' },
   ]
 
   const company = [
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/team' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Testimonials', href: '/testimonials' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Press', href: '/press' },
+    { name: 'About VL CoolTech', href: '/about' },
+    { name: 'Customer Stories', href: '/testimonials' },
+    { name: 'Service Areas', href: '/service-areas' },
+    { name: 'Book a Visit', href: '/book-service' },
+    { name: 'Customer Support', href: '/customer-support' },
+    { name: 'Contact Us', href: '/contact' },
   ]
 
   const support = [
@@ -70,14 +73,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-3 sm:mb-4">
-              <div className="h-10 w-10 sm:h-12 sm:w-12 bg-gradient-to-br from-black to-gray-800 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg sm:text-xl">A</span>
+              <div className="h-10 w-10 sm:h-12 sm:w-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg sm:text-xl">VL</span>
               </div>
-              <span className="ml-3 text-lg sm:text-xl font-bold text-white">ApplianceCares</span>
+              <span className="ml-3 text-lg sm:text-xl font-bold text-white">VL CoolTech</span>
             </div>
             <p className="text-gray-300 mb-4 sm:mb-6 text-sm leading-relaxed">
-              Professional electronics and appliance repair services in Hyderabad. 
-              Trusted by thousands of customers for reliable, affordable, and quality repairs.
+              Air conditioner, refrigerator, washing machine, LED TV, water purifier and electrical experts serving Ameenpur, Beeramguda, Patancheru, BHEL Township and Greater Hyderabad. Doorstep visits with transparent ₹299 visiting charge.
             </p>
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
@@ -85,8 +87,8 @@ const Footer = () => {
                   <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-xs sm:text-sm">+91 77802 25280</div>
-                  <div className="text-xs text-gray-400">Call us anytime</div>
+                  <div className="font-semibold text-xs sm:text-sm">+91 96763 33505 / +91 96765 82723</div>
+                  <div className="text-xs text-gray-400">Call or WhatsApp (Visiting Charge ₹299)</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
@@ -94,8 +96,8 @@ const Footer = () => {
                   <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-xs sm:text-sm">info@appliancecares.in</div>
-                  <div className="text-xs text-gray-400">Email support</div>
+                  <div className="font-semibold text-xs sm:text-sm">vlcooltech@gmail.com</div>
+                  <div className="text-xs text-gray-400">Email support & service queries</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
@@ -103,8 +105,8 @@ const Footer = () => {
                   <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
                 </div>
                 <div>
-                  <div className="font-semibold text-xs sm:text-sm">Pragathi Nagar, Hyderabad</div>
-                  <div className="text-xs text-gray-400">Service area</div>
+                  <div className="font-semibold text-xs sm:text-sm">114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Sangareddy 502032</div>
+                  <div className="text-xs text-gray-400">Head office & workshop</div>
                 </div>
               </div>
               <div className="flex items-center text-gray-300 hover:text-white transition-colors duration-200 group">
@@ -113,7 +115,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-xs sm:text-sm">Mon-Sun: 8:00 AM - 8:00 PM</div>
-                  <div className="text-xs text-gray-400">24/7 Emergency service</div>
+                  <div className="text-xs text-gray-400">Same-day & emergency visits available</div>
                 </div>
               </div>
             </div>
@@ -320,7 +322,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-right">
               <div className="text-gray-400 text-xs mb-1">
-                © 2025 ApplianceCares.in. All rights reserved.
+                © 2025 VL CoolTech. All rights reserved.
               </div>
               <div className="text-gray-500 text-xs mt-1">
                 Designed and developed by <a href="http://octaleads.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">Octaleads Pvt Ltd</a>

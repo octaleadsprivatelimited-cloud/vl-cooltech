@@ -4,67 +4,46 @@ const Testimonials = () => {
   // Force refresh to clear cache
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      location: 'Pragathi Nagar, Hyderabad',
+      name: 'Anil Reddy',
+      location: 'Ameenpur, Hyderabad',
       rating: 4.9,
-      text: 'Excellent Samsung TV repair service! My LED TV was repaired within 2 hours at my home. The technician was professional and explained everything clearly. Highly recommended for TV repair in Hyderabad!',
-      service: 'Samsung TV Repair'
+      text: 'VL CoolTech serviced both of our inverter split ACs. The team arrived within two hours, did a thorough foam cleaning and topped up gas. Cooling improved immediately and the visiting charge was adjusted in the bill.',
+      service: 'Inverter AC Service'
     },
     {
-      name: 'Priya Sharma',
-      location: 'Gachibowli, Hyderabad',
+      name: 'Swapna Rao',
+      location: 'Beeramguda, Sangareddy',
       rating: 4.9,
-      text: 'My LG washing machine was making strange noises. ApplianceCares fixed it perfectly and even cleaned it. Great value for money! Best washing machine repair service in Gachibowli.',
-      service: 'LG Washing Machine Repair'
+      text: 'Our refrigerator stopped cooling right before the weekend. VL CoolTech diagnosed a relay issue, replaced it on the spot and the fridge was ready in 30 minutes. Professional and transparent pricing.',
+      service: 'Double Door Fridge Repair'
     },
     {
-      name: 'Amit Singh',
-      location: 'Jubilee Hills, Hyderabad',
-      rating: 4.9,
-      text: 'Samsung AC wasn\'t cooling properly. They came the same day, diagnosed the issue quickly, and fixed it. Very satisfied with the AC repair service in Jubilee Hills.',
-      service: 'Samsung AC Repair'
+      name: 'Mahesh Babu',
+      location: 'BHEL Township, Hyderabad',
+      rating: 5,
+      text: 'Needed my 1.5 ton split AC relocated. The technicians dismantled, transported and reinstalled it perfectly with proper vacuuming and copper pipe insulation. Highly reliable service.',
+      service: 'AC Installation & Relocation'
     },
     {
-      name: 'Sunita Reddy',
-      location: 'HITEC City, Hyderabad',
-      rating: 4.9,
-      text: 'Whirlpool refrigerator repair was done professionally. The technician was honest about the issue and provided a fair quote. Will definitely use again for appliance repair in HITEC City.',
-      service: 'Whirlpool Refrigerator Repair'
+      name: 'Lavanya Iyer',
+      location: 'Miyapur, Hyderabad',
+      rating: 4.8,
+      text: 'VL CoolTech fixed our Bosch washing machine drum issue and also cleaned the drain outlet. They explained the problem clearly and gave maintenance tips. Great value for money.',
+      service: 'Front-Load Washing Machine Repair'
     },
     {
-      name: 'Vikram Patel',
-      location: 'Kondapur, Hyderabad',
-      rating: 4.9,
-      text: 'Dell laptop screen replacement was done perfectly. They used genuine parts and the service was quick. Very happy with the laptop repair service in Kondapur.',
-      service: 'Dell Laptop Repair'
+      name: 'Srinivas Rao',
+      location: 'Patancheru, Hyderabad',
+      rating: 5,
+      text: 'Power board burnt in our LG QLED TV. VL CoolTech sourced the PCB, replaced it and calibrated the picture settings. They handled the TV carefully and completed it the same day.',
+      service: 'LED/QLED TV Repair'
     },
     {
-      name: 'Anita Gupta',
-      location: 'Madhapur, Hyderabad',
+      name: 'Rukmini Devi',
+      location: 'Lingampally, Hyderabad',
       rating: 4.9,
-      text: 'Samsung microwave repair service was outstanding. The technician was knowledgeable and the pricing was transparent. Highly recommend for microwave repair in Madhapur!',
-      service: 'Samsung Microwave Repair'
-    },
-    {
-      name: 'Ravi Kumar',
-      location: 'Banjara Hills, Hyderabad',
-      rating: 4.9,
-      text: 'iPhone screen replacement was done perfectly. They came to my office in Banjara Hills and fixed it on the spot. Excellent mobile repair service!',
-      service: 'iPhone Repair'
-    },
-    {
-      name: 'Deepika Reddy',
-      location: 'Serilingampally, Hyderabad',
-      rating: 4.9,
-      text: 'LG AC repair service was exceptional. They provided same-day service and the cooling is now perfect. Great AC repair service in Serilingampally.',
-      service: 'LG AC Repair'
-    },
-    {
-      name: 'Mohammed Ali',
-      location: 'Chandanagar, Hyderabad',
-      rating: 4.9,
-      text: 'OnePlus mobile repair service was quick and professional. The technician explained the issue clearly and fixed it with genuine parts. Best mobile repair in Chandanagar.',
-      service: 'OnePlus Mobile Repair'
+      text: 'Booked their electrical and RO service together. The electrician fixed our MCB tripping issue and the RO technician replaced the filters with genuine parts. Excellent coordination.',
+      service: 'Water Purifier & Electrical Service'
     }
   ]
 
@@ -74,10 +53,10 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            What Our <span className="text-primary-600">Customers Say in Hyderabad</span>
+            What Hyderabad West <span className="text-primary-600">Customers Say</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers across HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad have to say about our services.
+            VL CoolTech is the preferred AC, refrigerator, washing machine, LED TV, water purifier and electrical partner for homes and businesses across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur, Lingampally and neighbouring Hyderabad localities.
           </p>
         </div>
 
@@ -132,7 +111,7 @@ const Testimonials = () => {
         <div className="mt-12 sm:mt-16 bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl sm:rounded-2xl p-6 sm:p-8">
           <div className="text-center">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Overall Customer Rating in Hyderabad
+              Overall Customer Rating – VL CoolTech
             </h3>
             <div className="flex items-center justify-center mb-3 sm:mb-4">
               <div className="text-4xl sm:text-6xl font-bold text-primary-600 mr-3 sm:mr-4">4.9</div>
@@ -142,12 +121,11 @@ const Testimonials = () => {
                     <Star key={i} className="h-6 w-6 sm:h-8 sm:w-8 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <div className="text-gray-600 text-sm sm:text-base">Based on 5000+ reviews across Hyderabad</div>
+                <div className="text-gray-600 text-sm sm:text-base">Based on 2,500+ service visits across Hyderabad West</div>
               </div>
             </div>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-              Our customers across HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad consistently rate us highly for our professional service, 
-              quick response times, and quality repairs.
+              Customers appreciate our transparent ₹299 visiting charge, quick turnaround times and the assurance of genuine spares for every AC and appliance job.
             </p>
           </div>
         </div>

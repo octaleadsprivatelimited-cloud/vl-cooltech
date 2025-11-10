@@ -23,7 +23,7 @@ export default function Error({ error, reset }: ErrorProps) {
           <div className="w-20 h-20 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
             <AlertTriangle className="h-10 w-10 text-red-600" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">ApplianceCares.in</h1>
+          <h1 className="text-2xl font-bold text-gray-900">VL CoolTech</h1>
         </div>
 
         {/* Error Content */}
@@ -131,10 +131,10 @@ export default function Error({ error, reset }: ErrorProps) {
             Need immediate assistance? Contact our support team
           </p>
           <Link
-            href="tel:+917780225280"
+            href="tel:+919676333505"
             className="text-primary-600 hover:text-primary-700 font-semibold"
           >
-            +91 77802 25280
+            +91 96763 33505
           </Link>
         </div>
       </div>

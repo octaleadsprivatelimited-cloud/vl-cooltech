@@ -18,11 +18,16 @@ const Hero = () => {
   }, [])
 
   const services = [
-    { name: 'TV Repair', href: '/services/tv-repair' },
-    { name: 'AC Repair', href: '/services/ac-repair' },
+    { name: 'AC Repair & Service', href: '/services/ac-repair' },
+    { name: 'AC Installation', href: '/services/ac-repair#installation' },
+    { name: 'AC Uninstallation', href: '/services/ac-repair#uninstall' },
+    { name: 'AC Foam Cleaning', href: '/services/ac-repair#cleaning' },
+    { name: 'Inverter AC Experts', href: '/services/ac-repair#inverter' },
+    { name: 'Fridge Service', href: '/services/refrigerator-repair' },
     { name: 'Washing Machine Repair', href: '/services/washing-machine-repair' },
-    { name: 'Refrigerator Repair', href: '/services/refrigerator-repair' },
-    { name: 'Microwave Repair', href: '/services/microwave-repair' },
+    { name: 'LED & QLED TV Repair', href: '/services/tv-repair' },
+    { name: 'Water Purifier Service', href: '/services/home-appliances#water-purifier' },
+    { name: 'Electrical Works', href: '/services/home-appliances#electrical' },
   ]
 
   return (
@@ -72,37 +77,42 @@ const Hero = () => {
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 <span className="bg-gradient-to-r from-white via-electric-200 to-cosmic-200 bg-clip-text text-transparent">
-                  Professional Electronics & Appliance Repair in Hyderabad
+                  VL CoolTech – AC & Appliance Experts in Ameenpur & Hyderabad
                 </span>
               </h1>
-                  <p className="hidden lg:block text-base sm:text-lg text-primary-100 leading-relaxed max-w-2xl">
-                Expert repair services for TVs, ACs, washing machines, refrigerators, laptops, mobiles, and all home appliances. 
-                Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Fast, reliable, and affordable solutions with 15+ years of experience.
+              <p className="text-sm sm:text-base text-primary-100 leading-relaxed max-w-2xl">
+                Doorstep air conditioner, refrigerator, washing machine, LED/QLED TV, water purifier and electrical services. Covering Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad with certified technicians, same-day support and visiting charge ₹299.
               </p>
             </div>
 
-            {/* Trust Indicators - Hidden on mobile and tablet */}
-            <div className="hidden lg:flex flex-row items-center justify-center gap-2 sm:gap-6 text-xs">
-              <div className="flex items-center gap-1 sm:gap-2 group bg-gradient-to-r from-sunset-500/20 to-accent-500/20 backdrop-blur-sm px-2 sm:px-3 py-2 rounded-lg hover:from-sunset-400/30 hover:to-accent-400/30 transition-all duration-300 border border-sunset-400/30">
-                <div className="p-1 bg-sunset-500/30 rounded">
-                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-sunset-300 fill-current group-hover:scale-110 transition-transform duration-200" />
+            {/* Mobile / Tablet Trust Indicators */}
+            <div className="lg:hidden grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
+                <div className="p-2 bg-sunset-500/20 rounded-lg">
+                  <Star className="h-4 w-4 text-yellow-300" />
                 </div>
-                <span className="font-semibold text-white group-hover:text-sunset-200 transition-colors duration-200 text-xs hidden xs:inline">4.9/5 Rating</span>
-                <span className="font-semibold text-white group-hover:text-sunset-200 transition-colors duration-200 text-xs xs:hidden">4.9★</span>
+                <div>
+                  <div className="text-sm font-semibold text-white">4.9/5 Rating</div>
+                  <p className="text-xs text-primary-100">Loved by Hyderabad customers</p>
+                </div>
               </div>
-              <div className="flex items-center gap-1 sm:gap-2 group bg-gradient-to-r from-neon-500/20 to-success-500/20 backdrop-blur-sm px-2 sm:px-3 py-2 rounded-lg hover:from-neon-400/30 hover:to-success-400/30 transition-all duration-300 border border-neon-400/30">
-                <div className="p-1 bg-neon-500/30 rounded">
-                  <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-neon-300 group-hover:scale-110 transition-transform duration-200" />
+              <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
+                <div className="p-2 bg-neon-500/20 rounded-lg">
+                  <Shield className="h-4 w-4 text-green-300" />
                 </div>
-                <span className="font-semibold text-white group-hover:text-neon-200 transition-colors duration-200 text-xs hidden xs:inline">100% Guaranteed</span>
-                <span className="font-semibold text-white group-hover:text-neon-200 transition-colors duration-200 text-xs xs:hidden">100%</span>
+                <div>
+                  <div className="text-sm font-semibold text-white">100% Guaranteed</div>
+                  <p className="text-xs text-primary-100">Certified, trained technicians</p>
+                </div>
               </div>
-              <div className="flex items-center gap-1 sm:gap-2 group bg-gradient-to-r from-electric-500/20 to-primary-500/20 backdrop-blur-sm px-2 sm:px-3 py-2 rounded-lg hover:from-electric-400/30 hover:to-primary-400/30 transition-all duration-300 border border-electric-400/30">
-                <div className="p-1 bg-electric-500/30 rounded">
-                  <Clock className="h-3 w-3 sm:h-4 sm:w-4 text-electric-300 group-hover:scale-110 transition-transform duration-200" />
+              <div className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3">
+                <div className="p-2 bg-electric-500/20 rounded-lg">
+                  <Clock className="h-4 w-4 text-blue-300" />
                 </div>
-                <span className="font-semibold text-white group-hover:text-electric-200 transition-colors duration-200 text-xs hidden xs:inline">Same Day Service</span>
-                <span className="font-semibold text-white group-hover:text-electric-200 transition-colors duration-200 text-xs xs:hidden">Same Day</span>
+                <div>
+                  <div className="text-sm font-semibold text-white">Same Day Service</div>
+                  <p className="text-xs text-primary-100">Quick doorstep support</p>
+                </div>
               </div>
             </div>
 
@@ -124,6 +134,61 @@ const Hero = () => {
                     <div className="font-medium text-xs sm:text-xs group-hover:scale-105 transition-transform duration-200">{service.name}</div>
                   </Link>
                 ))}
+              </div>
+            </div>
+
+            {/* Mobile / Tablet Services Grid */}
+            <div className="lg:hidden space-y-3">
+              <h3 className="text-base font-semibold text-white">What needs repair?</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {services.map((service) => (
+                  <Link
+                    key={service.name}
+                    href={service.href}
+                    onClick={() => setSelectedService(service.name)}
+                    className={`text-xs sm:text-sm px-3 py-2 rounded-lg border transition-all duration-300 text-left ${
+                      selectedService === service.name
+                        ? 'border-primary-400 bg-primary-500/30 text-white'
+                        : 'border-white/20 bg-white/5 text-primary-100 hover:border-primary-300/70 hover:text-white'
+                    }`}
+                  >
+                    {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile / Tablet CTA Buttons */}
+            <div className="lg:hidden flex flex-col sm:flex-row gap-3">
+              <Link
+                href="tel:+919676333505"
+                className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-4 py-3 rounded-lg text-sm font-semibold flex items-center justify-center gap-2 shadow-lg shadow-primary-900/40"
+              >
+                <Phone className="h-4 w-4" />
+                Call Now
+              </Link>
+              <Link
+                href={selectedService ? services.find((s) => s.name === selectedService)?.href || '/book-service' : '/book-service'}
+                className="flex-1 border border-white/30 text-white px-4 py-3 rounded-lg text-sm font-semibold flex items-center justify-center gap-2 bg-white/10"
+              >
+                <Zap className="h-4 w-4" />
+                Book Service Online
+              </Link>
+            </div>
+
+            {/* Mobile / Tablet Quick Stats */}
+            <div className={`lg:hidden grid grid-cols-3 gap-2 border-t border-white/10 pt-4 ${animateStats ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} transition-all duration-700`}> 
+              <div className="text-center bg-white/10 border border-white/20 rounded-lg px-2 py-3">
+                <div className="text-sm font-bold text-white">5000+</div>
+                <div className="text-[10px] uppercase tracking-wide text-primary-100">Happy Customers</div>
+              </div>
+              <div className="text-center bg-white/10 border border-white/20 rounded-lg px-2 py-3">
+                <div className="text-sm font-bold text-white">15+</div>
+                <div className="text-[10px] uppercase tracking-wide text-primary-100">Years Experience</div>
+              </div>
+              <div className="text-center bg-white/10 border border-white/20 rounded-lg px-2 py-3">
+                <div className="text-sm font-bold text-white">24/7</div>
+                <div className="text-[10px] uppercase tracking-wide text-primary-100">Service Available</div>
               </div>
             </div>
 

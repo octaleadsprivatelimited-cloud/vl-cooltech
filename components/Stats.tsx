@@ -11,18 +11,18 @@ const Stats = () => {
   const stats = [
     {
       icon: Users,
-      number: 5000,
+      number: 2500,
       suffix: '+',
       label: 'Happy Customers',
-      description: 'Satisfied customers across HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad',
+      description: 'Residents and businesses in Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad',
       color: 'from-blue-500 to-indigo-600'
     },
     {
       icon: Clock,
-      number: 15,
+      number: 12,
       suffix: '+',
       label: 'Years Experience',
-      description: 'Professional expertise in electronics and appliance repair in Hyderabad',
+      description: 'Specialised in AC, refrigeration and home appliance service across Hyderabad west corridor',
       color: 'from-green-500 to-emerald-600'
     },
     {
@@ -30,15 +30,15 @@ const Stats = () => {
       number: 4.9,
       suffix: '/5',
       label: 'Customer Rating',
-      description: 'Based on 5000+ customer reviews across Hyderabad',
+      description: 'Average rating from repeat customers and local marketplace listings',
       color: 'from-yellow-500 to-orange-600'
     },
     {
       icon: Shield,
-      number: 100,
-      suffix: '%',
-      label: 'Satisfaction Guarantee',
-      description: 'We stand behind our work across all areas of Hyderabad',
+      number: 299,
+      suffix: '',
+      label: 'Visiting Charge (₹299)',
+      description: 'Flat doorstep inspection charge adjusted in final bill once service is confirmed',
       color: 'from-purple-500 to-pink-600'
     }
   ]
@@ -114,11 +114,10 @@ const Stats = () => {
             <span className="text-yellow-400 font-semibold text-xs sm:text-sm uppercase tracking-wider">Our Achievements</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
-            Trusted by <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Thousands in Hyderabad</span>
+            Trusted by <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Families & Businesses in Hyderabad West</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Our numbers speak for themselves. We've been serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad with 
-            professional electronics and appliance repair services for over 15 years.
+            VL CoolTech keeps homes and commercial spaces comfortable across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad with dependable AC and appliance service backed by skilled technicians and transparent pricing.
           </p>
         </div>
 

@@ -1,37 +1,40 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MessageCircle, Clock, MapPin, HelpCircle, Headphones, FileText } from 'lucide-react'
 import Link from 'next/link'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Customer Support - ApplianceCares.in | 24/7 Help & Support',
-  description: 'Get help with your appliance repair service. Contact our customer support team 24/7 for assistance with bookings, tracking, and technical issues.',
-  keywords: 'customer support, help, contact support, appliance repair help, technical support',
+  title: 'VL CoolTech | Customer Support & Service Assistance',
+  description:
+    'Reach VL CoolTech’s customer success desk for booking help, technician coordination, AMC queries and emergency appliance service requests across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad.',
+  keywords:
+    'VL CoolTech customer support, Hyderabad appliance service help, VL CoolTech phone number, VL CoolTech contact, VL CoolTech service assistance',
 }
 
 const CustomerSupport = () => {
   const supportMethods = [
     {
       icon: Phone,
-      title: 'Phone Support',
-      description: 'Speak directly with our support team',
-      contact: '+91 77802 25280',
-      availability: '24/7 Available',
+      title: 'Primary Phone Support',
+      description: 'Speak directly with our VL CoolTech coordinators',
+      contact: '+91 96763 33505',
+      availability: '7 Days · 8:00 AM – 8:00 PM',
       action: 'Call Now'
     },
     {
       icon: MessageCircle,
-      title: 'Phone Support',
-      description: 'Quick support via phone call',
-      contact: '+91 77802 25280',
-      availability: '9 AM - 9 PM',
+      title: 'Alternate Phone / WhatsApp',
+      description: 'Quick call-back or WhatsApp assistance',
+      contact: '+91 96765 82723',
+      availability: '24/7 for urgent cases',
       action: 'Call Now'
     },
     {
       icon: Mail,
       title: 'Email Support',
-      description: 'Send us detailed queries',
-      contact: 'support@appliancecares.in',
-      availability: 'Response within 2 hours',
+      description: 'Share detailed service requirements or feedback',
+      contact: 'vlcooltech@gmail.com',
+      availability: 'Response within 1 business hour',
       action: 'Send Email'
     }
   ]
@@ -39,27 +42,33 @@ const CustomerSupport = () => {
   const faqs = [
     {
       question: 'How do I book a service?',
-      answer: 'You can book a service by calling us at +91 77802 25280 or by filling out our online booking form. We offer same-day service for urgent repairs.'
+      answer:
+        'Call VL CoolTech at +91 96763 33505 / +91 96765 82723 or submit the service form on our website. We prioritise same-day visits for cooling and essential appliances.'
     },
     {
       question: 'What areas do you cover?',
-      answer: 'We provide services across Hyderabad including Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, and many other areas. Contact us to check if we cover your area.'
+      answer:
+        'Our certified technicians serve Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad. Call us to confirm coverage for your locality.'
     },
     {
       question: 'How much does repair cost?',
-      answer: 'Our repair costs vary depending on the appliance type and issue. We provide free diagnosis and transparent pricing. Contact us for a quote.'
+      answer:
+        'Visit inspections are charged at ₹299 and adjusted in the final bill. Pricing depends on the appliance, fault and spares required—our team shares transparent estimates before starting work.'
     },
     {
       question: 'Do you provide warranty on repairs?',
-      answer: 'Yes, we provide 90-day warranty on all our repairs. If the same issue occurs within the warranty period, we will fix it free of charge.'
+      answer:
+        'Yes. VL CoolTech offers up to 90 days workmanship guarantee on repairs. If the same issue returns within the warranty window, we revisit at no extra cost.'
     },
     {
       question: 'What if my appliance cannot be repaired?',
-      answer: 'If your appliance cannot be repaired, we will inform you upfront and provide recommendations for replacement options. No charges apply for diagnosis.'
+      answer:
+        'If repair is not feasible, we explain the diagnosis, recommend replacement options and close the job without additional labour charges beyond the visiting fee.'
     },
     {
       question: 'How can I track my service request?',
-      answer: 'You can track your service using your tracking ID on our website or by calling our support team. We also send SMS updates on service progress.'
+      answer:
+        'Use your VL CoolTech tracking ID on the website, chat with us on WhatsApp or call our desk. We share SMS/WhatsApp updates when the technician is dispatched and after completion.'
     }
   ]
 
@@ -73,7 +82,10 @@ const CustomerSupport = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/mobile.webp')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -220,20 +232,20 @@ const CustomerSupport = () => {
               <MapPin className="h-6 w-6 text-primary-600 mt-1 flex-shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  ApplianceCares.in Office
+                  VL CoolTech Service Desk
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Pragathi Nagar, Hyderabad<br />
-                  Telangana, India - 500090
+                  114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda
+                  Sangareddy District, Telangana - 502032
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2">
                     <Phone className="h-4 w-4 text-gray-500" />
-                    <span className="text-gray-600">+91 77802 25280</span>
+                    <span className="text-gray-600">+91 96763 33505</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Mail className="h-4 w-4 text-gray-500" />
-                    <span className="text-gray-600">info@appliancecares.in</span>
+                    <span className="text-gray-600">vlcooltech@gmail.com</span>
                   </div>
                 </div>
               </div>

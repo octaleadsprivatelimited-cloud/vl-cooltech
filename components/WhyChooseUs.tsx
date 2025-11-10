@@ -5,31 +5,31 @@ const WhyChooseUs = () => {
     {
       icon: Shield,
       title: '100% Guarantee',
-      description: 'We guarantee our work across all areas of Hyderabad. If you\'re not satisfied, we\'ll make it right or refund your money.',
+      description: 'Every AC or appliance service includes a workmanship guarantee. If the issue returns within the warranty window, we fix it at no extra cost.',
       color: 'bg-green-500'
     },
     {
       icon: Clock,
       title: 'Same Day Service',
-      description: 'Most repairs completed the same day in HITEC City, Gachibowli, Kondapur, Madhapur, and all areas of Hyderabad. No waiting, no delays.',
+      description: 'Priority slots for Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and neighbouring Hyderabad localities. We arrive on time and respect your schedule.',
       color: 'bg-blue-500'
     },
     {
       icon: Wrench,
       title: 'Expert Technicians',
-      description: 'Our certified technicians have 15+ years of experience in Hyderabad and are trained on the latest technology for all major brands.',
+      description: 'Seasoned specialists for inverter ACs, side-by-side refrigerators, fully automatic washing machines, LED/QLED TVs and RO water purifiers.',
       color: 'bg-purple-500'
     },
     {
       icon: Phone,
       title: '24/7 Support',
-      description: 'Round-the-clock customer support for all areas of Hyderabad. We\'re here when you need us, day or night.',
+      description: 'Call or WhatsApp +91 96763 33505 / +91 96765 82723 anytime. Emergency visits arranged for critical cooling or electrical issues.',
       color: 'bg-cyan-500'
     },
     {
       icon: Star,
       title: 'Premium Quality',
-      description: 'We use only genuine parts and follow manufacturer specifications for all repairs. Trusted by 5000+ customers in Hyderabad.',
+      description: 'Genuine spares, calibrated tools and transparent visit charge of ₹299. We explain every step before the work begins.',
       color: 'bg-pink-500'
     }
   ]
@@ -40,11 +40,10 @@ const WhyChooseUs = () => {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Why Choose <span className="text-primary-600">ApplianceCares.in in Hyderabad?</span>
+            Why Choose <span className="text-primary-600">VL CoolTech?</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            We're not just another repair service in Hyderabad. We're your trusted partner for all 
-            electronics and appliance repair needs. Serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad with 15+ years of experience.
+            Since 2012 we have supported homeowners, facility teams and small businesses with reliable AC, refrigerator, washing machine, LED TV, water purifier and electrical services throughout Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad.
           </p>
         </div>
 
@@ -73,29 +72,27 @@ const WhyChooseUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
-                Your Trust is Our Priority in Hyderabad
+                Your Comfort Partner in Hyderabad West
               </h3>
               <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
-                With over 15 years of experience in electronics and appliance repair in Hyderabad, 
-                we've built a reputation for excellence across HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Our commitment 
-                to quality, transparency, and customer satisfaction sets us apart.
+                VL CoolTech operates from Ameenpur with a fully equipped workshop, on-field service vans and experienced technicians. We specialise in premium cooling solutions, preventive maintenance and quick breakdown support that keeps homes and offices running without interruption.
               </p>
               <ul className="space-y-2 sm:space-y-3">
                 <li className="flex items-center text-gray-700 text-sm sm:text-base">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Certified and experienced technicians
+                  Certified technicians trained on multi-brand inverter, VRF and cassette AC systems
                 </li>
                 <li className="flex items-center text-gray-700 text-sm sm:text-base">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Genuine parts and manufacturer-approved service
+                  Genuine manufacturer spares with warranty coverage
                 </li>
                 <li className="flex items-center text-gray-700 text-sm sm:text-base">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Comprehensive warranty on all repairs
+                  Transparent visiting charge of ₹299 adjusted in final bill
                 </li>
                 <li className="flex items-center text-gray-700 text-sm sm:text-base">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
-                  Free pickup and delivery service
+                  Preventive maintenance plans for residential and commercial properties
                 </li>
               </ul>
             </div>

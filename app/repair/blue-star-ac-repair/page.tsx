@@ -3,14 +3,18 @@ import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, T
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
 import { WhatsAppLink } from '@/components/WhatsAppButton'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Blue Star AC Repair Service - ApplianceCares.in | Expert Blue Star AC Repair',
-  description: 'Professional Blue Star AC repair service in Hyderabad. Expert technicians for all Blue Star air conditioner models. Same day service available.',
-  keywords: 'Blue Star AC repair, Blue Star air conditioner service, Blue Star AC technician Hyderabad, Blue Star AC not cooling, Blue Star AC gas leak',
+  title: 'VL CoolTech | Blue Star AC Repair Specialists in Hyderabad',
+  description:
+    'VL CoolTech repairs Blue Star split, window, inverter and ducted ACs across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. Certified technicians, genuine spares and same-day doorstep support with ₹299 visiting charge.',
+  keywords:
+    'VL CoolTech Blue Star AC repair, Blue Star service Hyderabad, Blue Star inverter AC PCB repair, Blue Star AC gas filling Ameenpur, same day Blue Star AC service',
   openGraph: {
-    title: 'Blue Star AC Repair Service - ApplianceCares.in',
-    description: 'Professional Blue Star AC repair service in Hyderabad. Expert technicians for all Blue Star air conditioner models.',
+    title: 'VL CoolTech | Blue Star AC Repair Specialists in Hyderabad',
+    description:
+      'Book VL CoolTech for Blue Star AC repair, gas refills and maintenance across Hyderabad West with genuine parts and certified technicians.',
     type: 'website',
   },
 }
@@ -68,14 +72,18 @@ export default function BlueStarACRepairPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(15, 23, 42, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Blue Star AC Repair Service
+              VL CoolTech Blue Star AC Repair Service
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-              Professional Blue Star AC repair service in Hyderabad. Expert technicians for all Blue Star air conditioner models. Same day service available.
+              Doorstep Blue Star split, window, inverter and commercial AC repairs powered by VL CoolTech’s certified
+              Hyderabad technicians. Same-day support with ₹299 visiting charge adjusted in the final bill.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <GetQuoteButton
@@ -85,11 +93,11 @@ export default function BlueStarACRepairPage() {
                 Get Quote for Blue Star AC
               </GetQuoteButton>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
-                Call Now
+                Call VL CoolTech
               </Link>
             </div>
           </div>
@@ -105,8 +113,9 @@ export default function BlueStarACRepairPage() {
                 Expert Blue Star AC Repair Service
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in repairing all Blue Star AC models with genuine parts and expert technicians. 
-                Our service covers all areas of Hyderabad with same-day repair available.
+                VL CoolTech handles cooling complaints, PCB faults, installation fixes and annual maintenance for every
+                Blue Star model. Our brand-trained technicians carry original-grade spares and multi-brand diagnostic tools
+                to deliver lasting repairs across Hyderabad West.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -115,7 +124,7 @@ export default function BlueStarACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Genuine Blue Star Parts</span>
+                  <span className="text-gray-700">Genuine VL CoolTech Approved Parts</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
@@ -123,7 +132,7 @@ export default function BlueStarACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Free Diagnosis</span>
+                  <span className="text-gray-700">Upfront Estimate & Diagnosis</span>
                 </div>
               </div>
             </div>
@@ -256,8 +265,8 @@ export default function BlueStarACRepairPage() {
               <span className="font-semibold text-gray-900">Coverage Areas</span>
             </div>
             <p className="text-gray-700">
-              Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, Nizampet, Bachupally, 
-              Gachibowli, Kondapur, HITEC City, Madhapur, and surrounding areas
+              Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, 
+              Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad
             </p>
           </div>
         </div>
@@ -280,11 +289,11 @@ export default function BlueStarACRepairPage() {
               WhatsApp for Blue Star AC
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call +91 96763 33505
             </Link>
           </div>
         </div>

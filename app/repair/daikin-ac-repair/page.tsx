@@ -3,14 +3,18 @@ import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, T
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
 import { WhatsAppLink } from '@/components/WhatsAppButton'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Daikin AC Repair Service - ApplianceCares.in | Expert Daikin AC Repair',
-  description: 'Professional Daikin AC repair service in Hyderabad. Expert technicians for all Daikin air conditioner models. Same day service available.',
-  keywords: 'Daikin AC repair, Daikin air conditioner service, Daikin AC technician Hyderabad, Daikin AC not cooling, Daikin AC gas leak',
+  title: 'VL CoolTech | Daikin AC Repair Specialists in Hyderabad',
+  description:
+    'VL CoolTech services Daikin split, inverter, cassette and VRV systems across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. Expert PCB diagnostics, gas balancing and same-day support with ₹299 visiting charge.',
+  keywords:
+    'VL CoolTech Daikin AC repair, Daikin VRV service Hyderabad, Daikin inverter PCB repair Ameenpur, Daikin AC gas filling Beeramguda, same day Daikin technician Hyderabad',
   openGraph: {
-    title: 'Daikin AC Repair Service - ApplianceCares.in',
-    description: 'Professional Daikin AC repair service in Hyderabad. Expert technicians for all Daikin air conditioner models.',
+    title: 'VL CoolTech | Daikin AC Repair Specialists in Hyderabad',
+    description:
+      'Schedule Daikin air conditioner repairs with VL CoolTech for genuine parts, inverter expertise and rapid service across Hyderabad West.',
     type: 'website',
   },
 }
@@ -68,14 +72,18 @@ export default function DaikinACRepairPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(15, 23, 42, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Daikin AC Repair Service
+              VL CoolTech Daikin AC Repair Service
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-              Professional Daikin AC repair service in Hyderabad. Expert technicians for all Daikin air conditioner models. Same day service available.
+              VL CoolTech engineers fix Daikin inverter errors, compressor issues and installation concerns with
+              manufacturer-approved processes. Hyderabad-wide coverage with ₹299 visiting charge adjusted in the invoice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <GetQuoteButton
@@ -85,11 +93,11 @@ export default function DaikinACRepairPage() {
                 Get Quote for Daikin AC
               </GetQuoteButton>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
-                Call Now
+                Call VL CoolTech
               </Link>
             </div>
           </div>
@@ -105,8 +113,9 @@ export default function DaikinACRepairPage() {
                 Expert Daikin AC Repair Service
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in repairing all Daikin AC models with genuine parts and expert technicians. 
-                Our service covers all areas of Hyderabad with same-day repair available.
+                Backed by advanced diagnostic tools and Daikin-trained expertise, VL CoolTech delivers accurate fixes for
+                VRV/VRF, inverter and cassette units. Expect detailed fault reporting, preventive tips and dependable
+                after-service support.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -115,7 +124,7 @@ export default function DaikinACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Genuine Daikin Parts</span>
+                  <span className="text-gray-700">Genuine VL CoolTech Approved Parts</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
@@ -123,7 +132,7 @@ export default function DaikinACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Free Diagnosis</span>
+                  <span className="text-gray-700">Upfront Estimate & Diagnosis</span>
                 </div>
               </div>
             </div>
@@ -256,8 +265,8 @@ export default function DaikinACRepairPage() {
               <span className="font-semibold text-gray-900">Coverage Areas</span>
             </div>
             <p className="text-gray-700">
-              Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, Nizampet, Bachupally, 
-              Gachibowli, Kondapur, HITEC City, Madhapur, and surrounding areas
+              Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, 
+              Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad
             </p>
           </div>
         </div>
@@ -280,11 +289,11 @@ export default function DaikinACRepairPage() {
               WhatsApp for Daikin AC
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-blue-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call +91 96763 33505
             </Link>
           </div>
         </div>

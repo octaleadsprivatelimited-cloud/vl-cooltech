@@ -3,14 +3,18 @@ import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, T
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
 import { WhatsAppLink } from '@/components/WhatsAppButton'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Voltas AC Repair Service - ApplianceCares.in | Expert Voltas AC Repair',
-  description: 'Professional Voltas AC repair service in Hyderabad. Expert technicians for all Voltas air conditioner models. Same day service available.',
-  keywords: 'Voltas AC repair, Voltas air conditioner service, Voltas AC technician Hyderabad, Voltas AC not cooling, Voltas AC gas leak',
+  title: 'VL CoolTech | Voltas AC Repair Specialists in Hyderabad',
+  description:
+    'VL CoolTech handles Voltas split, inverter, cassette and commercial AC repairs with certified technicians, genuine spares and same-day service across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. ₹299 visiting charge adjusted in final bill.',
+  keywords:
+    'VL CoolTech Voltas AC repair, Voltas inverter AC service Hyderabad, Voltas AC gas filling Ameenpur, Voltas cassette AC repair Beeramguda, same day Voltas AC technician Hyderabad',
   openGraph: {
-    title: 'Voltas AC Repair Service - ApplianceCares.in',
-    description: 'Professional Voltas AC repair service in Hyderabad. Expert technicians for all Voltas air conditioner models.',
+    title: 'VL CoolTech | Voltas AC Repair Specialists in Hyderabad',
+    description:
+      'Book VL CoolTech for Voltas air conditioner repairs, maintenance and installations across Hyderabad West with trained technicians and genuine parts.',
     type: 'website',
   },
 }
@@ -68,14 +72,19 @@ export default function VoltasACRepairPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-orange-900 via-orange-800 to-orange-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-orange-900 via-orange-800 to-orange-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(124, 45, 18, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Voltas AC Repair Service
+              VL CoolTech Voltas AC Repair Service
             </h1>
             <p className="text-xl text-orange-100 max-w-3xl mx-auto mb-8">
-              Professional Voltas AC repair service in Hyderabad. Expert technicians for all Voltas air conditioner models. Same day service available.
+              VL CoolTech resolves cooling, airflow and electrical faults for Voltas split, inverter and commercial ACs
+              using brand-trained technicians and genuine spares. Hyderabad-wide support with ₹299 visiting charge adjusted
+              in the invoice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <GetQuoteButton
@@ -85,11 +94,11 @@ export default function VoltasACRepairPage() {
                 Get Quote for Voltas AC
               </GetQuoteButton>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-orange-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
-                Call Now
+                Call VL CoolTech
               </Link>
             </div>
           </div>
@@ -105,8 +114,8 @@ export default function VoltasACRepairPage() {
                 Expert Voltas AC Repair Service
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in repairing all Voltas AC models with genuine parts and expert technicians. 
-                Our service covers all areas of Hyderabad with same-day repair available.
+                VL CoolTech offers thorough diagnostics, preventive maintenance plans and transparent pricing for every
+                Voltas service call. From PCB repairs to installation corrections, we ensure long-lasting performance.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -115,7 +124,7 @@ export default function VoltasACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Genuine Voltas Parts</span>
+                  <span className="text-gray-700">Genuine VL CoolTech Approved Parts</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
@@ -123,7 +132,7 @@ export default function VoltasACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Free Diagnosis</span>
+                  <span className="text-gray-700">Upfront Estimate & Diagnosis</span>
                 </div>
               </div>
             </div>
@@ -256,8 +265,8 @@ export default function VoltasACRepairPage() {
               <span className="font-semibold text-gray-900">Coverage Areas</span>
             </div>
             <p className="text-gray-700">
-              Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, Nizampet, Bachupally, 
-              Gachibowli, Kondapur, HITEC City, Madhapur, and surrounding areas
+              Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, 
+              Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad
             </p>
           </div>
         </div>
@@ -280,11 +289,11 @@ export default function VoltasACRepairPage() {
               WhatsApp for Voltas AC
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-orange-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call +91 96763 33505
             </Link>
           </div>
         </div>

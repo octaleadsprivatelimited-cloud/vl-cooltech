@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
-import { Tv, Wind, Refrigerator, Microwave, Monitor, ArrowRight, Sparkles } from 'lucide-react'
+import { Tv, Wind, Refrigerator, Wrench, RotateCcw, ArrowRight, Sparkles, Zap } from 'lucide-react'
 
 const Services = () => {
   const [visibleCards, setVisibleCards] = useState<number[]>([])
@@ -31,52 +31,60 @@ const Services = () => {
 
   const services = [
     {
-      icon: Tv,
-      title: 'TV Repair Hyderabad',
-      description: 'Professional TV repair services for all brands including LED, LCD, OLED, and Smart TVs in Hyderabad. Samsung, LG, Sony, Panasonic, TCL, OnePlus, Mi TV repair.',
-      features: ['Screen Repair', 'Power Issues', 'Audio Problems', 'Smart TV Setup'],
-      href: '/services/tv-repair',
-      color: 'bg-blue-500'
-    },
-    {
       icon: Wind,
-      title: 'AC Repair Hyderabad',
-      description: 'Complete AC repair and maintenance services for all types of air conditioners in Hyderabad. Samsung, LG, Daikin, Voltas, Blue Star, Carrier AC repair.',
-      features: ['Gas Filling', 'Compressor Repair', 'Cooling Issues', 'Maintenance'],
+      title: 'AC Repair & Service',
+      description: 'Diagnose and fix cooling problems for split, window and inverter ACs across Ameenpur, Beeramguda, Patancheru, BHEL Township and Greater Hyderabad.',
+      features: ['Gas top-up & leak fix', 'Compressor & PCB repair', 'No cooling / water leakage', '24/7 emergency support'],
       href: '/services/ac-repair',
       color: 'bg-cyan-500'
     },
     {
-      icon: Monitor,
-      title: 'Washing Machine Repair Hyderabad',
-      description: 'Expert washing machine repair for all brands and models in Hyderabad. Samsung, LG, Whirlpool, IFB washing machine repair.',
-      features: ['Drum Issues', 'Motor Problems', 'Water Leakage', 'Spin Problems'],
-      href: '/services/washing-machine-repair',
-      color: 'bg-indigo-500'
+      icon: Wrench,
+      title: 'AC Installation & Relocation',
+      description: 'Expert installation, dismantling and relocation for split and window AC units with proper vacuuming, copper piping and insulation.',
+      features: ['New AC installation', 'Relocation & re-install', 'Indoor / outdoor brackets', 'Stabilizer & wiring setup'],
+      href: '/services/ac-repair#installation',
+      color: 'bg-blue-500'
+    },
+    {
+      icon: Sparkles,
+      title: 'AC General & Foam Cleaning',
+      description: 'Deep cleaning packages that restore cooling efficiency, remove odour and protect indoor air quality with specialised foam jet service.',
+      features: ['Foam jet wash', 'Indoor/outdoor coil cleaning', 'Drain tray clearance', 'Anti-fungal sanitisation'],
+      href: '/services/ac-repair#cleaning',
+      color: 'bg-sky-500'
     },
     {
       icon: Refrigerator,
-      title: 'Refrigerator Repair Hyderabad',
-      description: 'Comprehensive refrigerator repair services for all types of fridges in Hyderabad. Samsung, LG, Whirlpool, Godrej refrigerator repair.',
-      features: ['Cooling Issues', 'Compressor Repair', 'Thermostat', 'Door Seals'],
+      title: 'Refrigerator & Freezer Service',
+      description: 'Repairs for single door, double door, side-by-side and deep freezers with genuine spares and coolant handling by certified technicians.',
+      features: ['Cooling complaints', 'Compressor & relay', 'Thermostat & sensors', 'Door gasket replacement'],
       href: '/services/refrigerator-repair',
       color: 'bg-green-500'
     },
     {
-      icon: Microwave,
-      title: 'Microwave Repair Hyderabad',
-      description: 'Professional microwave oven repair and maintenance services in Hyderabad. Samsung, LG, Whirlpool, IFB microwave repair.',
-      features: ['Heating Issues', 'Turntable Problems', 'Door Switches', 'Control Panel'],
-      href: '/services/microwave-repair',
-      color: 'bg-orange-500'
+      icon: RotateCcw,
+      title: 'Washing Machine Repair',
+      description: 'Top-load, front-load, semi-automatic and inverter washing machine diagnostics, part replacement and annual maintenance.',
+      features: ['Drum & bearing issues', 'Motor & belt repair', 'Water inlet / drainage', 'Error code troubleshooting'],
+      href: '/services/washing-machine-repair',
+      color: 'bg-indigo-500'
     },
     {
-      icon: Monitor,
-      title: 'Home Appliances Repair Hyderabad',
-      description: 'Repair services for all home appliances and electronic devices in Hyderabad. Mixer grinder, iron, geyser, water purifier repair.',
-      features: ['Mixer Grinder', 'Iron', 'Geyser', 'Water Purifier'],
+      icon: Tv,
+      title: 'LED & QLED TV Repair',
+      description: 'Board-level and display repairs for LED, QLED and Smart TVs with backlight replacement, panel repair and software calibration.',
+      features: ['Backlight replacement', 'Display / panel repair', 'No power / HDMI issues', 'Audio & Wi-Fi fixes'],
+      href: '/services/tv-repair',
+      color: 'bg-purple-500'
+    },
+    {
+      icon: Zap,
+      title: 'Water Purifier & Electrical Works',
+      description: 'RO/UV water purifier service, filter replacement and comprehensive residential electrical troubleshooting with experienced electricians.',
+      features: ['RO filter change', 'Motor & SMPS repair', 'Wiring & MCB upgrades', 'Appliance electrical setup'],
       href: '/services/home-appliances',
-      color: 'bg-teal-500'
+      color: 'bg-amber-500'
     }
   ]
 
@@ -95,11 +103,10 @@ const Services = () => {
             <span className="text-blue-500 font-semibold text-sm uppercase tracking-wider">Our Services</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Services in Hyderabad</span>
+            VL CoolTech <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">AC & Appliance Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional repair services for all your electronics and home appliances in Hyderabad. 
-            We fix it right the first time, every time. Serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad.
+            Visiting charge ₹299, same-day doorstep service and genuine spares for ACs, refrigerators, washing machines, LED/QLED TVs, water purifiers and electrical works across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad.
           </p>
         </div>
 
@@ -168,17 +175,17 @@ const Services = () => {
         <div className="mt-12 sm:mt-16 text-center">
           <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Don't see your appliance listed? We repair everything in Hyderabad!
+              Need something else fixed? VL CoolTech has you covered.
             </h3>
             <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
-              We repair all types of electronics and home appliances in Hyderabad. Serving HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, and all areas of Hyderabad. Contact us for a free quote.
+              Share your AC, appliance or electrical requirement and we will customise a solution for your home or business in Ameenpur, Beeramguda, Patancheru and Greater Hyderabad. Visiting charge ₹299 is adjusted in the final invoice.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-primary-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-sm sm:text-base"
               >
-                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+                <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <GetQuoteButton

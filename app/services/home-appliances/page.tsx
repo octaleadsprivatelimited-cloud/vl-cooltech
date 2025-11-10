@@ -1,11 +1,12 @@
 import { Monitor, CheckCircle, Clock, Shield, Wrench, Star, Phone } from 'lucide-react'
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
+import type { CSSProperties } from 'react'
 
 export const metadata = {
-  title: 'Home Appliances Repair Services - ApplianceCares.in | Professional Home Appliance Repair in Hyderabad',
-  description: 'Expert home appliance repair services in Hyderabad. We repair mixer grinder, iron, geyser, water purifier, induction cooker. Same-day service. Call +91 77802 25280',
-  keywords: 'home appliance repair, mixer grinder repair, iron repair, geyser repair, water purifier repair, induction cooker repair, Hyderabad, Pragathi Nagar, home appliances service',
+  title: 'VL CoolTech | Professional Home Appliance Repair in Hyderabad',
+  description: 'VL CoolTech provides certified home appliance repair for mixer grinders, irons, geysers, water purifiers and more across Ameenpur, Beeramguda, Patancheru, Miyapur and Greater Hyderabad. Same-day doorstep support with ₹299 visiting charge.',
+  keywords: 'VL CoolTech home appliance repair, Hyderabad appliance technicians, mixer grinder repair Hyderabad, geyser service Ameenpur, Beeramguda appliance repair, certified technicians Hyderabad',
 }
 
 export default function HomeAppliancesRepair() {
@@ -46,7 +47,10 @@ export default function HomeAppliancesRepair() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-teal-600 via-teal-700 to-emerald-800 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
+      <section
+        className="page-hero bg-gradient-to-br from-teal-600 via-teal-700 to-emerald-800 pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-24 lg:pb-18"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')", '--hero-overlay': 'rgba(0, 0, 0, 0.75)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -59,11 +63,11 @@ export default function HomeAppliancesRepair() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Link
-                  href="tel:+917780225280"
+                  href="tel:+919676333505"
                   className="bg-white text-teal-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+                  <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
                   <span className="sm:hidden">Call Now</span>
                 </Link>
                 <GetQuoteButton
@@ -159,10 +163,10 @@ export default function HomeAppliancesRepair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-teal-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              Call Now: +91 77802 25280
+              Call Now: +91 96763 33505
             </Link>
             <GetQuoteButton
               serviceType="home-appliances"

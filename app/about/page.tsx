@@ -1,23 +1,29 @@
 import { Users, Award, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react'
+import type { CSSProperties } from 'react'
 
 export const metadata = {
-  title: 'About Us - ApplianceCares.in | Electronics & Appliance Repair Services',
-  description: 'Learn about ApplianceCares.in - Hyderabad\'s trusted electronics and appliance repair service. 15+ years of experience, expert technicians, same-day service.',
-  keywords: 'about us, electronics repair, appliance repair, Hyderabad, Pragathi Nagar, experienced technicians, professional service',
+  title: 'About VL CoolTech | AC, Refrigerator & Appliance Experts in Hyderabad West',
+  description:
+    'Discover VL CoolTech’s story – a trusted AC and home appliance service provider from Ameenpur, Beeramguda and serving Greater Hyderabad. 12+ years of experience in AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services.',
+  keywords:
+    'About VL CoolTech, AC service Ameenpur, AC experts Hyderabad west, appliance repair Beeramguda, visiting charge 299, inverter AC specialists, refrigerator washing machine LED TV service, electrical works Hyderabad',
 }
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-blue-700 pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20">
+      <section
+        className="page-hero bg-black pt-20 pb-12 sm:pt-24 sm:pb-16 lg:pt-28 lg:pb-20"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')", '--hero-overlay': 'rgba(0, 0, 0, 0.75)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              About ApplianceCares
+              About VL CoolTech
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Your trusted partner for professional electronics and appliance repair services in Hyderabad for over 15 years.
+              Hyderabad West’s dedicated AC, refrigerator, washing machine, LED TV, water purifier and electrical service partner operating from Ameenpur since 2012.
             </p>
           </div>
         </div>
@@ -30,30 +36,23 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 2008, ApplianceCares.in has been serving the Hyderabad community 
-                with professional electronics and appliance repair services. What started as 
-                a small repair shop has grown into one of the most trusted service providers 
-                in the city.
+                VL CoolTech began in 2012 as a two-technician crew handling emergency AC breakdowns for households in Ameenpur and Beeramguda. Word of mouth, transparent pricing and reliable workmanship helped us expand across Patancheru, BHEL Township, Lingampally, Miyapur and the rest of Greater Hyderabad.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our mission is simple: to provide fast, reliable, and affordable repair 
-                services that keep your appliances running smoothly. We believe in building 
-                long-term relationships with our customers through honest service and 
-                quality workmanship.
+                We now operate specialised teams for AC repair and installation, inverter AC diagnostics, foam/jet cleaning, refrigerator and washing machine service, LED/QLED TV repair, water purifier maintenance and electrical works. Our workshop at 114 Sri Rajarajeshwari Colony, Ameenpur enables us to stock genuine spares and dispatch technicians quickly.
               </p>
               <p className="text-lg text-gray-600">
-                Today, we're proud to have served over 5,000 satisfied customers across 
-                Hyderabad and surrounding areas, with a 4.9/5 customer rating.
+                Today, more than 2,500 families, gated communities and businesses trust VL CoolTech with their cooling and appliance needs. We continue to invest in training, safety and customer support so every visit ends with a satisfied customer.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary-100 to-blue-100 rounded-2xl p-8">
               <div className="text-center">
                 <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-white text-3xl font-bold">15+</span>
+                  <span className="text-white text-3xl font-bold">12+</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Years of Experience</h3>
                 <p className="text-gray-600">
-                  Over a decade and a half of professional expertise in electronics and appliance repair.
+                  A decade-plus of hands-on service excellence across Hyderabad west corridor.
                 </p>
               </div>
             </div>
@@ -78,7 +77,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality</h3>
               <p className="text-gray-600">
-                We use only genuine parts and follow manufacturer specifications for all repairs.
+                We work with genuine spares, calibrated tools and documented processes for every AC and appliance job.
               </p>
             </div>
 
@@ -88,7 +87,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Reliability</h3>
               <p className="text-gray-600">
-                Same-day service with transparent communication and honest pricing.
+                Same-day or next-day slots across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, Kondapur and beyond.
               </p>
             </div>
 
@@ -98,7 +97,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Customer First</h3>
               <p className="text-gray-600">
-                Your satisfaction is our priority. We go above and beyond to exceed expectations.
+                Clear communication, upfront ₹299 visiting charge (adjusted in final bill) and post-service follow-ups keep our customers informed and confident.
               </p>
             </div>
 
@@ -108,7 +107,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Excellence</h3>
               <p className="text-gray-600">
-                Continuous learning and improvement to provide the best possible service.
+                Our technicians undergo periodic inverter AC, refrigeration and electrical training to stay ahead of new technologies.
               </p>
             </div>
           </div>
@@ -130,10 +129,10 @@ export default function About() {
               <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">SK</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Senior Technician</h3>
-              <p className="text-gray-600 mb-4">15+ years experience in electronics repair</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Srinivas – AC Lead</h3>
+              <p className="text-gray-600 mb-4">12+ years handling split, inverter and VRF systems</p>
               <p className="text-sm text-gray-500">
-                Specializes in TV, AC, and home appliance repairs. Certified in multiple brands.
+                Heads our AC division, manages complex inverter PCB repairs and mentors junior technicians on safety and best practices.
               </p>
             </div>
 
@@ -141,10 +140,10 @@ export default function About() {
               <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">RK</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile & Laptop Expert</h3>
-              <p className="text-gray-600 mb-4">12+ years experience in mobile and laptop repair</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Lavanya – Appliance Specialist</h3>
+              <p className="text-gray-600 mb-4">10+ years in refrigerator & washing machine diagnostics</p>
               <p className="text-sm text-gray-500">
-                Expert in smartphone repairs, laptop hardware, and data recovery services.
+                Ensures every refrigerator and washing machine job uses genuine spares and preventive maintenance checklists.
               </p>
             </div>
 
@@ -152,10 +151,10 @@ export default function About() {
               <div className="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-2xl font-bold">MK</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Appliance Specialist</h3>
-              <p className="text-gray-600 mb-4">10+ years experience in major appliance repair</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mahesh – Electrical & Water Purifier Expert</h3>
+              <p className="text-gray-600 mb-4">9+ years managing electrical, RO/UV systems</p>
               <p className="text-sm text-gray-500">
-                Specializes in washing machines, refrigerators, and kitchen appliances.
+                Handles electrical upgrades, MCB panels, RO purifier AMC schedules and complex leakage troubleshooting.
               </p>
             </div>
           </div>
@@ -174,20 +173,20 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-white mb-2">5000+</div>
-              <div className="text-xl text-blue-100">Happy Customers</div>
+              <div className="text-5xl font-bold text-white mb-2">2500+</div>
+              <div className="text-xl text-blue-100">Homes & Businesses Served</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-white mb-2">15+</div>
-              <div className="text-xl text-blue-100">Years Experience</div>
+              <div className="text-xl text-blue-100">Service Professionals</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-white mb-2">4.9/5</div>
-              <div className="text-xl text-blue-100">Customer Rating</div>
+              <div className="text-xl text-blue-100">Average Customer Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-white mb-2">24/7</div>
-              <div className="text-xl text-blue-100">Service Available</div>
+              <div className="text-5xl font-bold text-white mb-2">₹299</div>
+              <div className="text-xl text-blue-100">Transparent Visiting Charge</div>
             </div>
           </div>
         </div>
@@ -198,8 +197,8 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-            <p className="text-xl text-gray-600">
-              Ready to experience our professional repair services?
+              <p className="text-xl text-gray-600">
+                Call or WhatsApp to schedule an AC, appliance or electrical visit today.
             </p>
           </div>
 
@@ -208,8 +207,8 @@ export default function About() {
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-primary-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Call Us</h3>
-              <p className="text-gray-600">+91 77802 25280</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Call / WhatsApp</h3>
+              <p className="text-gray-600">+91 96763 33505 / +91 96765 82723</p>
             </div>
 
             <div className="text-center">
@@ -217,7 +216,7 @@ export default function About() {
                 <Mail className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Email Us</h3>
-              <p className="text-gray-600">info@appliancecares.in</p>
+              <p className="text-gray-600">vlcooltech@gmail.com</p>
             </div>
 
             <div className="text-center">
@@ -225,7 +224,7 @@ export default function About() {
                 <MapPin className="h-8 w-8 text-primary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Visit Us</h3>
-              <p className="text-gray-600">Pragathi Nagar, Hyderabad</p>
+              <p className="text-gray-600">114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Sangareddy 502032</p>
             </div>
           </div>
         </div>

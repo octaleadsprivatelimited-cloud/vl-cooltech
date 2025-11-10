@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Favicon Generation Script for ApplianceCares.in
+ * Favicon Generation Script for VL CoolTech
  * 
  * This script generates proper favicon files from the logo image.
  * Run with: node scripts/generate-favicons.js
@@ -78,8 +78,8 @@ try {
 // Update site.webmanifest
 const manifestPath = 'public/site.webmanifest';
 const manifest = {
-  "name": "ApplianceCares.in",
-  "short_name": "ApplianceCares",
+  "name": "VL CoolTech",
+  "short_name": "VL CoolTech",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

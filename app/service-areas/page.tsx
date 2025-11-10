@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
 import { MapPin, Phone, Clock, CheckCircle, Star } from 'lucide-react'
 import Link from 'next/link'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Service Areas - ApplianceCares.in | Electronics & Appliance Repair Services in Hyderabad',
-  description: 'We provide professional electronics and appliance repair services across all areas of Hyderabad including HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar, Kukatpally, Miyapur, Serilingampally, Chandanagar, Alwal, Malkajgiri, Dilsukhnagar, Uppal, Nagole, and more. Same-day service available.',
-  keywords: 'appliance repair service areas Hyderabad, electronics repair areas Hyderabad, TV repair near me, AC repair near me, washing machine repair near me, refrigerator repair near me, laptop repair near me, mobile repair near me, HITEC City repair, Gachibowli repair, Kondapur repair, Madhapur repair, Jubilee Hills repair, Banjara Hills repair, Pragathi Nagar repair, Kukatpally repair, Miyapur repair, Serilingampally repair, Chandanagar repair, Alwal repair, Malkajgiri repair, Dilsukhnagar repair, Uppal repair, Nagole repair, doorstep service Hyderabad, home service Hyderabad',
+  title: 'VL CoolTech | Appliance Repair Service Areas in Hyderabad',
+  description:
+    'VL CoolTech delivers AC, refrigerator, washing machine, TV, water purifier and electrical services across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, Kondapur, Gachibowli, Kukatpally, Bachupally and the wider Hyderabad metro. Same-day doorstep support with certified technicians.',
+  keywords:
+    'VL CoolTech service areas, Hyderabad appliance repair coverage, Ameenpur AC repair, Beeramguda appliance service, Patancheru technician, Miyapur washing machine repair, Gachibowli AC service, Kukatpally fridge repair, Hyderabad doorstep appliance repair',
 }
 
 const serviceAreas = [
@@ -100,23 +103,26 @@ export default function ServiceAreas() {
   return (
     <div className="pt-16 sm:pt-32 min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-blue-600 text-white py-16">
+      <section
+        className="page-hero bg-gradient-to-r from-primary-600 to-blue-600 text-white py-16"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(12, 74, 110, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               Our Service Areas in Hyderabad
             </h1>
             <p className="text-lg sm:text-xl text-primary-100 max-w-3xl mx-auto mb-8">
-              We provide professional electronics and appliance repair services across all areas of Hyderabad. 
-              From HITEC City to Pragathi Nagar, we serve every corner of the city with same-day service.
+              VL CoolTech technicians reach Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur and every
+              major Hyderabad neighbourhood for same-day appliance repairs and installations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-5 w-5" />
-                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+                <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -235,16 +241,16 @@ export default function ServiceAreas() {
             Need Repair Service in Your Area?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            We provide professional electronics and appliance repair services across all areas of Hyderabad. 
-            Same-day service available with free pickup and delivery.
+            VL CoolTech offers doorstep repair, installation and maintenance for appliances and electrical systems across
+            Hyderabad West and the wider metropolitan region. ₹299 visiting charge applies and is adjusted in the final bill.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Phone className="h-5 w-5" />
-              <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+              <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
               <span className="sm:hidden">Call Now</span>
             </Link>
             <Link

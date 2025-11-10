@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Image Optimization Script for ApplianceCares.in
+ * Image Optimization Script for VL CoolTech
  * 
  * This script optimizes and compresses images for better performance.
  * Run with: node scripts/optimize-images.js

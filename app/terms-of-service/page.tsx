@@ -1,30 +1,37 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { FileText, Shield, AlertCircle, CheckCircle, Phone, Mail, Calendar, User } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - ApplianceCares.in | Service Terms & Conditions',
-  description: 'Read our terms of service and conditions for appliance repair services. Understand your rights and obligations when using ApplianceCares.in services.',
-  keywords: 'terms of service, terms and conditions, service terms, user agreement, legal terms',
+  title: 'VL CoolTech Terms of Service | AC & Appliance Service Policies',
+  description:
+    'Review VL CoolTech’s terms of service covering AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical works across Hyderabad West. Learn about visiting charge ₹299, warranties, cancellations and customer responsibilities.',
+  keywords:
+    'VL CoolTech terms, AC service policy, appliance repair terms Hyderabad, visiting charge 299, warranty policy, cancellation terms, inverter AC service terms',
 }
 
 const TermsOfService = () => {
   const serviceTerms = [
     {
       title: 'Service Provision',
-      description: 'We agree to provide professional appliance repair services as requested by the customer.'
+      description:
+        'VL CoolTech agrees to provide professional AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services as requested by the customer within our coverage zones.'
     },
     {
       title: 'Service Scheduling',
-      description: 'Services will be scheduled at mutually convenient times. Cancellation policy applies.'
+      description:
+        'Services are scheduled at mutually convenient times across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, Kondapur, Gachibowli and the wider Hyderabad region. Our cancellation policy applies to all confirmed slots.'
     },
     {
       title: 'Payment Terms',
-      description: 'Payment is due upon completion of service. We accept cash, card, and digital payments.'
+      description:
+        'A transparent visiting charge of ₹299 is payable per job card and will be adjusted in the final invoice when the service is approved. Balance payment is due upon completion via cash, UPI or digital transfer.'
     },
     {
       title: 'Warranty Coverage',
-      description: 'All repairs come with a 90-day warranty covering parts and labor.'
+      description:
+        'All repairs include a service warranty communicated on the job card. Warranty coverage varies by appliance type, part availability and manufacturer terms.'
     },
     {
       title: 'Data Collection & Analytics',
@@ -92,15 +99,17 @@ const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Terms of Service
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Please read these terms carefully before using our appliance repair services. 
-              These terms govern your relationship with ApplianceCares.in.
+              Please review these terms before booking AC, refrigerator, washing machine, LED TV, water purifier or electrical services with VL CoolTech. These conditions govern your engagement with VL CoolTech appliance services.
             </p>
           </div>
         </div>
@@ -117,10 +126,7 @@ const TermsOfService = () => {
                   Agreement to Terms
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  By using our services, you agree to be bound by these Terms of Service. 
-                  These terms constitute a legal agreement between you and ApplianceCares.in. 
-                  If you do not agree to these terms, please do not use our services. 
-                  We reserve the right to modify these terms at any time.
+                  By booking or using any VL CoolTech service, you agree to be bound by these Terms of Service. These terms constitute a legal agreement between you and VL CoolTech. If you do not agree, please refrain from using our services. We may revise these terms periodically to reflect operational updates or regulatory requirements.
                 </p>
               </div>
             </div>
@@ -327,10 +333,10 @@ const TermsOfService = () => {
                 Speak with our customer service team
               </p>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                +91 77802 25280
+                +91 96763 33505 / +91 96765 82723
               </Link>
             </div>
 
@@ -343,10 +349,10 @@ const TermsOfService = () => {
                 Send us your questions via email
               </p>
               <Link
-                href="mailto:legal@appliancecares.in"
+                href="mailto:vlcooltech@gmail.com"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                legal@appliancecares.in
+                vlcooltech@gmail.com
               </Link>
             </div>
           </div>
@@ -392,10 +398,10 @@ const TermsOfService = () => {
               Contact Support
             </Link>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold text-lg text-center hover:scale-105 transform transition-all duration-300"
             >
-              Call Now
+              Call VL CoolTech
             </Link>
           </div>
         </div>

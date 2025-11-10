@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { Shield, Lock, Eye, FileText, Mail, Phone, Calendar, AlertCircle, User, Wrench, MapPin, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - ApplianceCares.in | Data Protection & Privacy',
-  description: 'Learn how ApplianceCares.in protects your personal information and respects your privacy. Our comprehensive privacy policy outlines data collection and usage.',
-  keywords: 'privacy policy, data protection, personal information, privacy rights, data security',
+  title: 'VL CoolTech Privacy Policy | AC & Appliance Service Data Protection',
+  description:
+    'Understand how VL CoolTech collects, uses and safeguards personal data for AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services across Hyderabad West.',
+  keywords:
+    'VL CoolTech privacy policy, AC service data protection, appliance service privacy Hyderabad, personal information VL CoolTech, visiting charge privacy, Hyderabad West appliance services',
 }
 
 const PrivacyPolicy = () => {
@@ -88,7 +91,10 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -113,10 +119,7 @@ const PrivacyPolicy = () => {
                   Our Commitment to Privacy
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  At ApplianceCares, we are committed to protecting your privacy and personal information. 
-                  This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
-                  when you use our appliance repair services. We respect your privacy rights and are 
-                  transparent about our data practices.
+                  At VL CoolTech, we are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose and safeguard your data when you request AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier or electrical services. We respect your privacy rights and maintain transparency about every data practice we follow.
                 </p>
               </div>
             </div>
@@ -369,10 +372,10 @@ const PrivacyPolicy = () => {
                 Send us your privacy questions or requests
               </p>
               <Link
-                href="mailto:privacy@appliancecares.in"
+                href="mailto:vlcooltech@gmail.com"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                privacy@appliancecares.in
+                vlcooltech@gmail.com
               </Link>
             </div>
 
@@ -385,10 +388,10 @@ const PrivacyPolicy = () => {
                 Speak with our privacy team directly
               </p>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                +91 77802 25280
+                +91 96763 33505 / +91 96765 82723
               </Link>
             </div>
           </div>
@@ -434,10 +437,10 @@ const PrivacyPolicy = () => {
               Contact Support
             </Link>
             <Link
-              href="mailto:privacy@appliancecares.in"
+              href="mailto:vlcooltech@gmail.com"
               className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold text-lg text-center hover:scale-105 transform transition-all duration-300"
             >
-              Email Privacy Team
+              Email VL CoolTech Privacy
             </Link>
           </div>
         </div>

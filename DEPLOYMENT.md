@@ -1,12 +1,12 @@
-# Deployment Guide - ApplianceCares.in
+# Deployment Guide - VL CoolTech
 
-This guide will help you deploy the ApplianceCares.in website to various hosting platforms.
+This guide will help you deploy the VL CoolTech website to various hosting platforms.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18+ installed
-- Git repository (GitHub, GitLab, or Bitbucket)
+- Project source code ready for deployment
 - Account on your chosen hosting platform
 
 ### Local Development
@@ -41,8 +41,8 @@ npm start
 - Free tier available
 
 **Steps:**
-1. Push code to GitHub
-2. Connect GitHub repo to Vercel
+1. Upload your project to Vercel
+2. Configure project settings
 3. Deploy automatically
 
 **Vercel Configuration:**
@@ -58,7 +58,7 @@ npm start
 ### 2. Netlify
 
 **Steps:**
-1. Connect GitHub repository
+1. Import your project into Netlify
 2. Set build command: `npm run build`
 3. Set publish directory: `.next`
 4. Deploy
@@ -76,7 +76,7 @@ npm start
 ### 3. AWS Amplify
 
 **Steps:**
-1. Connect GitHub repository
+1. Add your project to AWS Amplify
 2. Set build settings:
    - Build command: `npm run build`
    - Output directory: `.next`
@@ -85,7 +85,7 @@ npm start
 ### 4. DigitalOcean App Platform
 
 **Steps:**
-1. Connect GitHub repository
+1. Add your project to DigitalOcean App Platform
 2. Select Node.js
 3. Set build command: `npm run build`
 4. Set run command: `npm start`
@@ -96,9 +96,9 @@ npm start
 Create these environment variables in your hosting platform:
 
 ```env
-NEXT_PUBLIC_SITE_URL=https://appliancecares.in
-NEXT_PUBLIC_PHONE=+917780225280
-NEXT_PUBLIC_EMAIL=info@appliancecares.in
+NEXT_PUBLIC_SITE_URL=https://vlcooltech.in
+NEXT_PUBLIC_PHONE=+919676333505
+NEXT_PUBLIC_EMAIL=vlcooltech@gmail.com
 NEXT_PUBLIC_ADDRESS=Pragathi Nagar, Hyderabad, TG
 ```
 
@@ -108,7 +108,7 @@ NEXT_PUBLIC_ADDRESS=Pragathi Nagar, Hyderabad, TG
 1. Purchase domain (if not already owned)
 2. Configure DNS settings:
    - A record: Point to hosting platform IP
-   - CNAME: www.appliancecares.in → appliancecares.in
+   - CNAME: www.vlcooltech.in → vlcooltech.in
 3. Add SSL certificate (usually automatic)
 
 ### DNS Settings
@@ -119,14 +119,14 @@ Value: [Hosting Platform IP]
 
 Type: CNAME
 Name: www
-Value: appliancecares.in
+Value: vlcooltech.in
 ```
 
 ## 🔍 SEO Optimization
 
 ### Google Search Console
 1. Verify domain ownership
-2. Submit sitemap: `https://appliancecares.in/sitemap.xml`
+2. Submit sitemap: `https://vlcooltech.in/sitemap.xml`
 3. Monitor search performance
 
 ### Google Analytics
@@ -137,9 +137,9 @@ Value: appliancecares.in
 ### Local SEO
 1. Create Google My Business listing
 2. Add business information:
-   - Name: ApplianceCares.in
-   - Phone: +91 77802 25280
-   - Address: Pragathi Nagar, Hyderabad, TG
+   - Name: VL CoolTech
+   - Phone: +91 96763 33505 / +91 96765 82723
+   - Address: 114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Sangareddy 502032
    - Hours: 8 AM - 8 PM (Mon-Sun)
 
 ## 📊 Performance Optimization
@@ -222,7 +222,7 @@ const securityHeaders = [
 
 ## 🚀 Launch Checklist
 
-- [ ] Code pushed to repository
+- [ ] Project files uploaded to hosting platform
 - [ ] Environment variables configured
 - [ ] Domain DNS configured
 - [ ] SSL certificate active
@@ -238,9 +238,9 @@ const securityHeaders = [
 ## 📞 Support
 
 For technical support:
-- Email: info@appliancecares.in
-- Phone: +91 77802 25280
-- Location: Pragathi Nagar, Hyderabad, TG
+- Email: vlcooltech@gmail.com
+- Phone: +91 96763 33505 / +91 96765 82723
+- Location: 114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Sangareddy 502032
 
 ## 🔄 Updates & Maintenance
 
@@ -251,7 +251,7 @@ For technical support:
 - Check for broken links
 
 ### Backup Strategy
-- Code in Git repository
+- Project source files backed up securely
 - Database backups (if applicable)
 - Regular content backups
 
@@ -259,4 +259,4 @@ For technical support:
 
 **Ready to launch!** 🚀
 
-Your ApplianceCares.in website is now ready for deployment. Follow the steps above to get it live on the internet.
+Your VL CoolTech website is now ready for deployment. Follow the steps above to get it live on the internet.

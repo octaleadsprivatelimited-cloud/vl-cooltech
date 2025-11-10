@@ -4,6 +4,13 @@ import type { Metadata } from 'next'
 import { useState } from 'react'
 import { Search, Clock, MapPin, User, Phone, Wrench, CheckCircle, AlertCircle, Package, Truck } from 'lucide-react'
 import Link from 'next/link'
+import type { CSSProperties } from 'react'
+
+export const metadata: Metadata = {
+  title: 'VL CoolTech | Track Your Service Request',
+  description:
+    'Enter your VL CoolTech tracking ID or registered phone number to monitor technician assignment, arrival window and completion status for appliance repairs across Hyderabad.',
+}
 
 const TrackService = () => {
   const [trackingId, setTrackingId] = useState('')
@@ -16,12 +23,12 @@ const TrackService = () => {
     'ABC123': {
       id: 'ABC123',
       customerName: 'Rajesh Kumar',
-      phone: '+91 98765 43210',
+      phone: '+91 96763 33505',
       service: 'AC Repair',
-      address: 'Pragathi Nagar, Hyderabad',
+      address: '114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Hyderabad',
       status: 'In Progress',
       technician: 'Suresh Kumar',
-      technicianPhone: '+91 77802 25280',
+      technicianPhone: '+91 96765 82723',
       estimatedTime: '2-3 hours',
       issue: 'AC not cooling properly',
       bookedDate: '2024-01-15',
@@ -74,7 +81,10 @@ const TrackService = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -329,10 +339,10 @@ const TrackService = () => {
                 Speak directly with our customer support team
               </p>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="btn btn-primary px-6 py-3 rounded-lg font-semibold"
               >
-                +91 77802 25280
+                +91 96763 33505
               </Link>
             </div>
             <div className="text-center">

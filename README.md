@@ -1,6 +1,6 @@
-# ApplianceCares.in - Electronics & Appliance Repair Website
+# VL CoolTech - AC & Home Appliance Service Website
 
-A modern, responsive Next.js website for ApplianceCares.in, a professional electronics and appliance repair service in Hyderabad. Built with Next.js 14, React, TypeScript, and Tailwind CSS.
+A modern, responsive Next.js website for VL CoolTech, an air conditioner, refrigerator, washing machine, LED/QLED TV, water purifier and electrical service specialist based in Ameenpur, Beeramguda and serving Greater Hyderabad. Built with Next.js 14, React, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -30,14 +30,14 @@ A modern, responsive Next.js website for ApplianceCares.in, a professional elect
 - Service area information
 
 ### 🛠️ Services
-- TV Repair
-- AC Repair
-- Washing Machine Repair
-- Refrigerator Repair
-- Microwave Repair
-- Laptop Repair
-- Mobile Repair
-- Home Appliances
+- AC Repair & Same-Day Service
+- AC Installation, Relocation & Uninstallation
+- AC Foam / Deep Cleaning & Preventive Maintenance
+- Inverter & Advanced AC Diagnostics
+- Refrigerator & Deep Freezer Service
+- Washing Machine Repair (Top/Front Load)
+- LED & QLED TV Repair
+- Water Purifier Service & Electrical Works
 
 ### 📄 Legal Pages
 - Privacy Policy
@@ -171,8 +171,8 @@ colors: {
 ## Deployment
 
 ### Vercel (Recommended)
-1. Push code to GitHub
-2. Connect repository to Vercel
+1. Upload the project to Vercel
+2. Configure build settings
 3. Deploy automatically
 
 ### Other Platforms
@@ -197,14 +197,14 @@ colors: {
 
 ## License
 
-This project is proprietary software for ApplianceCares.in.
+This project is proprietary software for VL CoolTech.
 
 ## Support
 
 For technical support or questions about this website, contact:
-- Email: info@appliancecares.in
-- Phone: +91 77802 25280
+- Email: vlcooltech@gmail.com
+- Phone: +91 96763 33505 / +91 96765 82723
 
 ---
 
-Built with ❤️ for ApplianceCares.in
+Built with ❤️ for VL CoolTech

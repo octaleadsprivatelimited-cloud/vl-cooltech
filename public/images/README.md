@@ -19,7 +19,7 @@ public/
 │   │   ├── hero-appliances.jpg
 │   │   └── hero-technicians.jpg
 │   ├── logos/             # Brand logos and company logos
-│   │   ├── appliancecares-logo.png
+│   │   ├── vl-cooltech-logo.png
 │   │   ├── favicon.ico
 │   │   └── apple-touch-icon.png
 │   ├── testimonials/      # Customer photos and testimonials
@@ -66,8 +66,8 @@ import Image from 'next/image'
 ```tsx
 // In components/Header.tsx or Footer.tsx
 <Image
-  src="/images/logos/appliancecares-logo.png"
-  alt="ApplianceCares Logo"
+  src="/images/logos/vl-cooltech-logo.png"
+  alt="VL CoolTech Logo"
   width={120}
   height={40}
   className="h-8 w-auto"

@@ -23,11 +23,11 @@ import WhatsAppButton, { WhatsAppLink } from '@/components/WhatsAppButton'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '${keyword} - ApplianceCares.in | Expert ${category} Repair Service',
+  title: 'VL CoolTech | ${keyword} in Hyderabad',
   description: 'Professional ${keyword} service in Hyderabad. Expert technicians for all ${category} repair needs. Same day service available.',
   keywords: '${keyword.toLowerCase()}, ${category} repair, ${category} service, ${category} technician Hyderabad',
   openGraph: {
-    title: '${keyword} - ApplianceCares.in',
+    title: 'VL CoolTech | ${keyword}',
     description: 'Professional ${keyword} service in Hyderabad. Expert technicians for all ${category} repair needs.',
     type: 'website',
   },
@@ -56,7 +56,7 @@ export default function ${keyword.replace(/[^a-zA-Z0-9]/g, '')}Page() {
                 WhatsApp for ${keyword}
               </WhatsAppLink>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-primary-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
@@ -210,7 +210,7 @@ export default function ${keyword.replace(/[^a-zA-Z0-9]/g, '')}Page() {
               WhatsApp for ${keyword}
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-primary-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
@@ -281,7 +281,7 @@ function generateSitemapEntries() {
   allKeywords.forEach(keyword => {
     const slug = generateSlug(keyword)
     sitemapEntries.push({
-      url: `https://appliancecares.in/repair/${slug}`,
+      url: `https://vlcooltech.in/repair/${slug}`,
       lastmod: new Date().toISOString(),
       changefreq: 'weekly',
       priority: 0.8

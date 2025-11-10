@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { Cookie, Shield, Settings, Eye, AlertCircle, CheckCircle, Calendar } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy - ApplianceCares.in | Cookie Usage & Management',
-  description: 'Learn about how ApplianceCares.in uses cookies and similar technologies. Understand your cookie preferences and how to manage them.',
-  keywords: 'cookie policy, cookies, tracking, privacy, data collection, website analytics',
+  title: 'VL CoolTech Cookie Policy | Cookie Usage & Preference Management',
+  description:
+    'Learn how VL CoolTech uses cookies and similar technologies to operate vlcooltech.com and deliver AC, refrigerator, washing machine, LED TV, water purifier and electrical service experiences across Hyderabad West. Understand how to manage your cookie preferences.',
+  keywords:
+    'VL CoolTech cookie policy, cookies Hyderabad AC service, cookie preferences, analytics cookies, privacy Hyderabad West',
 }
 
 const CookiePolicy = () => {
@@ -75,7 +78,10 @@ const CookiePolicy = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/Repair_laptop.webp')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -322,10 +328,10 @@ const CookiePolicy = () => {
                 Contact our privacy team for cookie-related questions
               </p>
               <Link
-                href="mailto:privacy@appliancecares.in"
+                href="mailto:vlcooltech@gmail.com"
                 className="text-primary-600 hover:text-primary-700 font-semibold"
               >
-                privacy@appliancecares.in
+                vlcooltech@gmail.com
               </Link>
             </div>
 

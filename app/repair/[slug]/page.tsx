@@ -114,11 +114,11 @@ export async function generateMetadata({ params }: RepairPageProps): Promise<Met
   }
 
   return {
-    title: `${repair.title} - ApplianceCares.in | Expert ${repair.brand} ${repair.category} Repair`,
+    title: `VL CoolTech | ${repair.title} in Hyderabad`,
     description: repair.description,
     keywords: repair.keywords,
     openGraph: {
-      title: repair.title,
+      title: `VL CoolTech | ${repair.title}`,
       description: repair.description,
       type: 'website',
     },
@@ -151,14 +151,14 @@ export default function RepairPage({ params }: RepairPageProps) {
                 message={whatsappMessage}
                 className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300"
               >
-                WhatsApp for {repair.brand} {repair.category}
+                WhatsApp VL CoolTech
               </WhatsAppLink>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-primary-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
-                Call Now
+                Call +91 96763 33505
               </Link>
             </div>
           </div>
@@ -174,8 +174,10 @@ export default function RepairPage({ params }: RepairPageProps) {
                 Expert {repair.brand} {repair.category} Repair Service
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in repairing all {repair.brand} {repair.category.toLowerCase()} models with genuine parts and expert technicians. 
-                Our service covers all areas of Hyderabad with same-day repair available.
+                VL CoolTech repairs all {repair.brand} {repair.category.toLowerCase()} models with certified
+                technicians, advanced diagnostics and genuine OEM-grade components. We cover Ameenpur, Beeramguda,
+                Patancheru, BHEL Township, Miyapur and Greater Hyderabad with same-day support and a ₹299 visiting charge
+                adjusted in the final bill.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -184,7 +186,7 @@ export default function RepairPage({ params }: RepairPageProps) {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Genuine {repair.brand} Parts</span>
+                  <span className="text-gray-700">Genuine VL CoolTech Approved Parts</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
@@ -192,7 +194,7 @@ export default function RepairPage({ params }: RepairPageProps) {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Free Diagnosis</span>
+                  <span className="text-gray-700">Upfront Estimate & Diagnosis</span>
                 </div>
               </div>
             </div>
@@ -325,8 +327,8 @@ export default function RepairPage({ params }: RepairPageProps) {
               <span className="font-semibold text-gray-900">Coverage Areas</span>
             </div>
             <p className="text-gray-700">
-              Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, Nizampet, Bachupally, 
-              Gachibowli, Kondapur, HITEC City, Madhapur, and surrounding areas
+              Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, 
+              Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad
             </p>
           </div>
         </div>
@@ -349,11 +351,11 @@ export default function RepairPage({ params }: RepairPageProps) {
               WhatsApp for {repair.brand} {repair.category}
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-primary-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call +91 96763 33505
             </Link>
           </div>
         </div>

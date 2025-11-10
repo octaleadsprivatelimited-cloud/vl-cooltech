@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# ApplianceCares.in Website Installation Script
-echo "🚀 Setting up ApplianceCares.in Website..."
+# VL CoolTech Website Installation Script
+echo "🚀 Setting up VL CoolTech Website..."
 
 # Check if Node.js is installed
 if ! command -v node &> /dev/null; then
@@ -34,10 +34,10 @@ fi
 if [ ! -f ".env.local" ]; then
     echo "📝 Creating .env.local file..."
     cat > .env.local << EOF
-# ApplianceCares.in Environment Variables
-NEXT_PUBLIC_SITE_URL=https://appliancecares.in
-NEXT_PUBLIC_PHONE=+917780225280
-NEXT_PUBLIC_EMAIL=info@appliancecares.in
+# VL CoolTech Environment Variables
+NEXT_PUBLIC_SITE_URL=https://vlcooltech.in
+NEXT_PUBLIC_PHONE=+919676333505
+NEXT_PUBLIC_EMAIL=vlcooltech@gmail.com
 NEXT_PUBLIC_ADDRESS=Pragathi Nagar, Hyderabad, TG
 EOF
     echo "✅ .env.local file created"
@@ -70,7 +70,7 @@ else
 fi
 
 echo ""
-echo "🎉 ApplianceCares.in website setup complete!"
+echo "🎉 VL CoolTech website setup complete!"
 echo ""
 echo "📋 Next steps:"
 echo "1. Run 'npm run dev' to start the development server"
@@ -79,8 +79,8 @@ echo "3. Customize the content in the components and pages"
 echo "4. Deploy to Vercel, Netlify, or your preferred hosting platform"
 echo ""
 echo "📞 Contact Information:"
-echo "Phone: +91 77802 25280"
-echo "Email: info@appliancecares.in"
+echo "Phone: +91 96763 33505"
+echo "Email: vlcooltech@gmail.com"
 echo "Location: Pragathi Nagar, Hyderabad, TG"
 echo ""
 echo "🚀 Happy coding!"

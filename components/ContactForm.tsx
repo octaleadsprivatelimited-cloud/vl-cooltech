@@ -36,14 +36,16 @@ const ContactForm = () => {
   }, [])
 
   const services = [
-    'TV Repair',
-    'AC Repair',
-    'Washing Machine Repair',
+    'AC Repair / Service',
+    'AC Installation / Relocation',
+    'AC Uninstallation',
+    'AC Foam / Deep Cleaning',
+    'Inverter AC Diagnostics',
     'Refrigerator Repair',
-    'Microwave Repair',
-    'Laptop Repair',
-    'Mobile Repair',
-    'Home Appliances',
+    'Washing Machine Repair',
+    'LED / QLED TV Repair',
+    'Water Purifier Service',
+    'Electrical Work',
     'Other'
   ]
 
@@ -106,9 +108,9 @@ const ContactForm = () => {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-8">
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Get a Free Quote</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Request a VL CoolTech Service Visit</h2>
         <p className="text-gray-600">
-          Fill out the form below and we'll get back to you with a personalized quote for your repair needs.
+          Share your requirement and our team will confirm the earliest slot. Visiting charge is ₹299 and will be adjusted in your final invoice when you proceed with the service.
         </p>
       </div>
 
@@ -214,7 +216,7 @@ const ContactForm = () => {
             required
             rows={4}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
-            placeholder="Please describe the issue with your appliance..."
+            placeholder="Please describe the appliance, brand, issue and preferred visit date..."
           />
         </div>
 
@@ -239,27 +241,27 @@ const ContactForm = () => {
 
       {/* Contact Info */}
       <div className="mt-8 pt-8 border-t border-gray-200">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Or Contact Us Directly</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Prefer to reach us directly?</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="flex items-center gap-3">
             <Phone className="h-5 w-5 text-primary-600" />
             <div>
               <div className="font-medium text-gray-900">Phone</div>
-              <div className="text-gray-600">+91 77802 25280</div>
+              <div className="text-gray-600">+91 96763 33505 / +91 96765 82723</div>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <Mail className="h-5 w-5 text-primary-600" />
             <div>
               <div className="font-medium text-gray-900">Email</div>
-              <div className="text-gray-600">info@appliancecares.in</div>
+              <div className="text-gray-600">vlcooltech@gmail.com</div>
             </div>
           </div>
           <div className="flex items-center gap-3">
             <Clock className="h-5 w-5 text-primary-600" />
             <div>
               <div className="font-medium text-gray-900">Hours</div>
-              <div className="text-gray-600">8 AM - 8 PM</div>
+              <div className="text-gray-600">Mon - Sun: 8:00 AM - 8:00 PM</div>
             </div>
           </div>
         </div>

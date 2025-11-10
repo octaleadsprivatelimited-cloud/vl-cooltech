@@ -3,14 +3,18 @@ import { Phone, Wrench, Clock, Shield, Star, MapPin, CheckCircle, AlertCircle, T
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
 import { WhatsAppLink } from '@/components/WhatsAppButton'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'LG AC Repair Service - ApplianceCares.in | Expert LG AC Repair',
-  description: 'Professional LG AC repair service in Hyderabad. Expert technicians for all LG air conditioner models. Same day service available.',
-  keywords: 'LG AC repair, LG air conditioner service, LG AC technician Hyderabad, LG AC not cooling, LG AC gas leak',
+  title: 'VL CoolTech | LG AC Repair Specialists in Hyderabad',
+  description:
+    'VL CoolTech fixes LG split, window, inverter and cassette ACs with certified technicians, PCB diagnostics and genuine parts. Same-day doorstep service across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. ₹299 visiting charge adjusted in final bill.',
+  keywords:
+    'VL CoolTech LG AC repair, LG inverter AC service Hyderabad, LG split AC gas filling Ameenpur, LG AC PCB repair Beeramguda, same day LG AC technician Hyderabad',
   openGraph: {
-    title: 'LG AC Repair Service - ApplianceCares.in',
-    description: 'Professional LG AC repair service in Hyderabad. Expert technicians for all LG air conditioner models.',
+    title: 'VL CoolTech | LG AC Repair Specialists in Hyderabad',
+    description:
+      'Book VL CoolTech for LG air conditioner repairs, maintenance and installations across Hyderabad West with genuine parts and certified technicians.',
     type: 'website',
   },
 }
@@ -68,14 +72,18 @@ export default function LGACRepairPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-red-900 via-red-800 to-red-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-red-900 via-red-800 to-red-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(127, 29, 29, 0.78)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              LG AC Repair Service
+              VL CoolTech LG AC Repair Service
             </h1>
             <p className="text-xl text-red-100 max-w-3xl mx-auto mb-8">
-              Professional LG AC repair service in Hyderabad. Expert technicians for all LG air conditioner models. Same day service available.
+              VL CoolTech resolves cooling issues, PCB errors and installation concerns for every LG air conditioner model
+              with brand-trained technicians and genuine spare parts. Same-day Hyderabad coverage with ₹299 visiting charge.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <GetQuoteButton
@@ -85,11 +93,11 @@ export default function LGACRepairPage() {
                 Get Quote for LG AC
               </GetQuoteButton>
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-red-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
               >
                 <Phone className="h-5 w-5" />
-                Call Now
+                Call VL CoolTech
               </Link>
             </div>
           </div>
@@ -105,8 +113,9 @@ export default function LGACRepairPage() {
                 Expert LG AC Repair Service
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                We specialize in repairing all LG AC models with genuine parts and expert technicians. 
-                Our service covers all areas of Hyderabad with same-day repair available.
+                From inverter PCB faults to gas leaks and installation corrections, VL CoolTech provides end-to-end LG air
+                conditioner support. We maintain original-grade consumables, detailed diagnostics and transparent job
+                updates for complete peace of mind.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -115,7 +124,7 @@ export default function LGACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Genuine LG Parts</span>
+                  <span className="text-gray-700">Genuine VL CoolTech Approved Parts</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
@@ -123,7 +132,7 @@ export default function LGACRepairPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-6 w-6 text-green-600" />
-                  <span className="text-gray-700">Free Diagnosis</span>
+                  <span className="text-gray-700">Upfront Estimate & Diagnosis</span>
                 </div>
               </div>
             </div>
@@ -256,8 +265,8 @@ export default function LGACRepairPage() {
               <span className="font-semibold text-gray-900">Coverage Areas</span>
             </div>
             <p className="text-gray-700">
-              Pragathi Nagar, Kukatpally, Miyapur, Chandanagar, Nizampet, Bachupally, 
-              Gachibowli, Kondapur, HITEC City, Madhapur, and surrounding areas
+              Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur, 
+              Kondapur, Gachibowli, Kukatpally, Bachupally and Greater Hyderabad
             </p>
           </div>
         </div>
@@ -280,11 +289,11 @@ export default function LGACRepairPage() {
               WhatsApp for LG AC
             </WhatsAppLink>
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-red-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-red-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call +91 96763 33505
             </Link>
           </div>
         </div>

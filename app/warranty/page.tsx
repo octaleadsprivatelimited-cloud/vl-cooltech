@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { Shield, Clock, CheckCircle, AlertCircle, Phone, Mail, FileText, Wrench } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Warranty - ApplianceCares.in | 90-Day Service Warranty',
-  description: 'Learn about our comprehensive warranty coverage for appliance repair services. 90-day warranty on all repairs with free re-service guarantee.',
-  keywords: 'warranty, service warranty, appliance repair warranty, 90-day warranty, repair guarantee',
+  title: 'VL CoolTech Warranty | AC & Appliance Service Coverage',
+  description:
+    'Review VL CoolTech’s warranty policy for AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services across Hyderabad West. Learn about coverage periods, visiting charge adjustments and claim process.',
+  keywords:
+    'VL CoolTech warranty, AC service warranty Hyderabad, appliance repair guarantee, visiting charge 299 warranty, inverter AC warranty service, refrigerator washing machine warranty Hyderabad',
 }
 
 const Warranty = () => {
@@ -35,17 +38,17 @@ const Warranty = () => {
   const warrantyTerms = [
     {
       period: '90 Days',
-      description: 'Standard warranty period for all repair services',
-      coverage: 'Parts and Labor'
+      description: 'Standard coverage for AC repair, foam cleaning revisit, refrigerator, washing machine and LED/QLED TV repairs.',
+      coverage: 'Parts & Labor'
     },
     {
       period: '6 Months',
-      description: 'Extended warranty for major appliance repairs',
-      coverage: 'Parts and Labor'
+      description: 'Extended coverage for inverter AC PCB replacement, compressor-related jobs and major electrical rewiring.',
+      coverage: 'Parts & Labor'
     },
     {
       period: '1 Year',
-      description: 'Premium warranty for new part installations',
+      description: 'Premium manufacturer-backed warranty for select genuine parts supplied and installed by VL CoolTech.',
       coverage: 'Parts Only'
     }
   ]
@@ -85,7 +88,10 @@ const Warranty = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -107,13 +113,10 @@ const Warranty = () => {
               <Shield className="h-8 w-8 text-primary-600 mt-1 flex-shrink-0" />
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  90-Day Warranty Guarantee
+                  VL CoolTech Warranty Promise
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  At ApplianceCares, we provide a comprehensive 90-day warranty on all our repair services. 
-                  If the same issue occurs within the warranty period, we will fix it completely free of charge. 
-                  This includes parts, labor, and service call charges. We believe in the quality of our work 
-                  and want you to have complete confidence in our services.
+                  VL CoolTech provides comprehensive warranty coverage on AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services. If the same issue reappears during the warranty window, we revisit your premises and resolve it without additional labor or visiting charges. Genuine parts supplied by us are covered as per manufacturer support so you can book with full confidence.
                 </p>
               </div>
             </div>
@@ -246,7 +249,7 @@ const Warranty = () => {
               Why Our Warranty Matters
             </h2>
             <p className="text-lg text-gray-600">
-              Benefits of choosing ApplianceCares warranty
+              Benefits of choosing VL CoolTech warranty-backed service visits
             </p>
           </div>
 
@@ -259,7 +262,7 @@ const Warranty = () => {
                 Peace of Mind
               </h3>
               <p className="text-gray-600">
-                Complete confidence in our repair quality with comprehensive warranty coverage
+                Enjoy complete peace of mind with transparent coverage on every job card
               </p>
             </div>
             <div className="text-center">
@@ -270,7 +273,7 @@ const Warranty = () => {
                 Free Re-Service
               </h3>
               <p className="text-gray-600">
-                No additional charges for warranty repairs within the coverage period
+                No extra visiting charge or labor fees when a covered issue reoccurs
               </p>
             </div>
             <div className="text-center">
@@ -281,7 +284,7 @@ const Warranty = () => {
                 Quality Assurance
               </h3>
               <p className="text-gray-600">
-                We use only genuine parts and follow manufacturer specifications
+                Genuine spares, trained technicians and documented service reports for every revisit
               </p>
             </div>
           </div>
@@ -299,11 +302,11 @@ const Warranty = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="btn bg-white text-primary-600 hover:bg-primary-50 px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Phone className="h-5 w-5" />
-              Call Now
+              Call VL CoolTech
             </Link>
             <Link
               href="/customer-support"

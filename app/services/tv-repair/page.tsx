@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import { Tv, Star, Shield, Clock, Wrench, CheckCircle, Phone, MapPin } from 'lucide-react'
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'TV Repair Service Hyderabad | Samsung, LG, Sony TV Repair | ApplianceCares.in',
-  description: 'Professional TV repair service in Hyderabad. We repair Samsung, LG, Sony, Panasonic, TCL, OnePlus, Mi TVs. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 77802 25280.',
-  keywords: 'TV repair Hyderabad, Samsung TV repair, LG TV repair, Sony TV repair, Panasonic TV repair, TCL TV repair, OnePlus TV repair, Mi TV repair, LED TV repair, LCD TV repair, Smart TV repair, OLED TV repair, TV repair near me, TV repair HITEC City, TV repair Gachibowli, TV repair Kondapur, TV repair Madhapur, TV repair Jubilee Hills, TV repair Banjara Hills, TV repair Pragathi Nagar, same day TV repair, emergency TV repair, TV screen replacement, TV repair service Hyderabad, professional TV repair, TV repair technician Hyderabad',
+  title: 'VL CoolTech | Professional LED & QLED TV Repair in Hyderabad',
+  description: 'VL CoolTech delivers certified LED, LCD, Smart TV and QLED repair for Samsung, LG, Sony, TCL, OnePlus and Mi with doorstep coverage across Ameenpur, Beeramguda, Patancheru, BHEL Township, Miyapur and Greater Hyderabad. Same-day support, ₹299 visiting charge.',
+  keywords: 'VL CoolTech TV repair, LED TV service Hyderabad, QLED repair Ameenpur, smart TV technicians Beeramguda, same day TV repair Hyderabad',
 }
 
 const tvBrands = [
@@ -55,10 +56,13 @@ export default function TVRepair() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
+      <section
+        className="page-hero bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-24 lg:pb-18"
+        style={{ '--hero-bg': "url('/images/hero/tv repair.jpg')", '--hero-overlay': 'rgba(0, 0, 0, 0.75)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Professional <span className="text-yellow-300">TV Repair Service</span> in Hyderabad
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
@@ -67,11 +71,11 @@ export default function TVRepair() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-yellow-400 text-blue-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+                <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <Link
@@ -257,11 +261,10 @@ export default function TVRepair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
-              className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center gap-2"
+              href="tel:+919676333505"
+              className="bg-white text-indigo-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              <Phone className="h-5 w-5" />
-              Call Now: +91 77802 25280
+              Call Now: +91 96763 33505
             </Link>
             <Link
               href="/book-service"

@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
+import type { CSSProperties } from 'react'
 import { Shield, Clock, FileText, CheckCircle, AlertCircle, Phone, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Refund Policy - ApplianceCares.in | Money Back Guarantee',
-  description: 'Learn about our refund policy and money-back guarantee for appliance repair services. Fair and transparent refund terms for customer satisfaction.',
-  keywords: 'refund policy, money back guarantee, appliance repair refund, service refund, customer refund',
+  title: 'VL CoolTech Refund Policy | AC & Appliance Service Guarantees',
+  description:
+    'Read VL CoolTech’s refund policy covering AC repair, installation, foam cleaning, refrigerator, washing machine, LED TV, water purifier and electrical services across Hyderabad West. Understand visiting charge ₹299 adjustments, cancellation terms and refund process.',
+  keywords:
+    'VL CoolTech refund policy, AC service refund Hyderabad, appliance repair refund terms, visiting charge 299 refund, Hyderabad West appliance service guarantee',
 }
 
 const RefundPolicy = () => {
@@ -33,7 +36,7 @@ const RefundPolicy = () => {
   ]
 
   const nonRefundable = [
-    'Service charges for completed repairs',
+    'Service charges for completed repairs, including applied ₹299 visiting charge adjustments',
     'Diagnosis fees for successfully identified issues',
     'Travel charges for completed service visits',
     'Cancellation within 24 hours of scheduled appointment',
@@ -67,7 +70,10 @@ const RefundPolicy = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/washing machine.webp.webp')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -92,10 +98,7 @@ const RefundPolicy = () => {
                   Our Refund Guarantee
                 </h2>
                 <p className="text-gray-700 leading-relaxed">
-                  At ApplianceCares, we are committed to providing excellent service. 
-                  If you are not satisfied with our service or if we fail to meet our commitments, 
-                  we offer a fair refund policy. We process all valid refund requests promptly 
-                  and ensure you get your money back without unnecessary delays.
+                  VL CoolTech strives to deliver dependable AC, refrigerator, washing machine, LED TV, water purifier and electrical services across Ameenpur, Beeramguda, Patancheru, BHEL Township, Lingampally, Miyapur and Greater Hyderabad. If we fall short of the commitments outlined on your job card, our transparent refund policy ensures you are compensated swiftly and fairly.
                 </p>
               </div>
             </div>
@@ -227,14 +230,14 @@ const RefundPolicy = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-gray-500" />
-                  <Link href="tel:+917780225280" className="text-primary-600 hover:text-primary-700">
-                    +91 77802 25280
+                  <Link href="tel:+919676333505" className="text-primary-600 hover:text-primary-700">
+                    +91 96763 33505 / +91 96765 82723
                   </Link>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-gray-500" />
-                  <Link href="mailto:support@appliancecares.in" className="text-primary-600 hover:text-primary-700">
-                    support@appliancecares.in
+                  <Link href="mailto:vlcooltech@gmail.com" className="text-primary-600 hover:text-primary-700">
+                    vlcooltech@gmail.com
                   </Link>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
@@ -282,10 +285,10 @@ const RefundPolicy = () => {
               Contact Support
             </Link>
             <Link
-                href="tel:+917780225280"
+              href="tel:+919676333505"
               className="btn border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold text-lg text-center hover:scale-105 transform transition-all duration-300"
             >
-              Call Now
+              Call VL CoolTech
             </Link>
           </div>
         </div>

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { useState } from 'react'
 import { Calendar, Clock, MapPin, Phone, User, Wrench, CheckCircle, Star } from 'lucide-react'
 import Link from 'next/link'
+import type { CSSProperties } from 'react'
 
 const BookService = () => {
   const [formData, setFormData] = useState({
@@ -76,7 +77,8 @@ const BookService = () => {
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Service Booked Successfully!</h1>
           <p className="text-gray-600 mb-6">
-            Thank you for choosing ApplianceCares. We'll contact you shortly to confirm your appointment.
+            Thank you for choosing VL CoolTech. We'll contact you shortly to confirm your appointment and dispatch the
+            nearest technician.
           </p>
           <Link
             href="/"
@@ -92,7 +94,10 @@ const BookService = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-black pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/ac repair.jpg')", '--hero-overlay': 'rgba(0, 0, 0, 0.75)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -292,10 +297,10 @@ const BookService = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose ApplianceCares?
+              Why Choose VL CoolTech?
             </h2>
             <p className="text-lg text-gray-600">
-              We provide the best repair services in Hyderabad
+              Certified technicians, transparent pricing and rapid response across Hyderabad West
             </p>
           </div>
 

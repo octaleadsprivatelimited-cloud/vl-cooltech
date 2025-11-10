@@ -2,11 +2,13 @@ import { Monitor, CheckCircle, Clock, Shield, Wrench, Star, Phone, MapPin } from
 import Link from 'next/link'
 import { GetQuoteButton } from '@/components/CTA'
 import ServiceImages from '@/components/ServiceImages'
+import type { CSSProperties } from 'react'
+import { Metadata } from 'next'
 
-export const metadata = {
-  title: 'Washing Machine Repair Hyderabad | Samsung, LG, Whirlpool Washing Machine Repair | ApplianceCares.in',
-  description: 'Professional washing machine repair service in Hyderabad. We repair Samsung, LG, Whirlpool, IFB, Bosch washing machines. Same-day service available in HITEC City, Gachibowli, Kondapur, Madhapur, Jubilee Hills, Banjara Hills, Pragathi Nagar. Call +91 77802 25280.',
-  keywords: 'washing machine repair Hyderabad, Samsung washing machine repair, LG washing machine repair, Whirlpool washing machine repair, IFB washing machine repair, Bosch washing machine repair, washing machine repair near me, washing machine repair HITEC City, washing machine repair Gachibowli, washing machine repair Kondapur, washing machine repair Madhapur, washing machine repair Jubilee Hills, washing machine repair Banjara Hills, washing machine repair Pragathi Nagar, same day washing machine repair, emergency washing machine repair, washing machine service Hyderabad, drum repair Hyderabad, motor repair Hyderabad, water leakage repair, washing machine maintenance Hyderabad',
+export const metadata: Metadata = {
+  title: 'VL CoolTech | Washing Machine Repair Experts in Hyderabad',
+  description: 'VL CoolTech repairs front-load, top-load and semi-automatic washing machines for Samsung, LG, IFB, Whirlpool, Bosch and more. Same-day doorstep service across Ameenpur, Beeramguda, Patancheru, Miyapur and Greater Hyderabad with ₹299 visiting charge.',
+  keywords: 'VL CoolTech washing machine repair, Hyderabad washer service, IFB washing machine technician Ameenpur, Bosch washing machine repair Beeramguda, same day washing machine repair Hyderabad',
 }
 
 export default function WashingMachineRepair() {
@@ -47,10 +49,13 @@ export default function WashingMachineRepair() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-28 lg:pb-24">
+      <section
+        className="page-hero bg-gradient-to-br from-indigo-700 via-indigo-600 to-blue-600 pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-24 lg:pb-18"
+        style={{ '--hero-bg': "url('/images/hero/washing machine.webp.webp')", '--hero-overlay': 'rgba(0, 0, 0, 0.75)' } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Professional <span className="text-yellow-300">Washing Machine Repair</span> in Hyderabad
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
@@ -59,11 +64,11 @@ export default function WashingMachineRepair() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
-                href="tel:+917780225280"
+                href="tel:+919676333505"
                 className="bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                <span className="hidden sm:inline">Call Now: +91 77802 25280</span>
+                <span className="hidden sm:inline">Call Now: +91 96763 33505</span>
                 <span className="sm:hidden">Call Now</span>
               </Link>
               <GetQuoteButton
@@ -195,10 +200,10 @@ export default function WashingMachineRepair() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="tel:+917780225280"
+              href="tel:+919676333505"
               className="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
             >
-              Call Now: +91 77802 25280
+              Call Now: +91 96763 33505
             </Link>
             <GetQuoteButton
               serviceType="washing-machine-repair"

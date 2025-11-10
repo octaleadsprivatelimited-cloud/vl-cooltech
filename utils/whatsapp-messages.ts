@@ -1,11 +1,11 @@
 // WhatsApp message templates for different services
 export const getWhatsAppMessage = (serviceType: string, brand?: string): string => {
-  const baseMessage = "Hi! I need help with"
-  const location = "in Hyderabad. Please provide me with a quote and schedule a service."
+  const baseMessage = 'Hi VL CoolTech, I need help with'
+  const location = 'in Ameenpur/Beeramguda (Hyderabad West). Please share the visiting charge (₹299) details and earliest slot.'
   
   const serviceMessages: { [key: string]: string } = {
     // AC Repair Services
-    'ac-repair': `${baseMessage} AC repair ${location}`,
+    'ac-repair': `${baseMessage} AC repair or general service ${location}`,
     'samsung-ac': `${baseMessage} Samsung AC repair ${location}`,
     'voltas-ac': `${baseMessage} Voltas AC repair ${location}`,
     'daikin-ac': `${baseMessage} Daikin AC repair ${location}`,
@@ -14,17 +14,17 @@ export const getWhatsAppMessage = (serviceType: string, brand?: string): string 
     'blue-star-ac': `${baseMessage} Blue Star AC repair ${location}`,
     
     // Home Appliance Services
-    'tv-repair': `${baseMessage} TV repair ${location}`,
+    'tv-repair': `${baseMessage} LED or QLED TV repair ${location}`,
     'washing-machine-repair': `${baseMessage} washing machine repair ${location}`,
     'refrigerator-repair': `${baseMessage} refrigerator repair ${location}`,
     'microwave-repair': `${baseMessage} microwave repair ${location}`,
-    'home-appliances': `${baseMessage} home appliance repair ${location}`,
+    'home-appliances': `${baseMessage} AC and appliance service ${location}`,
     
     
     // General Services
-    'general': `${baseMessage} appliance repair services ${location}`,
-    'emergency': `URGENT: I need emergency appliance repair service in Hyderabad. Please provide immediate assistance.`,
-    'maintenance': `${baseMessage} appliance maintenance service ${location}`,
+    'general': `${baseMessage} AC/appliance services ${location}`,
+    'emergency': `URGENT: I need emergency AC or appliance service in Ameenpur/Beeramguda. Please help immediately.`,
+    'maintenance': `${baseMessage} preventive maintenance service ${location}`,
   }
   
   // If brand is provided, use it in the message
@@ -41,7 +41,7 @@ export const getWhatsAppMessage = (serviceType: string, brand?: string): string 
 
 // Generate WhatsApp URL with message
 export const getWhatsAppUrl = (serviceType: string, brand?: string): string => {
-  const phoneNumber = '917780225280'
+  const phoneNumber = '919676333505'
   const message = getWhatsAppMessage(serviceType, brand)
   const encodedMessage = encodeURIComponent(message)
   return `https://wa.me/${phoneNumber}?text=${encodedMessage}`

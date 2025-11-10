@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
 import { FileText, Home, Wrench, MapPin, Phone, User, Shield, Mail, Calendar, Search } from 'lucide-react'
 import Link from 'next/link'
+import type { CSSProperties } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Sitemap - ApplianceCares.in | Website Navigation',
-  description: 'Complete sitemap of ApplianceCares.in website. Find all pages and services easily with our comprehensive site navigation.',
-  keywords: 'sitemap, website navigation, appliance repair pages, service pages, contact pages',
+  title: 'VL CoolTech | Sitemap & Quick Navigation',
+  description:
+    'Browse the complete VL CoolTech website structure. Access appliance repair services, booking tools, customer support and policy pages in one place.',
+  keywords:
+    'VL CoolTech sitemap, Hyderabad appliance repair sitemap, VL CoolTech navigation, VL CoolTech services list',
 }
 
 const Sitemap = () => {
@@ -40,23 +43,26 @@ const Sitemap = () => {
   ]
 
   const quickLinks = [
-    { name: 'Call Now', href: 'tel:+917780225280', icon: Phone },
-    { name: 'Email Us', href: 'mailto:info@appliancecares.in', icon: Mail },
+    { name: 'Call Now', href: 'tel:+919676333505', icon: Phone },
+    { name: 'Email Us', href: 'mailto:vlcooltech@gmail.com', icon: Mail },
     { name: 'Book Online', href: '/book-service', icon: Calendar },
     { name: 'Track Service', href: '/track-service', icon: Search }
   ]
 
   const contactInfo = [
-    { label: 'Phone', value: '+91 77802 25280', icon: Phone },
-    { label: 'Email', value: 'info@appliancecares.in', icon: Mail },
-    { label: 'Address', value: 'Pragathi Nagar, Hyderabad, Telangana', icon: MapPin },
-    { label: 'Service Hours', value: '8:00 AM - 8:00 PM (Mon-Sat)', icon: Calendar }
+    { label: 'Phone', value: '+91 96763 33505 / +91 96765 82723', icon: Phone },
+    { label: 'Email', value: 'vlcooltech@gmail.com', icon: Mail },
+    { label: 'Address', value: '114 Sri Rajarajeshwari Colony, Ameenpur, Beeramguda, Telangana 502032', icon: MapPin },
+    { label: 'Service Hours', value: '8:00 AM - 8:00 PM (Mon-Sun) · Emergency support 24/7', icon: Calendar }
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20">
+      <section
+        className="relative page-hero bg-gradient-to-r from-primary-900 via-primary-800 to-primary-900 pt-32 pb-20"
+        style={{ '--hero-bg': "url('/images/hero/home.jpeg')" } as CSSProperties}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
