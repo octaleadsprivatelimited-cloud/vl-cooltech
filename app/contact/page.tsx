@@ -101,7 +101,7 @@ export default function Contact() {
           </div>
           
           <div className="bg-gray-200 rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
-            <div className="aspect-video">
+            <div className="h-64 sm:h-72 lg:h-80">
               <iframe
                 title="VL CoolTech Location"
                 src="https://www.google.com/maps?q=114+Sri+Rajarajeshwari+Colony,+Ameenpur,+Beeramguda,+Sangareddy+502032&z=15&output=embed"
